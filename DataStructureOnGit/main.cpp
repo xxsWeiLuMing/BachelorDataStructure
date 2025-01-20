@@ -13,7 +13,7 @@ int main()
 	Seq_InitList(L);
 	Seq_CreateList(L, a, 10);
 
-	Seq_ListTraverse(L);
-	Seq_DestroyList(L);
-	Seq_ListTraverse(L);
+	ElemType e;
+	Seq_GetElem(L, 3, e);
+	cout << e << endl;
 }
