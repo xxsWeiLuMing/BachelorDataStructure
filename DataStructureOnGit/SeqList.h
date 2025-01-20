@@ -12,6 +12,8 @@ typedef  struct SeqList {
     int listsize;   //当前分配的存储容量
 } SeqList;
 
+
+
 Status Seq_InitList(SeqList& L)
 {
     L.elem = (ElemType*)malloc(
@@ -19,5 +21,5 @@ Status Seq_InitList(SeqList& L)
     if (!L.elem) exit(OVERFLOW);
     L.length = 0;
     L.listsize = LIST_INIT_SIZE;
-    return true;
+    return OK;
 }
