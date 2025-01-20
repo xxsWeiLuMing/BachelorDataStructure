@@ -1,7 +1,7 @@
 #pragma once
 //顺序表
 
-typedef int ElemType;
+typedef char ElemType;
 
 #define  LIST_INIT_SIZE  100 //存储空间的初始分配量
 #define  LISTINCREMENT  10 //存储空间的分配增量
