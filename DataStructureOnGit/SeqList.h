@@ -51,10 +51,9 @@ Status Seq_ListTraverse(SeqList L)
     return OK;
 }
 
-Status Seq_DestroyList(SeqList& L) 
+void Seq_DestroyList(SeqList& L) 
 {
     free(L.elem);
-    return OK;
 }
 
 Status Seq_IsListEmpty(SeqList L)
