@@ -13,8 +13,5 @@ int main()
 	Seq_InitList(L);
 	Seq_CreateList(L, a, 10);
 
-	for (int i = 0; i < 10; i++)
-	{
-		cout << L.elem[i];
-	}
+	Seq_ListTraverse(L);
 }
