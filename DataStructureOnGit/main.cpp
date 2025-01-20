@@ -14,4 +14,6 @@ int main()
 	Seq_CreateList(L, a, 10);
 
 	Seq_ListTraverse(L);
+	Seq_DestroyList(L);
+	Seq_ListTraverse(L);
 }
