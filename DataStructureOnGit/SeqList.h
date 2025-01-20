@@ -33,3 +33,15 @@ Status Seq_CreateList(SeqList& L, ElemType a[], int n)
 
     return OK;
 }
+
+Status Seq_ListTraverse(SeqList L)
+{
+    if (L.length==0)return ERROR;
+
+    for (int i = 0; i < L.length; i++)
+        cout << L.elem[i] << " ";
+
+    cout << endl;
+
+    return OK;
+}
