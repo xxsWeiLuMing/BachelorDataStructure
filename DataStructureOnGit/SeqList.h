@@ -65,3 +65,12 @@ int Seq_ListLength(SeqList L)
 {
     return(L.length);
 }
+
+Status Seq_GetElem(SeqList L, int i, ElemType& e)
+{
+    if (i<1 || i>L.length)return ERROR;
+
+    e = L.elem[i - 1];//自然语言中没有“第0个”一说，故第i个的编号为i-1
+
+    return OK;
+}
