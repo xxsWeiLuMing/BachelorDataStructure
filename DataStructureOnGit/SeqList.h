@@ -54,4 +54,5 @@ Status Seq_ListTraverse(SeqList L)
 Status Seq_DestroyList(SeqList& L) 
 {
     free(L.elem);
+    return OK;
 }
