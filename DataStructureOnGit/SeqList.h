@@ -50,3 +50,8 @@ Status Seq_ListTraverse(SeqList L)
 
     return OK;
 }
+
+Status Seq_DestroyList(SeqList& L) 
+{
+    free(L.elem);
+}
