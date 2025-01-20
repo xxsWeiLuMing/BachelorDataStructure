@@ -23,3 +23,13 @@ Status Seq_InitList(SeqList& L)
     L.listsize = LIST_INIT_SIZE;
     return OK;
 }
+
+Status Seq_CreateList(SeqList& L, ElemType a[], int n)
+{
+    if (!L.elem) exit(ERROR);
+    for (int i = 0; i <= n; i++)L.elem[i] = a[i];
+    L.length = n;
+    L.listsize = LIST_INIT_SIZE;
+
+    return OK;
+}
