@@ -61,3 +61,8 @@ Status Seq_IsListEmpty(SeqList L)
 {
     return (L.length == 0);
 }
+
+int Seq_ListLength(SeqList L)
+{
+    return(L.length);
+}
