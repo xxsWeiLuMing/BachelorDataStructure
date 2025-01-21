@@ -6,7 +6,7 @@ typedef char ElemType;
 #define  LIST_INIT_SIZE  100 //存储空间的初始分配量
 #define  LISTINCREMENT  10 //存储空间的分配增量
 
-class Seqlist
+class SeqList
 {
 public:
     ElemType* elem; //存储空间基址
