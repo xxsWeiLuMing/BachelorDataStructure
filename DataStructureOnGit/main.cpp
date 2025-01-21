@@ -14,7 +14,9 @@ int main()
 	L.Create(a, 10);
 	L.Traverse();
 
+	SeqList* pL = &L;
+
 	/*ElemType e;
 	L.GetElem(5, e);*/
-	cout << L.elem[5] << endl;
+	cout << pL->elem[5] << endl;
 }
