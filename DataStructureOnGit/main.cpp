@@ -14,8 +14,8 @@ int main()
 	L.Create(a, 10);
 	L.Traverse();
 
-	if(L.Insert(12, '2'))
-		L.Traverse();
+	L.Insert(11, '2');
+	L.Traverse();
 
 	//cout << L.elem[5] << endl;
 }

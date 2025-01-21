@@ -100,7 +100,7 @@ public:
         }
 
         ElemType* q = &(this->elem[i - 1]);
-        for (ElemType* p = &(this->elem[this->length - 1]); p >= q; --p)
+        for (ElemType* p = &(this->elem[this->length - 1]); p >= q; p--)
         {
             *(p + 1) = *p;
         }
