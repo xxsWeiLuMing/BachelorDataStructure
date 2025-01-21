@@ -75,4 +75,14 @@ public:
 
         return OK;
     }
+
+    Status LocateElem(ElemType e)
+    {
+        for (int i = 0; i < this->length; i++)
+        {
+            if (this->elem[i] == e)return i + 1;
+        }
+
+        return ERROR;
+    }
 };
