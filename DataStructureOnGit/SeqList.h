@@ -85,4 +85,20 @@ public:
 
         return ERROR;
     }
+
+    Status Insert(int i, ElemType e)
+    {
+        if (i<1 || i>this->length + 1)return ERROR;
+
+        i--;
+        for (int j = this->length; j > i; j--) 
+        {
+            this->elem[j] = this->elem[j - 1];
+        }
+
+        this->elem[i] = e;
+        this->length++;
+
+        return OK;
+    }
 };
