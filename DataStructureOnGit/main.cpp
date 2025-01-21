@@ -14,7 +14,7 @@ int main()
 	L.Create(a, 10);
 	L.Traverse();
 
-	ElemType e;
-	L.GetElem(5, e);
-	cout << e << endl;
+	/*ElemType e;
+	L.GetElem(5, e);*/
+	cout << L.elem[5] << endl;
 }
