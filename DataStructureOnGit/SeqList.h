@@ -90,13 +90,22 @@ public:
     {
         if (i<1 || i>this->length + 1)return ERROR;
 
-        i--;
-        for (int j = this->length; j > i; j--) 
+        if (this->length >= this->listsize)
         {
-            this->elem[j] = this->elem[j - 1];
+            ElemType* newbase = (ElemType*)realloc(this->elem,
+                (this->listsize + LISTINCREMENT) * sizeof(ElemType));
+            if (!newbase) exit(OVERFLOW);
+            this->elem = newbase;
+            this->listsize += LISTINCREMENT;
         }
 
-        this->elem[i] = e;
+        ElemType* q = &(this->elem[i - 1]);
+        for (ElemType* p = &(this->elem[this->length - 1]); p >= q; --p)
+        {
+            *(p + 1) = *p;
+        }
+
+        *q = e;
         this->length++;
 
         return OK;
