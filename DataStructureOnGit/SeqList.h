@@ -57,7 +57,7 @@ public:
         free(this->elem);
     }
 
-    Status IsEmpty()
+    bool IsEmpty()
     {
         return (this->length == 0);
     }
