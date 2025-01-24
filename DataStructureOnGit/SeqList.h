@@ -6,53 +6,53 @@ typedef char ElemType;
 #define  LIST_INIT_SIZE  100 //存储空间的初始分配量
 #define  LISTINCREMENT  10 //存储空间的分配增量
 
-struct Seqlist
+typedef struct SeqList 
 {
     ElemType* elem; //存储空间基址
     int length;     //当前长度
     int listsize;   //当前分配的存储容量
-}SeqList;
-    
-    
+} SeqList;
+
+
 
 Status Init(SeqList& L)
 {
     L.elem = (ElemType*)malloc(
         LIST_INIT_SIZE * sizeof(ElemType));
 
-        if (!this->elem) exit(OVERFLOW);
+    if (!L.elem) exit(OVERFLOW);
 
-        this->length = 0;
-        this->listsize = LIST_INIT_SIZE;
+    L.length = 0;
+    L.listsize = LIST_INIT_SIZE;
 
-        return OK;
- }
+    return OK;
+}
 
 Status Create(SeqList& L, ElemType a[], int n)
 {
     if (!L.elem) exit(ERROR);
 
-        for (int i = 0; i <= n; i++)this->elem[i] = a[i];
+    for (int i = 0; i <= n; i++)L.elem[i] = a[i];
 
-        this->length = n;
-        this->listsize = LIST_INIT_SIZE;
+    L.length = n;
+    L.listsize = LIST_INIT_SIZE;
 
-        return OK;
-    }
+    return OK;
+}
 
 Status Traverse(SeqList L)
 {
-    if (L.length==0)return ERROR;
+    if (L.length == 0)return ERROR;
 
-        for (int i = 0; i < this->length; i++)
-            cout << this->elem[i] << " ";
+    for (int i = 0; i < L.length; i++)
+        cout << L.elem[i] << " ";
 
-        cout << endl;
+    cout << endl;
 
-        return OK;
-    }
+    return OK;
+}
 
-void Destroy(SeqList& L) 
+void Destroy(SeqList& L)
 {
     free(L.elem);
 }
