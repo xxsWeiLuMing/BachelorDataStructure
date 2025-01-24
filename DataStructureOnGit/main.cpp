@@ -10,12 +10,10 @@ int main()
 	SeqList L;
 	char a[10] = { '0','1','2','3','4','5','6','7','8','9' };
 
-	L.Init();
-	L.Create(a, 10);
-	L.Traverse();
+	Seq_InitList(L);
+	Seq_CreateList(L, a, 10);
 
-	L.Insert(11, '2');
-	L.Traverse();
-
-	//cout << L.elem[5] << endl;
+	ElemType e;
+	Seq_GetElem(L, 3, e);
+	cout << e << endl;
 }
