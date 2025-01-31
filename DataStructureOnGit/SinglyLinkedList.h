@@ -38,8 +38,11 @@ Status  Create(LinkList& L, int  n)
 }
 
 //遍历输出
-void Traverse(LinkList L)
+Status Traverse(LinkList L)
 {
+    if (!L)return ERROR;//不能遍历未初始化的表
+    if (!L->next)return ERROR;//不能遍历只有头结点的表
+
     LinkList p = L->next;
     while (p)
     {
@@ -47,6 +50,7 @@ void Traverse(LinkList L)
         p = p->next;
     }
     cout << endl;
+    return OK;
 }
 
 //销毁
