@@ -54,6 +54,17 @@ Status Traverse(LinkList L)
 }
 
 //销毁
+void Destroy(LinkList& L)
+{
+    LinkList p = L, q = p->next;
+    while (q)
+    {
+        free(p);
+        p = q; q = p->next;
+    }
+    free(p);
+}
+
 //判断空
 //求长度
 //求第i个元素的值
