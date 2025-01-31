@@ -38,6 +38,17 @@ Status  Create(LinkList& L, int  n)
 }
 
 //遍历输出
+void Traverse(LinkList L)
+{
+    LinkList p = L->next;
+    while (p)
+    {
+        cout << p->data << " ";
+        p = p->next;
+    }
+    cout << endl;
+}
+
 //销毁
 //判断空
 //求长度
