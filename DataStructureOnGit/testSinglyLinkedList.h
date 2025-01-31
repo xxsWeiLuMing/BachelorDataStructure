@@ -5,7 +5,13 @@ void testSinglyLinkedList()
 {
     LinkList L;
     //int i = Init(L);
-    cout << Init(L) << endl;
-    cout << Create(L, 5) << endl;
+    cout << "Init:" << Init(L) << endl;
+    cout << "Create:" << Create(L, 5) << endl;
+
+    cout << "Traverse:";
     Traverse(L);
+
+    char e;
+    GetElem(L, 4, e);
+    cout << "GetElem:" << e << endl;
 }
