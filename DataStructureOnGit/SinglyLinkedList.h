@@ -80,7 +80,7 @@ int Length(LinkList L)
         i++;
         p = p->next;
     }
-    return(i);
+    return i;
 }
 
 //求第i个元素的值
