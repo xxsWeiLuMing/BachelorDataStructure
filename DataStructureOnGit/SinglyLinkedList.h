@@ -101,7 +101,21 @@ Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的�
 }
 
 //求第1个值为e的元素的位序
+int LocateElem(LinkList L, ElemType e)
+{
+    LinkList p = L->next; 
+    int n = 1;
 
+    while (p && p->data != e)
+    {
+        p = p->next;
+        n++;
+    }
+
+    if (!p)return ERROR;
+
+    return n;
+}
 
 //插入元素e到第i个
 
