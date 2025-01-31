@@ -28,7 +28,7 @@ Status  Create(LinkList& L, int  n)
     for (int i = n; i > 0; i--)
     {
         LinkList p = (LinkList)malloc(sizeof(LNode));
-        scanf_s("%c", &p->data);
+        cin >> p->data;
         p->next = q->next;
         q->next = p;
         q = p;
