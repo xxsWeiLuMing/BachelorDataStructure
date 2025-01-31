@@ -72,7 +72,16 @@ Status IsEmpty(LinkList L)
 }
 
 //求长度
-
+int Length(LinkList L)
+{
+    LinkList p = L; int i = 0;
+    while (p->next != NULL)
+    {
+        i++;
+        p = p->next;
+    }
+    return(i);
+}
 
 //求第i个元素的值
 //求第1个值为e的元素的位序
