@@ -10,7 +10,7 @@ typedef  struct  LNode {
 
 
 //初始化
-Status InitList(LinkList& L)//初始化单链表
+Status Init(LinkList& L)//初始化单链表
 {
     L = (LinkList)malloc(sizeof(LNode)); 	 /*创建头结点*/
     L->next = NULL;
@@ -20,6 +20,23 @@ Status InitList(LinkList& L)//初始化单链表
 }
 
 //创建
+Status  Create(LinkList& L, int  n)
+{
+    if (!L)return ERROR;
+
+    LinkList q = L;
+    for (int i = n; i > 0; i--)
+    {
+        LinkList p = (LinkList)malloc(sizeof(LNode));
+        scanf_s("%c", &p->data);
+        p->next = q->next;
+        q->next = p;
+        q = p;
+    }
+
+    return OK;
+}
+
 //遍历输出
 //销毁
 //判断空
