@@ -133,4 +133,20 @@ Status  Insert(LinkList& L, int  i, ElemType e)
 }
 
 //删序第i个元素
+Status  Delete(LinkList& L, int i, ElemType& e)
+{
+    int j = 0;
+    LinkList p = L, q;
 
+    for (; p->next && j < i - 1; j++)p = p->next;
+
+    if (!(p->next || j > i - 1)) return ERROR;
+
+    q = p->next;
+    p->next = q->next;
+    e = q->data;
+
+    free(q);
+
+    return OK;
+}
