@@ -106,11 +106,7 @@ int LocateElem(LinkList L, ElemType e)
     LinkList p = L->next; 
     int n = 1;
 
-    while (p && p->data != e)
-    {
-        p = p->next;
-        n++;
-    }
+    for (;p && p->data != e;n++)p = p->next;
 
     if (!p)return ERROR;
 

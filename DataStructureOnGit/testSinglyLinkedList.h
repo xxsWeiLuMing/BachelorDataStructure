@@ -14,4 +14,6 @@ void testSinglyLinkedList()
     char e;
     GetElem(L, 4, e);
     cout << "GetElem:" << e << endl;
+
+    cout << "LocateElem:" << LocateElem(L, 'g');
 }
