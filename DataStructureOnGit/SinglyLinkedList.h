@@ -66,7 +66,14 @@ void Destroy(LinkList& L)
 }
 
 //判断空
+Status IsEmpty(LinkList L)
+{
+    return(L->next == NULL);
+}
+
 //求长度
+
+
 //求第i个元素的值
 //求第1个值为e的元素的位序
 //插入元素e到第i个
