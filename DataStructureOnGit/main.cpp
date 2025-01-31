@@ -4,6 +4,7 @@ using namespace std;
 
 #include"general.h"
 #include"testSeqList.h"
+#include"testSinglyLinkedList.h"
 
 int main()
 {

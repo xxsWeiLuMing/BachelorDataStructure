@@ -35,5 +35,8 @@
     <ClInclude Include="SinglyLinkedList.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="testSinglyLinkedList.h">
+      <Filter>头文件\test</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

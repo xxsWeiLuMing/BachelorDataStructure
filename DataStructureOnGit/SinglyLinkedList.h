@@ -7,7 +7,10 @@ typedef  struct  LNode {
     struct  LNode* next;
 } LNode, * LinkList;
 
+
+
 //初始化
+
 //创建
 //遍历输出
 //销毁
