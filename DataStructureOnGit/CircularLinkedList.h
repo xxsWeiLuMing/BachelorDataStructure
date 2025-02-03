@@ -45,7 +45,7 @@ Status Traverse(LinkList L)
     if (!L->next)return ERROR;//不能遍历只有头结点的表
 
     LinkList p = L->next;
-    while (p->next != L->next);
+    while (p->next != L->next)
     {
         cout << p->data << " ";
         p = p->next;
