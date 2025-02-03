@@ -50,7 +50,7 @@ Status Traverse(LinkList L)
         cout << p->data << " ";
         p = p->next;
     }
-    cout << endl;
+    cout << p->data << endl;
     return OK;
 }
 
