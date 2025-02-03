@@ -60,7 +60,8 @@ void Destroy(LinkList& L)
     while (q)
     {
         free(p);
-        p = q; q = p->next;
+        p = q; 
+        q = p->next;
     }
     free(p);
 }
