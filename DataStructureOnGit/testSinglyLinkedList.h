@@ -16,4 +16,8 @@ void testSinglyLinkedList()
     cout << "GetElem:" << e << endl;
 
     cout << "LocateElem:" << LocateElem(L, 'g');
+
+    Insert(L, 5, '1');
+    cout << "Insert:";
+    Traverse(L);
 }
