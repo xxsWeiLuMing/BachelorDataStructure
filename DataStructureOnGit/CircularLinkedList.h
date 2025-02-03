@@ -3,7 +3,8 @@
 
 typedef char ElemType;
 
-typedef  struct  LNode {
+typedef struct LNode
+{
     ElemType data;
     struct  LNode* next;
 } LNode, * LinkList;
@@ -49,7 +50,7 @@ Status Traverse(LinkList L)
     {
         cout << p->data << " ";
         p = p->next;
-    } while (p != L->next);//先执行一次，再进行判断
+    } while (p != L->next);//先执行一次，再判断
     cout << endl;
     return OK;
 }

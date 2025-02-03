@@ -3,7 +3,8 @@
 
 typedef char ElemType;
 
-typedef  struct  LNode {
+typedef  struct  LNode
+{
     ElemType data;
     struct  LNode* next;
 } LNode, * LinkList;
