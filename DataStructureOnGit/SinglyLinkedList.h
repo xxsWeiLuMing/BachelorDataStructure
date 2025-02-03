@@ -11,9 +11,9 @@ typedef  struct  LNode {
 
 
 //初始化
-Status Init(LinkList& L)//初始化单链表
+Status Init(LinkList& L)
 {
-    L = (LinkList)malloc(sizeof(LNode)); 	 /*创建头结点*/
+    L = (LinkList)malloc(sizeof(LNode));
     L->next = NULL;
 
     if (!L)return ERROR;
