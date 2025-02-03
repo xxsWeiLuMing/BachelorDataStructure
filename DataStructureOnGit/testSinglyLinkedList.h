@@ -21,5 +21,8 @@ void testSinglyLinkedList()
     cout << "Insert:";
     Traverse(L);
 
-
+    Delete(L, 1, e);
+    cout << "Delete:";
+    Traverse(L);
+    cout << "e:" << e << endl;
 }
