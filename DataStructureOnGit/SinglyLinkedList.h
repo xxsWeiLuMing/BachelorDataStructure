@@ -114,7 +114,7 @@ int LocateElem(LinkList L, ElemType e)
 }
 
 //插入元素e到第i个
-Status  Insert(LinkList& L, int  i, ElemType e)
+Status Insert(LinkList& L, int  i, ElemType e)
 {
     LinkList  p = L;
     int j = 0;
@@ -133,7 +133,7 @@ Status  Insert(LinkList& L, int  i, ElemType e)
 }
 
 //删序第i个元素
-Status  Delete(LinkList& L, int i, ElemType& e)
+Status Delete(LinkList& L, int i, ElemType& e)
 {
     int j = 0;
     LinkList p = L, q;
