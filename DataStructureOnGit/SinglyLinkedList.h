@@ -75,7 +75,8 @@ Status IsEmpty(LinkList L)
 //求长度
 int Length(LinkList L)
 {
-    LinkList p = L; int i = 0;
+    LinkList p = L; 
+    int i = 0;
     while (p->next != NULL)
     {
         i++;
