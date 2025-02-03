@@ -19,6 +19,9 @@
     <Filter Include="头文件\DataStructure">
       <UniqueIdentifier>{75155a84-b658-40e0-b329-33f2deeef8fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\DataStructure\LinearList">
+      <UniqueIdentifier>{73bcef22-3329-4873-9e8d-a6492fc0ffa1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,10 +39,16 @@
       <Filter>头文件\DataStructure</Filter>
     </ClInclude>
     <ClInclude Include="SeqList.h">
-      <Filter>头文件\DataStructure</Filter>
+      <Filter>头文件\DataStructure\LinearList</Filter>
     </ClInclude>
     <ClInclude Include="SinglyLinkedList.h">
-      <Filter>头文件\DataStructure</Filter>
+      <Filter>头文件\DataStructure\LinearList</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularLinkedList.h">
+      <Filter>头文件\DataStructure\LinearList</Filter>
+    </ClInclude>
+    <ClInclude Include="testCircularLinkedList.h">
+      <Filter>头文件\test</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

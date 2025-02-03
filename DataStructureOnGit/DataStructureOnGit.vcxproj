@@ -131,9 +131,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="general.h" />
     <ClInclude Include="SeqList.h" />
     <ClInclude Include="SinglyLinkedList.h" />
+    <ClInclude Include="testCircularLinkedList.h" />
     <ClInclude Include="testSeqList.h" />
     <ClInclude Include="testSinglyLinkedList.h" />
   </ItemGroup>
