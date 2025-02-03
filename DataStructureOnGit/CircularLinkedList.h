@@ -52,6 +52,7 @@ Status Traverse(LinkList L)
         p = p->next;
     } while (p != L->next);//先执行一次，再判断
     cout << endl;
+
     return OK;
 }
 
