@@ -55,11 +55,33 @@ Status Traverse(LinkList L)
 }
 
 //销毁
+void Destroy(LinkList& L)
+{
+    LinkList p = L, q = p->next;
+    while (q)
+    {
+        free(p);
+        p = q;
+        q = p->next;
+    }
+    free(p);
+}
+
 //判断空
+bool IsEmpty(LinkList L)
+{
+    return(L->next == NULL);
+}
+
 //求长度
+
 //用e返回L中第i个元素的值
+
 //顺序查找第1个值域与e相等的元素的位序
+
 //在L的第i个位置上插入新的元素e
-//删序L中的第i个元素。
+
+//删序L中的第i个元素
+
 
 
