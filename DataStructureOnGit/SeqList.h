@@ -1,4 +1,6 @@
 #pragma once
+#include"general.h"
+
 //顺序表
 
 typedef char ElemType;

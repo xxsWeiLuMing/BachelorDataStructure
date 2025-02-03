@@ -1,7 +1,22 @@
 #pragma once
-#include"SinglyLinkedList.h"
+#include"general.h"
+
+typedef char ElemType;
+
+typedef  struct  LNode {
+    ElemType data;
+    struct  LNode* next;
+} LNode, * LinkList;
 
 //初始化
+Status Init(LinkList& L)//初始化单链表
+{
+    L = (LinkList)malloc(sizeof(LNode)); 	 /*创建头结点*/
+    L->next = NULL;
+
+    if (!L)return ERROR;
+    return OK;
+}
 
 //创建
 Status Create(int  n, LinkList& L)

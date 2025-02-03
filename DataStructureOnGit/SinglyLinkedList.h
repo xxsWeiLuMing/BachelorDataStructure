@@ -1,4 +1,5 @@
 #pragma once
+#include"general.h"
 
 typedef char ElemType;
 
