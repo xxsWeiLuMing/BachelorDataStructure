@@ -16,6 +16,9 @@
     <Filter Include="头文件\test">
       <UniqueIdentifier>{851c8a27-2919-45c1-971b-66b4c3a58a23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\DataStructure">
+      <UniqueIdentifier>{75155a84-b658-40e0-b329-33f2deeef8fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -23,20 +26,20 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SeqList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="general.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="testSeqList.h">
       <Filter>头文件\test</Filter>
     </ClInclude>
-    <ClInclude Include="SinglyLinkedList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="testSinglyLinkedList.h">
       <Filter>头文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="general.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="SeqList.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglyLinkedList.h">
+      <Filter>头文件\DataStructure</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
