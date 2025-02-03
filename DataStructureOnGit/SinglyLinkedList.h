@@ -68,7 +68,7 @@ void Destroy(LinkList& L)
 }
 
 //判断空
-Status IsEmpty(LinkList L)
+bool IsEmpty(LinkList L)
 {
     return(L->next == NULL);
 }
