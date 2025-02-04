@@ -59,14 +59,13 @@ Status Traverse(LinkList L)
 //销毁
 void Destroy(LinkList& L)
 {
-    LinkList p = L, q = p->next;
-    while (q)
+    LinkList p = L, q = L->next;
+    do
     {
         free(p);
         p = q;
         q = p->next;
-    }
-    free(p);
+    } while (q != L->next);
 }
 
 //判断空
