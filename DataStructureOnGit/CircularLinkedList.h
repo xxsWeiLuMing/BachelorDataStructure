@@ -23,7 +23,7 @@ Status Init(LinkList& L)
 }
 
 //创建
-Status Create(int  n, LinkList& L)
+Status Create(LinkList& L, int  n)
 {
     if (!L)return ERROR;
 
@@ -69,13 +69,15 @@ void Destroy(LinkList& L)
         free(p);
         p = q;
         q = p->next;
-    } while (q != L->next);
+    } while (q != (LinkList)0xdddddddddddddddd);//最后一次循环中，q为0xdddddddddddddddd 
+    L = NULL;
 }
 
 //判断空
 bool IsEmpty(LinkList L)
 {
-    return(L->next == NULL);
+    if (!L) return true;
+    return(L->next == NULL);//L为空，返回true，否则返回false
 }
 
 //求长度
