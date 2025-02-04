@@ -11,5 +11,8 @@ void testCircularLinkedList()
     cout << "Init,Create,Traverse:";
     Traverse(H);
 
+    Destroy(H);
     cout << "Destroy,IsEmpty:" << IsEmpty(H) << endl;
+
+    /*cout << "Length:" << Length(H) << endl;*/
 }

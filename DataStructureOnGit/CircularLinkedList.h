@@ -76,6 +76,22 @@ bool IsEmpty(LinkList L)
 }
 
 //求长度
+int Length(LinkList L)
+{
+    if (!L) return ERROR;
+    if (!L->next) return 0;
+
+    LinkList p = L;
+    int i = 0;
+
+    do
+    {
+        i++;
+        p = p->next;
+    } while (p->next != L->next);
+
+    return i;
+}
 
 //用e返回L中第i个元素的值
 
