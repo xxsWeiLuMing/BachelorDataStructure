@@ -61,18 +61,34 @@ Status Traverse(LinkList L)
 }
 
 //销毁
+
+//void Destroy(LinkList& L)
+//{
+//    LinkList p = L, q = L->next;
+//    do
+//    {
+//        free(p);//free会把next值变为0xdddddddddddddddd，而不是null（0x00000000）
+//        p = q;
+//        q = q->next;
+//    } while (q != (LinkList)0xdddddddddddddddd);
+//    //最后一次循环中，q为0xdddddddddddddddd
+//    //当p指向尾结点时，p->next指向首结点，
+//    //而首结点被释放了，所以首结点的next值为0xdddddddddddddddd
+//    L = NULL;
+//}
+
 void Destroy(LinkList& L)
 {
     LinkList p = L, q = L->next;
     do
     {
-        free(p);//free会把next值变为0xdddddddddddddddd，而不是null（0x00000000）
+        free(p);
+        //free会把next值变为0xdddddddddddddddd（野指针），而不是null（0x00000000）（空指针）
+        p->next = NULL;
         p = q;
-        q = p->next;
-    } while (q != (LinkList)0xdddddddddddddddd);
-    //最后一次循环中，q为0xdddddddddddddddd
-    //当p指向尾结点时，p->next指向首结点，
-    //而首结点被释放了，所以首结点的next值为0xdddddddddddddddd
+        q = q->next;
+    } while (q);
+
     L = NULL;
 }
 
