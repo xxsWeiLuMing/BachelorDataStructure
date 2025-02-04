@@ -13,16 +13,18 @@ void testSinglyLinkedList()
     cout << "Traverse:";
     Traverse(L);
 
-    char e;
-    GetElem(L, 4, e);
-
     cout << "IsEmpty:" << IsEmpty(L) << endl;
 
     cout << "Length:" << Length(L) << endl;
 
-    cout << "GetElem:" << e << endl;
+    char e;
+    int i = 4;
+    GetElem(L, i, e);
+    cout << "GetElem " << "第" << i << "位：" << e << endl;
 
-    cout << "LocateElem:" << LocateElem(L, 'g') << endl;
+    char e1 = 'g';
+    if (!LocateElem(L, e1))cout << "LocateElem:" << e1 << "不存在" << endl;
+    else cout << "LocateElem:" << e1 << "在第" << LocateElem(L, e1) << "位" << endl;
 
     Insert(L, 5, '1');
     cout << "Insert:";
