@@ -66,11 +66,13 @@ void Destroy(LinkList& L)
         q = p->next;
     }
     free(p);
+    L = NULL;
 }
 
 //判断空
 bool IsEmpty(LinkList L)
 {
+    if (!L) return ERROR;
     return(L->next == NULL);
 }
 
