@@ -33,7 +33,7 @@ void testSinglyLinkedList()
     Delete(L, 1, e);
     cout << "Delete:";
     Traverse(L);
-    cout << "e:" << e << endl;
+    cout << "Delete e:" << e << endl;
 
     Destroy(L);
     cout << "Destroy:" << IsEmpty(L) << endl;
