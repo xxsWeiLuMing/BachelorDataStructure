@@ -66,7 +66,7 @@ void Destroy(LinkList& L)
     LinkList p = L, q = L->next;
     do
     {
-        free(p);
+        free(p);//free会把next值变为0xdddddddddddddddd，而不是null（0x00000000）
         p = q;
         q = p->next;
     } while (q != (LinkList)0xdddddddddddddddd);
