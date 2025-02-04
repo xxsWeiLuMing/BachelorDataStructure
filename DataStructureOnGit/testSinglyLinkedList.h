@@ -4,10 +4,11 @@
 void testSinglyLinkedList()
 {
     LinkList L;
+    cout << "Init Status:" << Init(L) << endl;
+
     cout << "IsEmpty:" << IsEmpty(L) << endl;
 
-    cout << "Init:" << Init(L) << endl;
-    cout << "Create:" << Create(L, 5) << endl;
+    cout << "Create Status:" << Create(L, 5) << endl;
 
     cout << "Traverse:";
     Traverse(L);
