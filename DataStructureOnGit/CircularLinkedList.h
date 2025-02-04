@@ -69,7 +69,10 @@ void Destroy(LinkList& L)
         free(p);
         p = q;
         q = p->next;
-    } while (q != (LinkList)0xdddddddddddddddd);//最后一次循环中，q为0xdddddddddddddddd 
+    } while (q != (LinkList)0xdddddddddddddddd);
+    //最后一次循环中，q为0xdddddddddddddddd
+    //当p指向尾结点时，p->next指向首结点，
+    //而首结点被释放了，所以首结点的next值为0xdddddddddddddddd
     L = NULL;
 }
 
