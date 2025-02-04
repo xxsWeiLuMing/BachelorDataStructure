@@ -72,7 +72,7 @@ void Destroy(LinkList& L)
 //判断空
 bool IsEmpty(LinkList L)
 {
-    if (!L) return ERROR;
+    if (!L) return true;//L为空，返回true
     return(L->next == NULL);
 }
 
