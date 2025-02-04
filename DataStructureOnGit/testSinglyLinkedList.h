@@ -4,7 +4,8 @@
 void testSinglyLinkedList()
 {
     LinkList L;
-    //int i = Init(L);
+    cout << "IsEmpty:" << IsEmpty(L) << endl;
+
     cout << "Init:" << Init(L) << endl;
     cout << "Create:" << Create(L, 5) << endl;
 
