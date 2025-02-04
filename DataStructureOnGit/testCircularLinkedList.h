@@ -10,9 +10,8 @@ void testCircularLinkedList()
 
     cout << "IsEmpty:" << IsEmpty(H) << endl;
 
-    cout << "Create Status:" << Create(H, 5) << endl;
-
-    cout << "Traverse:";
+    Create(H, 5);
+    cout << "Create,Traverse:";
     Traverse(H);
 
     cout << "IsEmpty:" << IsEmpty(H) << endl;
