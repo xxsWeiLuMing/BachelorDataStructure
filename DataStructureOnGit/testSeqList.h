@@ -4,10 +4,11 @@
 void testSeqList()
 {
     SeqList L;
+    Init(L);//顺序表：初始化
+    cout << "初始化、判断空：" << IsEmpty(L) << endl;//顺序表：判断空
+
     char a[] = { 'a','b','c','d','e',
         'f','g','h','i','j' };
-
-    Init(L);//顺序表：初始化
     Create(L, a, 10);//顺序表：创建
     cout << "初始化、创建、遍历：";
     Traverse(L);//顺序表：遍历
@@ -22,7 +23,7 @@ void testSeqList()
     cout << "求第" << i << "个的值：" << e << endl;//顺序表：求第i个的值
 
     e = 'g';
-    cout << "求第" << e << "在表中的位置：" << LocateElem(L, e) << endl;//顺序表：求值e在表中是第几个
+    cout << "求" << e << "在表中的位置：" << LocateElem(L, e) << endl;//顺序表：求值e在表中是第几个
 
     i = 11;
     e = '5';
@@ -31,4 +32,5 @@ void testSeqList()
     Traverse(L);
 
     Destroy(L);//顺序表：销毁表
+    cout << "Destroy：" << IsEmpty(L) << endl;
 }

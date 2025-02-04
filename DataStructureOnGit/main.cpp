@@ -1,6 +1,6 @@
-#include"testSinglyLinkedList.h"
+#include"testSeqList.h"
 
 int main()
 {
-    testSinglyLinkedList();
+    testSeqList();
 }

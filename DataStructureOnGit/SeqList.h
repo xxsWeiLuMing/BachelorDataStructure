@@ -60,6 +60,9 @@ Status Traverse(SeqList L)
 void Destroy(SeqList& L)
 {
     free(L.elem);
+    L.elem = NULL;
+    L.length = 0;
+    L.listsize = 0;
 }
 
 Status IsEmpty(SeqList L)
