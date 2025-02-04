@@ -3,7 +3,9 @@
 
 void testSinglyLinkedList()
 {
-    LinkList L;
+    LinkList L = NULL;
+    cout << "IsEmpty:" << IsEmpty(L) << endl;
+
     cout << "Init Status:" << Init(L) << endl;
 
     cout << "IsEmpty:" << IsEmpty(L) << endl;
@@ -36,5 +38,5 @@ void testSinglyLinkedList()
     cout << "Delete e:" << e << endl;
 
     Destroy(L);
-    cout << "Destroy:" << IsEmpty(L) << endl;
+    cout << "Destroy IsEmpty:" << IsEmpty(L) << endl;
 }
