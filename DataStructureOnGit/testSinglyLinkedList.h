@@ -13,9 +13,14 @@ void testSinglyLinkedList()
 
     char e;
     GetElem(L, 4, e);
+
+    cout << "IsEmpty:" << IsEmpty(L) << endl;
+
+    cout << "Length:" << Length(L) << endl;
+
     cout << "GetElem:" << e << endl;
 
-    cout << "LocateElem:" << LocateElem(L, 'g');
+    cout << "LocateElem:" << LocateElem(L, 'g') << endl;
 
     Insert(L, 5, '1');
     cout << "Insert:";
@@ -25,4 +30,7 @@ void testSinglyLinkedList()
     cout << "Delete:";
     Traverse(L);
     cout << "e:" << e << endl;
+
+    Destroy(L);
+    cout << "Destroy:" << IsEmpty(L) << endl;
 }

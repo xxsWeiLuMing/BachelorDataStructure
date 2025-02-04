@@ -2,9 +2,9 @@
 #include<malloc.h>
 using namespace std;
 
-#include"testCircularLinkedList.h"
+#include"testSinglyLinkedList.h"
 
 int main()
 {
-    testCircularLinkedList();
+    testSinglyLinkedList();
 }
