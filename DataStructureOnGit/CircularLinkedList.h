@@ -13,9 +13,9 @@ typedef struct LNode
 Status Init(LinkList& L)
 {
     L = (LinkList)malloc(sizeof(LNode));
+    if (!L)return ERROR;
     L->next = NULL;
 
-    if (!L)return ERROR;
     return OK;
 }
 
@@ -28,6 +28,7 @@ Status Create(int  n, LinkList& L)
     for (int i = n; i > 0; i--) 
     {
         LinkList p = (LinkList)malloc(sizeof(LNode));
+        if(!p) return ERROR;
         cin >> p->data;
         p->next = q->next;
         q->next = p;
