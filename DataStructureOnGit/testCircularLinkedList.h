@@ -19,13 +19,13 @@ void testCircularLinkedList()
     cout << "Length:" << Length(H) << endl;
 
     char e;
-    int i = 6;
+    int i = 5;
     if (GetElem(H, i, e))cout << "GetElem " << "第" << i << "位：" << e << endl;
     else cout << "GetElem " << "第" << i << "位不存在" << endl;
 
-    /*char e1 = 'g';
+    char e1 = 'g';
     if (!LocateElem(H, e1))cout << "LocateElem:" << e1 << "不存在" << endl;
-    else cout << "LocateElem:" << e1 << "在第" << LocateElem(H, e1) << "位" << endl;*/
+    else cout << "LocateElem:" << e1 << "在第" << LocateElem(H, e1) << "位" << endl;
 
     /*Insert(H, 5, '1');
     cout << "Insert:";

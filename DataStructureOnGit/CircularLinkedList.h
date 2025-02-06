@@ -144,6 +144,23 @@ Status GetElem(LinkList L, int i, ElemType& e)
 }
 
 //顺序查找第1个值域与e相等的元素的位序
+int LocateElem(LinkList L, ElemType e)
+{
+    if (!L) return ERROR;
+    if (!L->next) return ERROR;
+
+    LinkList p = L->next;
+    int i = 1;
+
+    do
+    {
+        if (p->data == e) return i;
+        p = p->next;
+        i++;
+    } while (p != L->next);
+
+    return 0;
+}
 
 //在L的第i个位置上插入新的元素e
 
