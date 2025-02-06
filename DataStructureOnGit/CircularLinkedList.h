@@ -135,6 +135,10 @@ Status GetElem(LinkList L, int i, ElemType& e)
         p = p->next;
         j++;
     } while (p->next != L->next && j < i);
+    //对于while (p!= L->next && j < i)
+    //当i=1，有p=L->next
+    //当p=L->next时，可能i=1，也可能i大于Length(L)
+    //所以应该用while (p->next != L->next && j < i)
 
     if (j != i) return ERROR;
 
