@@ -118,7 +118,26 @@ int Length(LinkList L)
 }
 
 //用e返回L中第i个元素的值
+Status GetElem(LinkList L, int i, ElemType& e)
+{
+    if (!L) return ERROR;
+    if (!L->next) return ERROR;
 
+    LinkList p = L;
+    int j = 0;
+
+    do
+    {
+        p = p->next;
+        j++;
+    } while (p->next != L->next && j < i);
+
+    if (j != i) return ERROR;
+
+    e = p->data;
+
+    return OK;
+}
 //顺序查找第1个值域与e相等的元素的位序
 
 //在L的第i个位置上插入新的元素e
