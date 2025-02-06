@@ -98,16 +98,12 @@ Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的�
     if (!L) return ERROR;
     if (!L->next) return ERROR;
 
-    if (i > Length(L))return ERROR;
-
     LinkList p = L;
+    int j = 0;
 
-    for (int j = 0; j < i && p; j++)
-    {
-        p = p->next;
-    }
+    for (; j < i && p; j++)p = p->next;
 
-    if (!p) return ERROR; //不存在第i个数据结点
+    if (!p || j != i) return ERROR; //不存在第i个数据结点
 
     //存在第i个数据结点
     e = p->data;
