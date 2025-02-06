@@ -123,6 +123,10 @@ Status GetElem(LinkList L, int i, ElemType& e)
     if (!L) return ERROR;
     if (!L->next) return ERROR;
 
+    if (i < 1) return ERROR;
+    //“i小于1”的时间复杂度为O(1)，可以立刻做出判断
+    //“i大于Length(L)”的时间复杂度为O(n)，应该在本函数中进行判断
+
     LinkList p = L;
     int j = 0;
 
@@ -138,6 +142,7 @@ Status GetElem(LinkList L, int i, ElemType& e)
 
     return OK;
 }
+
 //顺序查找第1个值域与e相等的元素的位序
 
 //在L的第i个位置上插入新的元素e
