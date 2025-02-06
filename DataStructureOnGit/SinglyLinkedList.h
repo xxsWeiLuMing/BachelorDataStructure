@@ -95,6 +95,11 @@ int Length(LinkList L)
 //求第i个元素的值
 Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的值。
 {
+    if (!L) return ERROR;
+    if (!L->next) return ERROR;
+
+    if (i > Length(L))return ERROR;
+
     LinkList p = L;
 
     for (int j = 0; j < i && p; j++)
