@@ -33,10 +33,10 @@ void testCircularLinkedList()
     cout << "Insert 第" << i << "位插入" << e << ":";
     Traverse(H);
 
-    /*Delete(H, 1, e);
-    cout << "Delete:";
+    i = 1;
+    Delete(H, i, e);
+    cout << "Delete 第" << i << "位" << e << " :";
     Traverse(H);
-    cout << "Delete e:" << e << endl;*/
 
     Destroy(H);
     cout << "Destroy IsEmpty:" << IsEmpty(H) << endl;
