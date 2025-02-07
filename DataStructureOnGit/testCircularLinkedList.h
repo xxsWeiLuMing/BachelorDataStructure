@@ -33,7 +33,7 @@ void testCircularLinkedList()
     else cout << "Insert 第" << i << "位插入" << e << "失败:";
     Traverse(H);
 
-    i = 6;
+    i = 7;
     if (Delete(H, i, e))cout << "Delete 第" << i << "位" << e << " :";
     else cout << "Delete 删除第" << i << "位失败:";
     Traverse(H);
