@@ -167,6 +167,32 @@ int LocateElem(LinkList L, ElemType e)
 }
 
 //在L的第i个位置上插入新的元素e
+Status Insert(LinkList& L, int i, ElemType e)
+{
+    if (!L) return ERROR;
+    if (!L->next) return ERROR;
+    if (i < 1) return ERROR;
+
+    LinkList p = L;
+    int j = 0;
+
+    do
+    {
+        p = p->next;
+        j++;
+    } while (p->next != L->next && j < i);
+
+    if (j != i) return ERROR;
+
+    LinkList q = (LinkList)malloc(sizeof(LNode));
+    if (!q) return ERROR;
+
+    q->data = e;
+    q->next = p->next;
+    p->next = q;
+
+    return OK;
+}
 
 //删序L中的第i个元素
 
