@@ -244,7 +244,7 @@ Status Delete(LinkList& L, int i, ElemType& e)
         j++;
     } while (p->next != L->next && j < i);
 
-    if (j != i) return ERROR;
+    if (p->next == L->next) return ERROR;
 
     LinkList q = p->next;
     e = q->data;
