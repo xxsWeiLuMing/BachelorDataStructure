@@ -27,7 +27,7 @@ void testCircularLinkedList()
     if (!LocateElem(H, e))cout << "LocateElem:" << e << "不存在" << endl;
     else cout << "LocateElem:" << e << "在第" << LocateElem(H, e) << "位" << endl;
 
-    i = 5;
+    i = 6;
     e = '1';
     Insert(H, i, e);
     cout << "Insert 第" << i << "位插入" << e << ":";

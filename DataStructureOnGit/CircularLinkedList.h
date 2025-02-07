@@ -173,8 +173,30 @@ Status Insert(LinkList& L, int i, ElemType e)
     if (!L->next) return ERROR;
     if (i < 1) return ERROR;
 
+    if (i == 1)
+    {
+        LinkList p = L->next;
+        while (p->next != L->next) p = p->next;
+
+        LinkList q = (LinkList)malloc(sizeof(LNode));
+        if (!q) return ERROR;
+        q->data = e;
+
+        q->next = L->next;
+        L->next = q;
+        p->next = q;
+
+        return OK;
+    }
+
     LinkList p = L;
     int j = 1;
+
+    //while ((p->next != L->next || p == L) && j < i)
+    //{
+    //    p = p->next;
+    //    j++;
+    //}//只有头结点L和尾结点的next值为L->next
 
     do
     {
@@ -186,8 +208,8 @@ Status Insert(LinkList& L, int i, ElemType e)
 
     LinkList q = (LinkList)malloc(sizeof(LNode));
     if (!q) return ERROR;
-
     q->data = e;
+
     q->next = p->next;
     p->next = q;
 
