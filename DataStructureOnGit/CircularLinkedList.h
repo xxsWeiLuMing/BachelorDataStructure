@@ -191,13 +191,11 @@ Status Insert(LinkList& L, int i, ElemType e)
 
     LinkList p = L;
     int j = 1;
-
     //while ((p->next != L->next || p == L) && j < i)
     //{
     //    p = p->next;
     //    j++;
     //}//只有头结点L和尾结点的next值为L->next
-
     do
     {
         p = p->next;
@@ -217,6 +215,40 @@ Status Insert(LinkList& L, int i, ElemType e)
 }
 
 //删序L中的第i个元素
+Status Delete(LinkList& L, int i, ElemType& e)
+{
+    if (!L) return ERROR;
+    if (!L->next) return ERROR;
+    if (i < 1) return ERROR;
 
+    if (i == 1)
+    {
+        LinkList p = L->next;
+        while (p->next != L->next) p = p->next;
+        LinkList q = L->next;
+        e = q->data;
+        L->next = q->next;
+        free(q);
+        p->next = L->next;
+        return OK;
+    }
+
+    LinkList p = L;
+    int j = 1;
+    do
+    {
+        p = p->next;
+        j++;
+    } while (p->next != L->next && j < i);
+
+    if (j != i) return ERROR;
+
+    LinkList q = p->next;
+    e = q->data;
+    p->next = q->next;
+    free(q);
+
+    return OK;
+}
 
 
