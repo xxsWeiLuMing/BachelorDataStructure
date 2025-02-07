@@ -174,7 +174,7 @@ Status Insert(LinkList& L, int i, ElemType e)
     if (i < 1) return ERROR;
 
     LinkList p = L;
-    int j = 0;
+    int j = 1;
 
     do
     {
