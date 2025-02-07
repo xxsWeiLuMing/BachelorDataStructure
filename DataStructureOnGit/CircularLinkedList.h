@@ -225,11 +225,14 @@ Status Delete(LinkList& L, int i, ElemType& e)
     {
         LinkList p = L->next;
         while (p->next != L->next) p = p->next;
+
         LinkList q = L->next;
         e = q->data;
         L->next = q->next;
-        free(q);
         p->next = L->next;
+
+        free(q);
+
         return OK;
     }
 
