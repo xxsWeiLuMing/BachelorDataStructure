@@ -147,7 +147,7 @@ Status GetElem(LinkList L, int i, ElemType& e)
     return OK;
 }
 
-//顺序查找第1个值域与e相等的元素的位序
+//查找第1个值域与e相等的元素的位序
 int LocateElem(LinkList L, ElemType e)
 {
     if (!L) return ERROR;
@@ -214,7 +214,7 @@ Status Insert(LinkList& L, int i, ElemType e)
     return OK;
 }
 
-//删序L中的第i个元素
+//删除L中的第i个元素
 Status Delete(LinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
