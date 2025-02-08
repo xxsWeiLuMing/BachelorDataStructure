@@ -46,6 +46,8 @@ Status CreateList(DoubleLinkList& L, int n)
 Status TraverseList(DoubleLinkList L)
 {
     if (!L) return ERROR;
+    if (!L->next) return ERROR;
+
     DoubleLinkList p = L->next;
     while (p)
     {
