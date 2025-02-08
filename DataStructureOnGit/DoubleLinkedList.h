@@ -36,7 +36,6 @@ Status CreateList(DoubleLinkList& L, int n)
         cin >> q->data;
         q->prior = p;
         q->next = p->next;
-        if (p->next) p->next->prior = q;
         p->next = q;
         p = q;
     }
