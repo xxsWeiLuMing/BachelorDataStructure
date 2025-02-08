@@ -19,7 +19,9 @@ Status InitList(DoubleLinkList& L)
 {
     L = (DoubleLNode*)malloc(sizeof(DoubleLNode));
     if (!L) exit(OVERFLOW);
+
     L->next = L->prior = NULL;
+
     return OK;
 }
 
@@ -27,17 +29,20 @@ Status InitList(DoubleLinkList& L)
 Status CreateList(DoubleLinkList& L, int n)
 {
     if (!L) return ERROR;
+
     DoubleLinkList p = L;
     for (int i = n; i > 0; i--)
     {
         DoubleLinkList q = (DoubleLinkList)malloc(sizeof(DoubleLNode));
         if (!q) return ERROR;
+
         cin >> q->data;
         q->prior = p;
         q->next = p->next;
         p->next = q;
         p = q;
     }
+
     return OK;
 }
 
@@ -54,6 +59,7 @@ Status TraverseList(DoubleLinkList L)
         p = p->next;
     }
     cout << endl;
+
     return OK;
 }
 
@@ -61,6 +67,7 @@ Status TraverseList(DoubleLinkList L)
 Status DestroyList(DoubleLinkList& L)
 {
     if (!L) return ERROR;
+
     DoubleLinkList p = L;
     while (p)
     {
@@ -69,6 +76,7 @@ Status DestroyList(DoubleLinkList& L)
         p = q;
     }
     L= NULL;
+
     return OK;
 }
 
@@ -83,6 +91,7 @@ Status IsListEmpty(DoubleLinkList L)
 int ListLength(DoubleLinkList L)
 {
     if (!L) return ERROR;
+
     DoubleLinkList p = L;
     int i = 0;
     while (p->next)
@@ -90,6 +99,7 @@ int ListLength(DoubleLinkList L)
         i++;
         p = p->next;
     }
+
     return i;
 }
 
@@ -97,6 +107,7 @@ int ListLength(DoubleLinkList L)
 Status GetElem(DoubleLinkList L, int i, ElemType& e)
  {
     if (!L) return ERROR;
+
     DoubleLinkList p = L->next;
     int j = 1;
     while (p && j < i)
@@ -105,7 +116,9 @@ Status GetElem(DoubleLinkList L, int i, ElemType& e)
         j++;
     }
     if (!p || j > i) return ERROR;
+
     e = p->data;
+
     return OK;
 }
 
@@ -113,6 +126,7 @@ Status GetElem(DoubleLinkList L, int i, ElemType& e)
 int LocateElem(DoubleLinkList L, ElemType e)
 {
     if (!L) return ERROR;
+
     DoubleLinkList p = L->next;
     int i = 1;
     while (p && p->data != e)
@@ -120,6 +134,7 @@ int LocateElem(DoubleLinkList L, ElemType e)
         p = p->next;
         i++;
     }
+
     if (!p) return 0;
     return i;
 }
@@ -128,6 +143,7 @@ int LocateElem(DoubleLinkList L, ElemType e)
 Status ListInsert(DoubleLinkList& L, int i, ElemType e)
 {
     if (!L) return ERROR;
+
     DoubleLinkList p = L;
     int j = 0;
     while (p && j < i - 1)
@@ -136,13 +152,16 @@ Status ListInsert(DoubleLinkList& L, int i, ElemType e)
         j++;
     }
     if (!p || j > i - 1) return ERROR;
+
     DoubleLinkList q = (DoubleLinkList)malloc(sizeof(DoubleLNode));
     if (!q) return ERROR;
+
     q->data = e;
     q->prior = p;
     q->next = p->next;
     if (p->next) p->next->prior = q;
     p->next = q;
+
     return OK;
 }
 
@@ -150,6 +169,7 @@ Status ListInsert(DoubleLinkList& L, int i, ElemType e)
 Status ListDelete(DoubleLinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
+
     DoubleLinkList p = L;
     int j = 0;
     while (p->next && j < i - 1)
@@ -158,10 +178,12 @@ Status ListDelete(DoubleLinkList& L, int i, ElemType& e)
         j++;
     }
     if (!p->next || j > i - 1) return ERROR;
+
     DoubleLinkList q = p->next;
     e = q->data;
     p->next = q->next;
     if (q->next) q->next->prior = p;
     free(q);
+
     return OK;
 }
