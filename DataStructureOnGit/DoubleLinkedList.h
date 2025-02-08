@@ -162,6 +162,7 @@ int LocateElem(DoubleLinkList L, ElemType e)
 Status ListInsert(DoubleLinkList& L, int i, ElemType e)
 {
     if (!L) return ERROR;
+    if (i < 1) return ERROR;
 
     DoubleLinkList p = L;
     int j = 0;
@@ -170,7 +171,7 @@ Status ListInsert(DoubleLinkList& L, int i, ElemType e)
         p = p->next;
         j++;
     }
-    if (!p || j > i - 1) return ERROR;
+    if (!p) return ERROR;
 
     DoubleLinkList q = (DoubleLinkList)malloc(sizeof(DoubleLNode));
     if (!q) return ERROR;
@@ -188,6 +189,7 @@ Status ListInsert(DoubleLinkList& L, int i, ElemType e)
 Status ListDelete(DoubleLinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
+    if (i < 1) return ERROR;
 
     DoubleLinkList p = L;
     int j = 0;
@@ -196,7 +198,7 @@ Status ListDelete(DoubleLinkList& L, int i, ElemType& e)
         p = p->next;
         j++;
     }
-    if (!p->next || j > i - 1) return ERROR;
+    if (!p->next) return ERROR;
 
     DoubleLinkList q = p->next;
     e = q->data;

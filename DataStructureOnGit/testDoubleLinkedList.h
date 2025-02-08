@@ -25,13 +25,13 @@ void test()
     if (!LocateElem(D, e))cout << "LocateElem:" << e << "不存在" << endl;
     else cout << "LocateElem:" << e << "在第" << LocateElem(D, e) << "位" << endl;
 
-    i = 6;
+    i = 0;
     e = '1';
     if (ListInsert(D, i, e))cout << "ListInsert 第" << i << "位插入" << e << ":";
     else cout << "ListInsert 第" << i << "位插入" << e << "失败:";
     TraverseList(D);
 
-    i = 6;
+    i = 0;
     if (ListDelete(D, i, e))cout << "ListDelete 删除第" << i << "位" << e << " :";
     else cout << "ListDelete 删除第" << i << "位失败:";
     TraverseList(D);
