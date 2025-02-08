@@ -75,7 +75,7 @@ Status DestroyList(DoubleLinkList& L)
 //判断空
 Status IsListEmpty(DoubleLinkList L)
 {
-    if (!L) return ERROR;
+    if (!L) return TRUE;
     if (L->next) return FALSE;
     return TRUE;
 }
