@@ -137,6 +137,7 @@
     <ClInclude Include="SeqList.h" />
     <ClInclude Include="SinglyLinkedList.h" />
     <ClInclude Include="testCircularLinkedList.h" />
+    <ClInclude Include="testDoubleLinkedList.h" />
     <ClInclude Include="testSeqList.h" />
     <ClInclude Include="testSinglyLinkedList.h" />
   </ItemGroup>

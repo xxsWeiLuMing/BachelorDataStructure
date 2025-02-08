@@ -56,5 +56,8 @@
     <ClInclude Include="DoubleLinkedList.h">
       <Filter>头文件\Data Structure\Linear List</Filter>
     </ClInclude>
+    <ClInclude Include="testDoubleLinkedList.h">
+      <Filter>头文件\test</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
