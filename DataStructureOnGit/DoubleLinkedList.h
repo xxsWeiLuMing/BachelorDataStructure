@@ -60,14 +60,14 @@ Status TraverseList(DoubleLinkList L)
 Status DestroyList(DoubleLinkList& L)
 {
     if (!L) return ERROR;
-    DoubleLinkList p = L->next;
+    DoubleLinkList p = L;
     while (p)
     {
         DoubleLinkList q = p->next;
         free(p);
         p = q;
     }
-    L->next = NULL;
+    L= NULL;
     return OK;
 }
 
@@ -75,8 +75,7 @@ Status DestroyList(DoubleLinkList& L)
 Status IsListEmpty(DoubleLinkList L)
 {
     if (!L) return TRUE;
-    if (L->next) return FALSE;
-    return TRUE;
+    return L->next == NULL;
 }
 
 //求长度
