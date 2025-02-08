@@ -7,6 +7,8 @@ void test()
     cout << "InitList Status:" << InitList(D) << endl;
     cout << "IsListEmpty:" << IsListEmpty(D) << endl;
 
+    cout << "ListLength:" << ListLength(D) << endl;
+
     CreateList(D, 5);
     cout << "CreateList,TraverseList:";
     TraverseList(D);

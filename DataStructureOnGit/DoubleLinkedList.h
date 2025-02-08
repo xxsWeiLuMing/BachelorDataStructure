@@ -84,9 +84,9 @@ Status IsListEmpty(DoubleLinkList L)
 int ListLength(DoubleLinkList L)
 {
     if (!L) return ERROR;
-    DoubleLinkList p = L->next;
+    DoubleLinkList p = L;
     int i = 0;
-    while (p)
+    while (p->next)
     {
         i++;
         p = p->next;
