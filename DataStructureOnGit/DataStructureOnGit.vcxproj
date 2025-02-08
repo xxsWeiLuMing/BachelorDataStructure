@@ -131,7 +131,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BoubleLinkedList.h" />
+    <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="general.h" />
     <ClInclude Include="SeqList.h" />
