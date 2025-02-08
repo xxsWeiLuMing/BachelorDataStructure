@@ -105,6 +105,24 @@ int ListLength(DoubleLinkList L)
 
 //求第i个元素的值
 Status GetElem(DoubleLinkList L, int i, ElemType& e)
+{
+    if (!L) return ERROR;
+    if (i < 1) return ERROR;
+
+    DoubleLinkList p = L->next;
+    int j = 1;
+    while (p && j < i)
+    {
+        p = p->next;
+        j++;
+    }
+    if (!p) return ERROR;//i>length(L)
+
+    e = p->data;
+
+    return OK;
+}
+/*Status GetElem(DoubleLinkList L, int i, ElemType& e)
  {
     if (!L) return ERROR;
 
@@ -116,11 +134,12 @@ Status GetElem(DoubleLinkList L, int i, ElemType& e)
         j++;
     }
     if (!p || j > i) return ERROR;
+    //当i<1,if(i<1)和if(j>i)耗时一样,但后者平白降低了代码可读性
 
     e = p->data;
 
     return OK;
-}
+}*/
 
 //求第一个值为e的元素的位序
 int LocateElem(DoubleLinkList L, ElemType e)
