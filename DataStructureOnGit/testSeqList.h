@@ -1,7 +1,7 @@
 #pragma once
 #include"SeqList.h"
 
-void testSeqList()
+void test()
 {
     SeqList L;
     InitList(L);//顺序表：初始化
@@ -30,6 +30,10 @@ void testSeqList()
     ListInsert(L, i, e);//顺序表：把值e插入到表L的第i个处
     cout << "把值" << e << "插入到第" << i << "个处：";
     TraverseList(L);
+
+    i = 5;
+    ListDelete(L, i, e);//顺序表：删除表L的第i个处的值
+    cout << "删除第" << i << "个处的值：" << e << endl;
 
     DestroyList(L);//顺序表：销毁表
     cout << "Destroy：" << IsListEmpty(L) << endl;

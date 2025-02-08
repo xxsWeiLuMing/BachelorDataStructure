@@ -1,7 +1,7 @@
 #pragma once
 #include"SinglyLinkedList.h"
 
-void testSinglyLinkedList()
+void test()
 {
     LinkList L = NULL;
     cout << "IsListEmpty:" << IsListEmpty(L) << endl;

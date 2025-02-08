@@ -1,7 +1,7 @@
 #pragma once
 #include"CircularLinkedList.h"
 
-void testCircularLinkedList()
+void test()
 {
     LinkList H = NULL;
     cout << "IsListEmpty:" << IsListEmpty(H) << endl;

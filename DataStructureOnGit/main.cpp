@@ -1,6 +1,6 @@
-#include"testCircularLinkedList.h"
+#include"testSeqList.h"
 
 int main()
 {
-    testCircularLinkedList();
+    test();
 }

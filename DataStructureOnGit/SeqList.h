@@ -118,3 +118,21 @@ Status ListInsert(SeqList& L,int i, ElemType e)
 
     return OK;
 }
+
+//删除第i个元素
+Status ListDelete(SeqList& L, int i, ElemType& e)
+{
+    if (i<1 || i>L.length)return ERROR;
+
+    ElemType* p = &(L.elem[i - 1]);
+    e = *p;
+
+    for (ElemType* q = &(L.elem[L.length - 1]); p <= q; p++)
+    {
+        *p = *(p + 1);
+    }
+
+    L.length--;
+
+    return OK;
+}
