@@ -10,7 +10,6 @@ typedef  struct  DoubleLNode
     ElemType data;
     struct  DoubleLNode* prior;
     struct  DoubleLNode* next;
-    int freq = 0;
 } DoubleLNode, * DoubleLinkList;
 
 
