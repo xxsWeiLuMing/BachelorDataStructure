@@ -4,19 +4,19 @@
 void testCircularLinkedList()
 {
     LinkList H = NULL;
-    cout << "IsEmpty:" << IsEmpty(H) << endl;
+    cout << "IsListEmpty:" << IsListEmpty(H) << endl;
 
-    cout << "Init Status:" << Init(H) << endl;
+    cout << "InitList Status:" << InitList(H) << endl;
 
-    cout << "IsEmpty:" << IsEmpty(H) << endl;
+    cout << "IsListEmpty:" << IsListEmpty(H) << endl;
 
-    Create(H, 5);
-    cout << "Create,Traverse:";
-    Traverse(H);
+    CreateList(H, 5);
+    cout << "CreateList,TraverseList:";
+    TraverseList(H);
 
-    cout << "IsEmpty:" << IsEmpty(H) << endl;
+    cout << "IsListEmpty:" << IsListEmpty(H) << endl;
 
-    cout << "Length:" << Length(H) << endl;
+    cout << "ListLength:" << ListLength(H) << endl;
 
     char e;
     int i = 5;
@@ -29,15 +29,15 @@ void testCircularLinkedList()
 
     i = 6;
     e = '1';
-    if (Insert(H, i, e))cout << "Insert 第" << i << "位插入" << e << ":";
-    else cout << "Insert 第" << i << "位插入" << e << "失败:";
-    Traverse(H);
+    if (ListInsert(H, i, e))cout << "ListInsert 第" << i << "位插入" << e << ":";
+    else cout << "ListInsert 第" << i << "位插入" << e << "失败:";
+    TraverseList(H);
 
     i = 7;
-    if (Delete(H, i, e))cout << "Delete 第" << i << "位" << e << " :";
-    else cout << "Delete 删除第" << i << "位失败:";
-    Traverse(H);
+    if (ListDelete(H, i, e))cout << "ListDelete 第" << i << "位" << e << " :";
+    else cout << "ListDelete 删除第" << i << "位失败:";
+    TraverseList(H);
 
-    Destroy(H);
-    cout << "Destroy IsEmpty:" << IsEmpty(H) << endl;
+    DestroyList(H);
+    cout << "DestroyList IsListEmpty:" << IsListEmpty(H) << endl;
 }

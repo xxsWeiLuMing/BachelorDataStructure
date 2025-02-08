@@ -13,7 +13,7 @@ typedef struct LNode
 } LNode, * LinkList;
 
 //初始化
-Status Init(LinkList& L)
+Status InitList(LinkList& L)
 {
     L = (LinkList)malloc(sizeof(LNode));
     if (!L)return ERROR;
@@ -23,7 +23,7 @@ Status Init(LinkList& L)
 }
 
 //创建
-Status Create(LinkList& L, int  n)
+Status CreateList(LinkList& L, int  n)
 {
     if (!L)return ERROR;
 
@@ -44,7 +44,7 @@ Status Create(LinkList& L, int  n)
 }
 
 //遍历输出
-Status Traverse(LinkList L)
+Status TraverseList(LinkList L)
 {
     if (!L) return ERROR; //不能遍历未初始化的表
     if (!L->next) return ERROR; //不能遍历只有头结点的表
@@ -62,7 +62,7 @@ Status Traverse(LinkList L)
 
 //销毁
 
-//void Destroy(LinkList& L)
+//void DestroyList(LinkList& L)
 //{
 //    LinkList p = L, q = L->next;
 //    do
@@ -77,7 +77,7 @@ Status Traverse(LinkList L)
 //    L = NULL;
 //}
 
-void Destroy(LinkList& L)
+void DestroyList(LinkList& L)
 {
     LinkList p = L, q = L->next;
     do
@@ -93,14 +93,14 @@ void Destroy(LinkList& L)
 }
 
 //判断空
-bool IsEmpty(LinkList L)
+bool IsListEmpty(LinkList L)
 {
     if (!L) return true;
     return(L->next == NULL);//L为空，返回true，否则返回false
 }
 
 //求长度
-int Length(LinkList L)
+int ListLength(LinkList L)
 {
     if (!L) return ERROR;
     if (!L->next) return 0;
@@ -167,7 +167,7 @@ int LocateElem(LinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-Status Insert(LinkList& L, int i, ElemType e)
+Status ListInsert(LinkList& L, int i, ElemType e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -215,7 +215,7 @@ Status Insert(LinkList& L, int i, ElemType e)
 }
 
 //删除第i个元素
-Status Delete(LinkList& L, int i, ElemType& e)
+Status ListDelete(LinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;

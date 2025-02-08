@@ -53,5 +53,8 @@
     <ClInclude Include="testCircularLinkedList.h">
       <Filter>头文件\test</Filter>
     </ClInclude>
+    <ClInclude Include="BoubleLinkedList.h">
+      <Filter>头文件\Data Structure\Linear List</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

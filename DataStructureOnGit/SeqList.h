@@ -20,7 +20,7 @@ typedef struct SeqList
 
 
 
-Status Init(SeqList& L)
+Status InitList(SeqList& L)
 {
     L.elem = (ElemType*)malloc(
         LIST_INIT_SIZE * sizeof(ElemType));
@@ -33,7 +33,7 @@ Status Init(SeqList& L)
     return OK;
 }
 
-Status Create(SeqList& L, ElemType a[], int n)
+Status CreateList(SeqList& L, ElemType a[], int n)
 {
     if (!L.elem) exit(ERROR);
 
@@ -45,7 +45,7 @@ Status Create(SeqList& L, ElemType a[], int n)
     return OK;
 }
 
-Status Traverse(SeqList L)
+Status TraverseList(SeqList L)
 {
     if (L.length == 0)return ERROR;
 
@@ -57,7 +57,7 @@ Status Traverse(SeqList L)
     return OK;
 }
 
-void Destroy(SeqList& L)
+void DestroyList(SeqList& L)
 {
     free(L.elem);
     L.elem = NULL;
@@ -65,12 +65,12 @@ void Destroy(SeqList& L)
     L.listsize = 0;
 }
 
-Status IsEmpty(SeqList L)
+Status IsListEmpty(SeqList L)
 {
     return (L.length == 0);
 }
 
-int Length(SeqList L)
+int ListLength(SeqList L)
 {
     return(L.length);
 }
@@ -94,7 +94,7 @@ int LocateElem(SeqList L,ElemType e)
     return ERROR;
 }
 
-Status Insert(SeqList& L,int i, ElemType e)
+Status ListInsert(SeqList& L,int i, ElemType e)
 {
     if (i<1 || i>L.length + 1)return ERROR;
 

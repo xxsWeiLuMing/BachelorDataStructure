@@ -4,20 +4,20 @@
 void testSinglyLinkedList()
 {
     LinkList L = NULL;
-    cout << "IsEmpty:" << IsEmpty(L) << endl;
+    cout << "IsListEmpty:" << IsListEmpty(L) << endl;
 
-    cout << "Init Status:" << Init(L) << endl;
+    cout << "InitList Status:" << InitList(L) << endl;
 
-    cout << "IsEmpty:" << IsEmpty(L) << endl;
+    cout << "IsListEmpty:" << IsListEmpty(L) << endl;
 
-    cout << "Create Status:" << Create(L, 5) << endl;
+    cout << "CreateList Status:" << CreateList(L, 5) << endl;
 
-    cout << "Traverse:";
-    Traverse(L);
+    cout << "TraverseList:";
+    TraverseList(L);
 
-    cout << "IsEmpty:" << IsEmpty(L) << endl;
+    cout << "IsListEmpty:" << IsListEmpty(L) << endl;
 
-    cout << "Length:" << Length(L) << endl;
+    cout << "ListLength:" << ListLength(L) << endl;
 
     char e;
     int i = 4;
@@ -28,15 +28,15 @@ void testSinglyLinkedList()
     if (!LocateElem(L, e1))cout << "LocateElem:" << e1 << "不存在" << endl;
     else cout << "LocateElem:" << e1 << "在第" << LocateElem(L, e1) << "位" << endl;
 
-    Insert(L, 5, '1');
-    cout << "Insert:";
-    Traverse(L);
+    ListInsert(L, 5, '1');
+    cout << "ListInsert:";
+    TraverseList(L);
 
-    Delete(L, 1, e);
-    cout << "Delete:";
-    Traverse(L);
-    cout << "Delete e:" << e << endl;
+    ListDelete(L, 1, e);
+    cout << "ListDelete:";
+    TraverseList(L);
+    cout << "ListDelete e:" << e << endl;
 
-    Destroy(L);
-    cout << "Destroy IsEmpty:" << IsEmpty(L) << endl;
+    DestroyList(L);
+    cout << "DestroyList IsListEmpty:" << IsListEmpty(L) << endl;
 }
