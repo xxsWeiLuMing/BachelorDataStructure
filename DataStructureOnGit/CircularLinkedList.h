@@ -117,7 +117,7 @@ int Length(LinkList L)
     return i;
 }
 
-//用e返回L中第i个元素的值
+//求第i个元素的值
 Status GetElem(LinkList L, int i, ElemType& e)
 {
     if (!L) return ERROR;
@@ -147,7 +147,7 @@ Status GetElem(LinkList L, int i, ElemType& e)
     return OK;
 }
 
-//查找第1个值域与e相等的元素的位序
+//求第1个值为e的元素的位序
 int LocateElem(LinkList L, ElemType e)
 {
     if (!L) return ERROR;
@@ -166,7 +166,7 @@ int LocateElem(LinkList L, ElemType e)
     return 0;
 }
 
-//在L的第i个位置上插入新的元素e
+//把元素e插入到第i个
 Status Insert(LinkList& L, int i, ElemType e)
 {
     if (!L) return ERROR;
@@ -214,7 +214,7 @@ Status Insert(LinkList& L, int i, ElemType e)
     return OK;
 }
 
-//删除L中的第i个元素
+//删除第i个元素
 Status Delete(LinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
