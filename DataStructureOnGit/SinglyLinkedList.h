@@ -112,7 +112,7 @@ Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的�
     return OK;
 }
 
-//求第1个值为e的元素的位序
+//求第一个值为e的元素的位序
 int LocateElem(LinkList L, ElemType e)
 {
     LinkList p = L->next; 
