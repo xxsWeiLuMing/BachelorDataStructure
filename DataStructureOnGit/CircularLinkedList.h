@@ -6,16 +6,16 @@ using namespace std;
 
 typedef char ElemType;
 
-typedef struct LNode
+typedef struct CirLNode
 {
     ElemType data;
-    struct  LNode* next;
-} LNode, * LinkList;
+    struct  CirLNode* next;
+} CirLNode, * CirLinkList;
 
 //初始化
-Status InitList(LinkList& L)
+Status InitList(CirLinkList& L)
 {
-    L = (LinkList)malloc(sizeof(LNode));
+    L = (CirLinkList)malloc(sizeof(CirLNode));
     if (!L)return ERROR;
     L->next = NULL;
 
@@ -23,14 +23,14 @@ Status InitList(LinkList& L)
 }
 
 //创建
-Status CreateList(LinkList& L, int  n)
+Status CreateList(CirLinkList& L, int  n)
 {
     if (!L)return ERROR;
 
-    LinkList q = L;
+    CirLinkList q = L;
     for (int i = n; i > 0; i--) 
     {
-        LinkList p = (LinkList)malloc(sizeof(LNode));
+        CirLinkList p = (CirLinkList)malloc(sizeof(CirLNode));
         if(!p) return ERROR;
         cin >> p->data;
         p->next = q->next;
@@ -44,12 +44,12 @@ Status CreateList(LinkList& L, int  n)
 }
 
 //遍历输出
-Status TraverseList(LinkList L)
+Status TraverseList(CirLinkList L)
 {
     if (!L) return ERROR; //不能遍历未初始化的表
     if (!L->next) return ERROR; //不能遍历只有头结点的表
 
-    LinkList p = L->next;
+    CirLinkList p = L->next;
     do
     {
         cout << p->data << " ";
@@ -62,24 +62,24 @@ Status TraverseList(LinkList L)
 
 //销毁
 
-//void DestroyList(LinkList& L)
+//void DestroyList(CirLinkList& L)
 //{
-//    LinkList p = L, q = L->next;
+//    CirLinkList p = L, q = L->next;
 //    do
 //    {
 //        free(p);//free会把next值变为0xdddddddddddddddd，而不是null（0x00000000）
 //        p = q;
 //        q = q->next;
-//    } while (q != (LinkList)0xdddddddddddddddd);
+//    } while (q != (CirLinkList)0xdddddddddddddddd);
 //    //最后一次循环中，q为0xdddddddddddddddd
 //    //当p指向尾结点时，p->next指向首结点，
 //    //而首结点被释放了，所以首结点的next值为0xdddddddddddddddd
 //    L = NULL;
 //}
 
-void DestroyList(LinkList& L)
+void DestroyList(CirLinkList& L)
 {
-    LinkList p = L, q = L->next;
+    CirLinkList p = L, q = L->next;
     do
     {
         free(p);
@@ -93,19 +93,19 @@ void DestroyList(LinkList& L)
 }
 
 //判断空
-bool IsListEmpty(LinkList L)
+bool IsListEmpty(CirLinkList L)
 {
     if (!L) return true;
     return(L->next == NULL);//L为空，返回true，否则返回false
 }
 
 //求长度
-int ListLength(LinkList L)
+int ListLength(CirLinkList L)
 {
     if (!L) return ERROR;
     if (!L->next) return 0;
 
-    LinkList p = L;
+    CirLinkList p = L;
     int i = 0;
 
     do
@@ -118,7 +118,7 @@ int ListLength(LinkList L)
 }
 
 //求第i个元素的值
-Status GetElem(LinkList L, int i, ElemType& e)
+Status GetElem(CirLinkList L, int i, ElemType& e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -127,7 +127,7 @@ Status GetElem(LinkList L, int i, ElemType& e)
     //“i小于1”的时间复杂度为O(1)，可以立刻做出判断
     //“i大于Length(L)”的时间复杂度为O(n)，应该在本函数中进行判断
 
-    LinkList p = L;
+    CirLinkList p = L;
     int j = 0;
 
     do
@@ -148,12 +148,12 @@ Status GetElem(LinkList L, int i, ElemType& e)
 }
 
 //求第一个值为e的元素的位序
-int LocateElem(LinkList L, ElemType e)
+int LocateElem(CirLinkList L, ElemType e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
 
-    LinkList p = L->next;
+    CirLinkList p = L->next;
     int i = 1;
 
     do
@@ -167,7 +167,7 @@ int LocateElem(LinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-Status ListInsert(LinkList& L, int i, ElemType e)
+Status ListInsert(CirLinkList& L, int i, ElemType e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -175,10 +175,10 @@ Status ListInsert(LinkList& L, int i, ElemType e)
 
     if (i == 1)
     {
-        LinkList p = L->next;
+        CirLinkList p = L->next;
         while (p->next != L->next) p = p->next;
 
-        LinkList q = (LinkList)malloc(sizeof(LNode));
+        CirLinkList q = (CirLinkList)malloc(sizeof(CirLNode));
         if (!q) return ERROR;
         q->data = e;
 
@@ -189,7 +189,7 @@ Status ListInsert(LinkList& L, int i, ElemType e)
         return OK;
     }
 
-    LinkList p = L;
+    CirLinkList p = L;
     int j = 1;
     //while ((p->next != L->next || p == L) && j < i)
     //{
@@ -204,7 +204,7 @@ Status ListInsert(LinkList& L, int i, ElemType e)
 
     if (j != i) return ERROR;
 
-    LinkList q = (LinkList)malloc(sizeof(LNode));
+    CirLinkList q = (CirLinkList)malloc(sizeof(CirLNode));
     if (!q) return ERROR;
     q->data = e;
 
@@ -215,7 +215,7 @@ Status ListInsert(LinkList& L, int i, ElemType e)
 }
 
 //删除第i个元素
-Status ListDelete(LinkList& L, int i, ElemType& e)
+Status ListDelete(CirLinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -223,10 +223,10 @@ Status ListDelete(LinkList& L, int i, ElemType& e)
 
     if (i == 1)
     {
-        LinkList p = L->next;
+        CirLinkList p = L->next;
         while (p->next != L->next) p = p->next;
 
-        LinkList q = L->next;
+        CirLinkList q = L->next;
         e = q->data;
         L->next = q->next;
         p->next = L->next;
@@ -236,7 +236,7 @@ Status ListDelete(LinkList& L, int i, ElemType& e)
         return OK;
     }
 
-    LinkList p = L;
+    CirLinkList p = L;
     int j = 1;
     do
     {
@@ -246,7 +246,7 @@ Status ListDelete(LinkList& L, int i, ElemType& e)
 
     if (p->next == L->next) return ERROR;
 
-    LinkList q = p->next;
+    CirLinkList q = p->next;
     e = q->data;
     p->next = q->next;
     free(q);

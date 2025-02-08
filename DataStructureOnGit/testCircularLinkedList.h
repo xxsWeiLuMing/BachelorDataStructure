@@ -3,7 +3,7 @@
 
 void test()
 {
-    LinkList H = NULL;
+    CirLinkList H = NULL;
     cout << "IsListEmpty:" << IsListEmpty(H) << endl;
 
     cout << "InitList Status:" << InitList(H) << endl;
