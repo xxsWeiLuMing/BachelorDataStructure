@@ -62,5 +62,11 @@
     <ClInclude Include="testDoubleLinkedList.h">
       <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
+    <ClInclude Include="SeqStack.h">
+      <Filter>头文件\Data Structure\Stack and Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="testSeqStack.h">
+      <Filter>头文件\Data Structure\Stack and Queue\test</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
