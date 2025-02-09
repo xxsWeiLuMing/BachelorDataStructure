@@ -1,9 +1,9 @@
 #pragma once
-#include"Stack.h"
+#include"SeqStack.h"
 
 void test()
 {
-    /*Stack S = NULL;
+   /* SeqStack S = NULL;
     cout << "IsStackEmpty:" << IsStackEmpty(S) << endl;
     cout << "InitStack Status:" << InitStack(S) << endl;
     cout << "IsStackEmpty:" << IsStackEmpty(S) << endl;
@@ -32,3 +32,4 @@ void test()
     DestroyStack(S);
     cout << "DestroyStack IsStackEmpty:" << IsStackEmpty(S) << endl;*/
 }
+
