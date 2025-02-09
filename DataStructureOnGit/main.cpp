@@ -1,4 +1,4 @@
-#include"testDoubleLinkedList.h"
+#include"testSeqStack.h"
 
 int main()
 {

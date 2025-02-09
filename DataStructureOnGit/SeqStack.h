@@ -45,13 +45,14 @@ Status TraverseStack(SeqStack S)
         cout << *p << " ";
         p++;
     }
+    cout << endl;
     return OK;
 }
 
 //判断空
 Status IsStackEmpty(SeqStack S)
 {
-    if (!S.base) return ERROR;
+    if (!S.base) return TRUE;
     return S.top == S.base;
 }
 
