@@ -29,6 +29,22 @@ void test()
 
     cout << "TraverseStack:";
     TraverseStack(S);
+
+    cout << "StackLength:" << StackLength(S) << endl;
+
+    SElemType e;
+    GetTop(S, e);
+    cout << "GetTop:" << e << endl;
+
+    cout << "Pop:";
+    while (!IsStackEmpty(S))
+    {
+        Pop(S, e);
+        cout << e << " ";
+    }
+    cout << endl;
+
+    cout << "ClearStack:" << ClearStack(S) << endl;
 }
 
 
