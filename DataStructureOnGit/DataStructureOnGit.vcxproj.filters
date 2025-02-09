@@ -25,6 +25,9 @@
     <Filter Include="头文件\Data Structure\Linear List\test">
       <UniqueIdentifier>{851c8a27-2919-45c1-971b-66b4c3a58a23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Data Structure\Stack and Queue\test">
+      <UniqueIdentifier>{cd9f759b-0b36-46dd-84ed-ca54bf2b401f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
