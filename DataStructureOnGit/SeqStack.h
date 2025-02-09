@@ -76,9 +76,8 @@ Status Push(SqStack& S, SElemType e)
     if (!S.base) return ERROR;
     if (S.top - S.base >= S.stacksize)
     {
-        SElemType* newBase = (SElemType*)realloc(S.base, 
-            (static_cast<unsigned long long>(S.stacksize)+
-                STACKINCREMENT) * sizeof(SElemType));
+        SElemType* newBase = (SElemType*)realloc(S.base, (static_cast<unsigned long long>
+            (S.stacksize) + STACKINCREMENT) * sizeof(SElemType));
         if (!newBase) exit(OVERFLOW);
         S.top = newBase + (S.top - S.base);
         S.base = newBase;
