@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="头文件\test">
-      <UniqueIdentifier>{851c8a27-2919-45c1-971b-66b4c3a58a23}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\Data Structure">
       <UniqueIdentifier>{75155a84-b658-40e0-b329-33f2deeef8fb}</UniqueIdentifier>
     </Filter>
@@ -25,6 +22,9 @@
     <Filter Include="头文件\Data Structure\Stack and Queue">
       <UniqueIdentifier>{0e44e9fa-9bda-4bd9-be36-2c3c00960372}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Data Structure\Linear List\test">
+      <UniqueIdentifier>{851c8a27-2919-45c1-971b-66b4c3a58a23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -33,10 +33,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="testSeqList.h">
-      <Filter>头文件\test</Filter>
+      <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
     <ClInclude Include="testSinglyLinkedList.h">
-      <Filter>头文件\test</Filter>
+      <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
     <ClInclude Include="general.h">
       <Filter>头文件\Data Structure</Filter>
@@ -51,13 +51,13 @@
       <Filter>头文件\Data Structure\Linear List</Filter>
     </ClInclude>
     <ClInclude Include="testCircularLinkedList.h">
-      <Filter>头文件\test</Filter>
+      <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
     <ClInclude Include="DoubleLinkedList.h">
       <Filter>头文件\Data Structure\Linear List</Filter>
     </ClInclude>
     <ClInclude Include="testDoubleLinkedList.h">
-      <Filter>头文件\test</Filter>
+      <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
