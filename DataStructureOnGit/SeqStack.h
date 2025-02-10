@@ -73,10 +73,10 @@ Status GetTop(SeqStack S, SElemType& e)
 }
 
 Status Push(SeqStack& S, SElemType e)
-{//每一次入栈，都新增分配空间，所以栈永远不会满
+{
     if (!S.base) return ERROR;
     if (S.top - S.base >= S.stacksize)
-    {
+    {//如果栈满，重新分配空间
         SElemType* newBase = (SElemType*)realloc(S.base, (static_cast<unsigned long long>
             (S.stacksize) + STACKINCREMENT) * sizeof(SElemType));
         if (!newBase) exit(OVERFLOW);
