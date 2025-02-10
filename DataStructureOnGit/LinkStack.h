@@ -1,4 +1,9 @@
 #pragma once
+#include"general.h"
+#include<iostream>
+#include<malloc.h>
+using namespace std;
+
 #define  STACK_INIT_SIZE   100 
 #define  STACKINCREMENT  10 
 
