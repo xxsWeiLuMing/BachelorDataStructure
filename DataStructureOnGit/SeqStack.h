@@ -73,7 +73,7 @@ Status GetTop(SeqStack S, SElemType& e)
 }
 
 Status Push(SeqStack& S, SElemType e)
-{
+{//每一次入栈，都新增分配空间，所以栈永远不会满
     if (!S.base) return ERROR;
     if (S.top - S.base >= S.stacksize)
     {
