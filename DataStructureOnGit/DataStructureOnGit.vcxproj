@@ -134,6 +134,7 @@
     <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="general.h" />
+    <ClInclude Include="LinkStack.h" />
     <ClInclude Include="SeqList.h" />
     <ClInclude Include="SinglyLinkedList.h" />
     <ClInclude Include="SeqStack.h" />
@@ -142,6 +143,9 @@
     <ClInclude Include="testSeqList.h" />
     <ClInclude Include="testSinglyLinkedList.h" />
     <ClInclude Include="testSeqStack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="栈基本操作.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
