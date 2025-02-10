@@ -4,6 +4,7 @@
 void CreateStack(SeqStack &S)
 {
     char ch[5] = { 'a','b','c','d','e' };
+    char str[3][4] = { "abc","123","qwe" };
 
     for (int i = 0; i < 5; i++)
     {
