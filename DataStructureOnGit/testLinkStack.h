@@ -1,7 +1,7 @@
 #pragma once
 #include"LinkStack.h"
 
-void CreateStack(SLinkList S)
+void CreateStack(SLinkList& S)
 {
     char ch[5] = { 'a','b','c','d','e' };
     char str[3][4] = { "abc","123","qwe" };
@@ -45,5 +45,5 @@ void test()
     }
     cout << endl;
 
-    //cout << "ClearStack:" << ClearStack(S) << endl;
+    cout << "ClearStack:" << ClearStack(S) << endl;
 }
