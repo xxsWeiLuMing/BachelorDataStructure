@@ -74,17 +74,18 @@ Status Push(SLinkList& S, SElemType e) {
 }
 
 //出栈
-bool Pop(SLinkList& S, SElemType& e) {
-    if (S == nullptr) return false;
+Status Pop(SLinkList& S, SElemType& e) {
+    if (S == nullptr) return ERROR;
     SLNode* p = S;
     e = p->data;
     S = S->next;
     free(p);
-    return true;
+    return OK;
 }
 
 //清空栈
-void ClearStack(SLinkList& S) {
+Status ClearStack(SLinkList& S) {
     DestroyStack(S);
     S = nullptr;
+    return OK;
 }
