@@ -31,6 +31,9 @@
     <Filter Include="头文件\Data Structure\Queue">
       <UniqueIdentifier>{d0ba1a7d-ee93-47c2-9652-912f3de24e2e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Data Structure\Queue\test">
+      <UniqueIdentifier>{ae71b228-7e72-470a-84de-828ed8853105}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -76,6 +79,18 @@
     </ClInclude>
     <ClInclude Include="testLinkStack.h">
       <Filter>头文件\Data Structure\Stack\test</Filter>
+    </ClInclude>
+    <ClInclude Include="SeqQueue.h">
+      <Filter>头文件\Data Structure\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkQueue.h">
+      <Filter>头文件\Data Structure\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="testSeqQueue.h">
+      <Filter>头文件\Data Structure\Queue\test</Filter>
+    </ClInclude>
+    <ClInclude Include="testLinkQueue.h">
+      <Filter>头文件\Data Structure\Queue\test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

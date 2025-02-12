@@ -134,14 +134,18 @@
     <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="general.h" />
+    <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="SeqList.h" />
+    <ClInclude Include="SeqQueue.h" />
     <ClInclude Include="SinglyLinkedList.h" />
     <ClInclude Include="SeqStack.h" />
     <ClInclude Include="testCircularLinkedList.h" />
     <ClInclude Include="testDoubleLinkedList.h" />
+    <ClInclude Include="testLinkQueue.h" />
     <ClInclude Include="testLinkStack.h" />
     <ClInclude Include="testSeqList.h" />
+    <ClInclude Include="testSeqQueue.h" />
     <ClInclude Include="testSinglyLinkedList.h" />
     <ClInclude Include="testSeqStack.h" />
   </ItemGroup>
