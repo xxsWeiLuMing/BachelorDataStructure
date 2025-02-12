@@ -3,5 +3,7 @@
 
 void test() {
     SLinkList S;
-    cout << InitStack(S) << endl;
+    cout << "InitStack Status:" << InitStack(S) << endl;
+    cout << "Stack Empty:" << StackEmpty(S) << endl;
+    cout << "Stack Length:" << StackLength(S) << endl;
 }
