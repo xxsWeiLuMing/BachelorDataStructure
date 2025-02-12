@@ -19,14 +19,17 @@
     <Filter Include="头文件\Data Structure\Linear List">
       <UniqueIdentifier>{73bcef22-3329-4873-9e8d-a6492fc0ffa1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\Data Structure\Stack and Queue">
-      <UniqueIdentifier>{0e44e9fa-9bda-4bd9-be36-2c3c00960372}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\Data Structure\Linear List\test">
       <UniqueIdentifier>{851c8a27-2919-45c1-971b-66b4c3a58a23}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\Data Structure\Stack and Queue\test">
+    <Filter Include="头文件\Data Structure\Stack">
+      <UniqueIdentifier>{0e44e9fa-9bda-4bd9-be36-2c3c00960372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Data Structure\Stack\test">
       <UniqueIdentifier>{cd9f759b-0b36-46dd-84ed-ca54bf2b401f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Data Structure\Queue">
+      <UniqueIdentifier>{d0ba1a7d-ee93-47c2-9652-912f3de24e2e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -63,16 +66,16 @@
       <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
     <ClInclude Include="SeqStack.h">
-      <Filter>头文件\Data Structure\Stack and Queue</Filter>
+      <Filter>头文件\Data Structure\Stack</Filter>
     </ClInclude>
     <ClInclude Include="testSeqStack.h">
-      <Filter>头文件\Data Structure\Stack and Queue\test</Filter>
+      <Filter>头文件\Data Structure\Stack\test</Filter>
     </ClInclude>
     <ClInclude Include="LinkStack.h">
-      <Filter>头文件\Data Structure\Stack and Queue</Filter>
+      <Filter>头文件\Data Structure\Stack</Filter>
     </ClInclude>
     <ClInclude Include="testLinkStack.h">
-      <Filter>头文件\Data Structure\Stack and Queue\test</Filter>
+      <Filter>头文件\Data Structure\Stack\test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
