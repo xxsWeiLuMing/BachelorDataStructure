@@ -21,23 +21,27 @@ Status InitStack(SLinkList& S) {
 }
 
 //销毁
-void DestroyStack(SLinkList& S) {
+Status DestroyStack(SLinkList& S) {
+    //if (!S)return OK;
     SLNode* p;
     while (S) {
         p = S;
         S = S->next;
         free(p);
     }
+    return OK;
 }
 
 //遍历输出
-void TraverseStack(SLinkList S) {
+Status TraverseStack(SLinkList S) {
+    //if (!S)return OK;
     SLNode* p = S;
     while (p) {
         cout << p->data << " ";
         p = p->next;
     }
     cout << endl;
+    return OK;
 }
 
 //判断空
@@ -57,10 +61,10 @@ int StackLength(SLinkList S) {
 }
 
 //得到栈首元素
-bool GetTop(SLinkList S, SElemType& e) {
-    if (S == nullptr) return false;
+Status GetTop(SLinkList S, SElemType& e) {
+    if (S == nullptr) return ERROR;
     e = S->data;
-    return true;
+    return OK;
 }
 
 //入栈
