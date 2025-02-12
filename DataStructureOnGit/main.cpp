@@ -1,4 +1,4 @@
-#include"testSeqStack.h"
+#include"testLinkStack.h"
 
 int main()
 {

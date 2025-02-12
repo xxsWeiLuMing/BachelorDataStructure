@@ -71,6 +71,9 @@
     <ClInclude Include="LinkStack.h">
       <Filter>头文件\Data Structure\Stack and Queue</Filter>
     </ClInclude>
+    <ClInclude Include="testLinkStack.h">
+      <Filter>头文件\Data Structure\Stack and Queue\test</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="栈基本操作.md">

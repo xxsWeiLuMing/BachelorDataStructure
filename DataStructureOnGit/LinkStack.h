@@ -15,8 +15,9 @@ typedef  struct  SLNode {
 } SLNode, * SLinkList;
 
 //初始化
-void InitStack(SLinkList& S) {
+Status InitStack(SLinkList& S) {
     S = nullptr;
+    return OK;
 }
 
 //销毁

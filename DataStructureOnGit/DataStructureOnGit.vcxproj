@@ -140,6 +140,7 @@
     <ClInclude Include="SeqStack.h" />
     <ClInclude Include="testCircularLinkedList.h" />
     <ClInclude Include="testDoubleLinkedList.h" />
+    <ClInclude Include="testLinkStack.h" />
     <ClInclude Include="testSeqList.h" />
     <ClInclude Include="testSinglyLinkedList.h" />
     <ClInclude Include="testSeqStack.h" />
