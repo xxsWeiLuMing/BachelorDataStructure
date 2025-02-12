@@ -64,11 +64,13 @@ bool GetTop(SLinkList S, SElemType& e) {
 }
 
 //入栈
-void Push(SLinkList& S, SElemType e) {
+Status Push(SLinkList& S, SElemType e) {
     SLNode* p = (SLNode*)malloc(sizeof(SLNode));
+    if (!p)exit(OVERFLOW);
     p->data = e;
     p->next = S;
     S = p;
+    return OK;
 }
 
 //出栈
