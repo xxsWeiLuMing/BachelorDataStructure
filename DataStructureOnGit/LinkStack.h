@@ -33,13 +33,19 @@ Status DestroyStack(SLinkList& S) {
 }
 
 //遍历输出
+void visit(SLinkList p) {
+    if (p->next)visit(p->next);
+    cout << p->data << " ";
+}
+
 Status TraverseStack(SLinkList S) {
     //if (!S)return OK;
     SLNode* p = S;
-    while (p) {
-        cout << p->data << " ";
-        p = p->next;
-    }
+    //while (p) {
+    //    cout << p->data << " ";
+    //    p = p->next;
+    //}
+    visit(p);
     cout << endl;
     return OK;
 }
