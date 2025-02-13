@@ -77,7 +77,7 @@ Status GetHead(LinkQueue Q, QElemType& e) {
 //入队列
 Status EnQueue(LinkQueue& Q, QElemType e) {
     QueuePtr p = (QueuePtr)malloc(sizeof(QNode));
-    if (!p) return ERROR;
+    if (!p) exit(OVERFLOW);
     p->data = e;
     p->next = nullptr;
     Q.rear->next = p;
