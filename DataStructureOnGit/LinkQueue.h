@@ -16,45 +16,7 @@ typedef  struct {
     QueuePtr rear;
 } LinkQueue;
 
-//初始化
-Status  InitQueue(LinkQueue& Q) {
 
-}
-
-//销毁
-Status  DestroyQueue(LinkQueue& Q) {
-
-}
-
-//清空队列
-Status  ClearQueue(LinkQueue& Q) {
-
-}
-
-//判断空
-Status  QueueEmpty(LinkQueue  Q) {
-
-}
-
-//求长度
-int   QueueLength(LinkQueue  Q) {
-
-}
-
-//得到队首元素
-Status  GetHead(LinkQueue  Q, QElemType& e) {
-
-}
-
-//入队列
-Status  EnQueue(LinkQueue& Q, QElemType  e) {
-
-}
-
-//出队列
-Status  DeQueue(LinkQueue& Q, QElemType& e) {
-
-}
 
 //初始化
 Status InitQueue(LinkQueue& Q) {
