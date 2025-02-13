@@ -97,5 +97,8 @@
     <None Include="栈基本操作.md">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="队列基本操作.md">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
