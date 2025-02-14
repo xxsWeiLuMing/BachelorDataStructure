@@ -99,14 +99,15 @@ Status DeQueue(LinkQueue& Q, QElemType& e) {
 }
 
 //遍历输出
-//Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
-//    QueuePtr p = Q.front->next;
-//    while (p) {
-//        visit(p->data);
-//        p = p->next;
-//    }
-//    return OK;
-//}
+Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
+    QueuePtr p = Q.front->next;
+    while (p) {
+        visit(p->data);
+        p = p->next;
+    }
+    return OK;
+}
+
 Status QueueTraverse(LinkQueue Q) {
     QueuePtr p = Q.front->next;
     while (p) {
