@@ -81,7 +81,7 @@ Status QueueTraverse(SqQueue Q, void (*visit)(QElemType)) {
     return OK;
 }
 
-Status QueueTraverse(SqQueue Q, void (*visit)(QElemType)) {
+Status QueueTraverse(SqQueue Q) {
     int i = Q.front;
     while (i != Q.rear) {
         cout << Q.base[i] << " ";
