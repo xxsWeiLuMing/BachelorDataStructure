@@ -80,3 +80,13 @@ Status QueueTraverse(SqQueue Q, void (*visit)(QElemType)) {
     }
     return OK;
 }
+
+Status QueueTraverse(SqQueue Q, void (*visit)(QElemType)) {
+    int i = Q.front;
+    while (i != Q.rear) {
+        cout << Q.base[i] << " ";
+        i = (i + 1) % MAXQSIZE;
+    }
+    cout << endl;
+    return OK;
+}
