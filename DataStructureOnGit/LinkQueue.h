@@ -4,6 +4,8 @@
 #include<malloc.h>
 using namespace std;
 
+
+
 typedef char QElemType;
 
 typedef  struct  QNode {

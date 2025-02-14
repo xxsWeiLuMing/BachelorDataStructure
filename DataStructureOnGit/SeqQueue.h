@@ -6,6 +6,16 @@ using namespace std;
 
 
 
+#define   MAXQSIZE    100
+
+typedef char QElemType;
+
+typedef  struct {
+    QElemType* base;
+    int         front;
+    int         rear;
+} SqQueue;
+
 //初始化
 
 //销毁
