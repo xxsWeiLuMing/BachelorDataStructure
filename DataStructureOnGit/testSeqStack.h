@@ -30,6 +30,7 @@ void test()
 
     cout << "TraverseStack:";
     TraverseStack(S);
+    cout << "IsStackEmpty:" << IsStackEmpty(S) << endl;
 
     cout << "StackLength:" << StackLength(S) << endl;
 
