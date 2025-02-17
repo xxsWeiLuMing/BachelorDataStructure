@@ -34,6 +34,12 @@
     <Filter Include="头文件\Data Structure\Queue\test">
       <UniqueIdentifier>{ae71b228-7e72-470a-84de-828ed8853105}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Data Structure\Tree">
+      <UniqueIdentifier>{8fe7c36e-4eea-497d-9646-6dabda0cee57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Data Structure\Tree\BinaryTrees">
+      <UniqueIdentifier>{22865bbd-1102-400f-9131-777aac0726a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -91,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="testLinkQueue.h">
       <Filter>头文件\Data Structure\Queue\test</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkBiTree.h">
+      <Filter>头文件\Data Structure\Tree\BinaryTrees</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
