@@ -111,7 +111,7 @@ Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
 Status QueueTraverse(LinkQueue Q) {
     QueuePtr p = Q.front->next;
     while (p) {
-        cout << p->data;
+        cout << p->data << " ";
         p = p->next;
     }
     cout << endl;

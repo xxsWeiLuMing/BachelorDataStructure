@@ -1,4 +1,4 @@
-#include"testLinkStack.h"
+#include"testLinkQueue.h"
 
 int main()
 {
