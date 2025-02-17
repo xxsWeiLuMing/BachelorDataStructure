@@ -12,10 +12,10 @@ typedef  struct {
     QElemType* base;
     int         front;
     int         rear;
-} SqQueue;
+} SeqQueue;
 
 //初始化
-Status InitQueue(SqQueue& Q) {
+Status InitQueue(SeqQueue& Q) {
     Q.base = (QElemType*)malloc(MAXQSIZE * sizeof(QElemType));
     if (!Q.base) return ERROR;
     Q.front = Q.rear = 0;
@@ -23,7 +23,7 @@ Status InitQueue(SqQueue& Q) {
 }
 
 //销毁
-Status DestroyQueue(SqQueue& Q) {
+Status DestroyQueue(SeqQueue& Q) {
     if (Q.base) {
         free(Q.base);
         Q.base = nullptr;
@@ -33,30 +33,30 @@ Status DestroyQueue(SqQueue& Q) {
 }
 
 //清空队列
-Status ClearQueue(SqQueue& Q) {
+Status ClearQueue(SeqQueue& Q) {
     Q.front = Q.rear = 0;
     return OK;
 }
 
 //判断空
-Status QueueEmpty(SqQueue Q) {
+Status QueueEmpty(SeqQueue Q) {
     return Q.front == Q.rear ? TRUE : FALSE;
 }
 
 //求长度
-int QueueLength(SqQueue Q) {
+int QueueLength(SeqQueue Q) {
     return (Q.rear - Q.front + MAXQSIZE) % MAXQSIZE;
 }
 
 //得到队首元素
-Status GetHead(SqQueue Q, QElemType& e) {
+Status GetHead(SeqQueue Q, QElemType& e) {
     if (Q.front == Q.rear) return ERROR;
     e = Q.base[Q.front];
     return OK;
 }
 
 //入队列
-Status EnQueue(SqQueue& Q, QElemType e) {
+Status EnQueue(SeqQueue& Q, QElemType e) {
     if ((Q.rear + 1) % MAXQSIZE == Q.front) return ERROR; // 队列满
     Q.base[Q.rear] = e;
     Q.rear = (Q.rear + 1) % MAXQSIZE;
@@ -64,7 +64,7 @@ Status EnQueue(SqQueue& Q, QElemType e) {
 }
 
 //出队列
-Status DeQueue(SqQueue& Q, QElemType& e) {
+Status DeQueue(SeqQueue& Q, QElemType& e) {
     if (Q.front == Q.rear) return ERROR; // 队列空
     e = Q.base[Q.front];
     Q.front = (Q.front + 1) % MAXQSIZE;
@@ -72,7 +72,7 @@ Status DeQueue(SqQueue& Q, QElemType& e) {
 }
 
 //遍历输出
-Status QueueTraverse(SqQueue Q, void (*visit)(QElemType)) {
+Status QueueTraverse(SeqQueue Q, void (*visit)(QElemType)) {
     int i = Q.front;
     while (i != Q.rear) {
         visit(Q.base[i]);
@@ -81,7 +81,7 @@ Status QueueTraverse(SqQueue Q, void (*visit)(QElemType)) {
     return OK;
 }
 
-Status QueueTraverse(SqQueue Q) {
+Status QueueTraverse(SeqQueue Q) {
     int i = Q.front;
     while (i != Q.rear) {
         cout << Q.base[i] << " ";
