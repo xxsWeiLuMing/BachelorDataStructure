@@ -1,4 +1,4 @@
-#include"testSeqQueue.h"
+#include"testLinkBiTree.h"
 
 int main()
 {
