@@ -29,6 +29,7 @@ void test()
 
     cout << "QueueTraverse:";
     QueueTraverse(Q);
+    cout << "QueueEmpty:" << QueueEmpty(Q) << endl;
 
     cout << "QueueLength:" << QueueLength(Q) << endl;
 
