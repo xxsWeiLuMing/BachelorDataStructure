@@ -16,8 +16,8 @@ typedef  struct  BiTNode
 Status  CreateBiTree(BiTree& T)//先序输入，创建二叉树
 {
     char ch;
-    scanf_s("%c", &ch, sizeof(char)); // 修复C6064和C4473错误，添加缓冲区大小参数
-    if (ch == '0')  T = NULL;
+    scanf_s("%c", &ch, (int)sizeof(ch));
+    if (ch == ' ')  T = NULL;
     else
     {
         T = (BiTNode*)malloc(sizeof(BiTNode));
