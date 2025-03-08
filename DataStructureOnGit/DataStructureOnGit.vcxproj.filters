@@ -130,5 +130,8 @@
     <None Include="Joseph.md">
       <Filter>资源文件\测试数据</Filter>
     </None>
+    <None Include="..\README.md">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

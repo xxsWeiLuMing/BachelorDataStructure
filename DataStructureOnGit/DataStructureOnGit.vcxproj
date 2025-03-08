@@ -153,6 +153,7 @@
     <ClInclude Include="testSeqStack.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md" />
     <None Include="Joseph.md" />
     <None Include="二叉树.md" />
     <None Include="栈基本操作.md" />
