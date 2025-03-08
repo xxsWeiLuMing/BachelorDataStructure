@@ -9,7 +9,9 @@ void Joseph() {
     cin >> m >> n;
     cout << endl;
 
+    CirLinkList L;
+    InitList(L);
     cout << "输入" << n << "个人的密码:";
-    for (int i = 0; i < n; i++)cin >> a[i];
-    cout << endl;
+    CreateList(L, n);
+    //TraverseList(L);
 }
