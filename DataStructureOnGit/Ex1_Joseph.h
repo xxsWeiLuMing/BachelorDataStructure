@@ -17,7 +17,7 @@ void Joseph()
     //TraverseList(L);
 
     CirLinkList p = L->next;
-    int pos[30];
+    int pos[30] = { 0 };
     for (int i = 1; i <= n; i++)
     {
         pos[p->data - '0'] = i;
