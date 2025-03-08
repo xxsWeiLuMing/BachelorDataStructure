@@ -33,20 +33,20 @@ void Joseph()
         {
             if (i == m && p->data != '*')break;
 
-            if (p->data == '*')p = p->next;                         
+            if (p->data == '*')p = p->next;
             else
             {
                 i++;
                 p = p->next;
             }
             pos++;
-            if (p == L->next)pos = 1;           
+            if (p == L->next)pos = 1;
         }
 
         ElemType e = p->data;
-        p->data = '*';
+        p->data = '*';//不真正删除结点，这样就保持了位序
 
-        cout << pos << " ";       
+        cout << pos << " ";
         
         m = e-'0';
         n--;
