@@ -29,8 +29,10 @@ void Joseph()
     int pos = 1;
     while (n > 0)
     {
-        for (int i = 1; i < m || !(i == m && p->data == '*');)
+        for (int i = 1; ;)
         {
+            if (i == m && p->data != '*')break;
+
             if (p->data == '*')p = p->next;                         
             else
             {
@@ -38,7 +40,7 @@ void Joseph()
                 p = p->next;
             }
             pos++;
-            if (p == L->next)pos = 1;
+            if (p == L->next)pos = 1;           
         }
 
         ElemType e = p->data;
