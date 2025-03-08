@@ -25,7 +25,7 @@ void Joseph()
     //}
 
     //p = L->next;
-    while (n>1)
+    while (n > 1)
     {
         int pos = 1;
         for (int i = m; i > 0;)
