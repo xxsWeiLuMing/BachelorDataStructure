@@ -29,7 +29,7 @@ void Joseph()
     int pos = 1;
     while (n > 0)
     {
-        for (int i = 1; i < m;)
+        for (int i = 1; i < m || !(i == m && p->data == '*');)
         {
             if (p->data == '*')p = p->next;                         
             else
