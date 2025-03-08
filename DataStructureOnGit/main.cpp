@@ -1,6 +1,6 @@
-#include"testLinkBiTree.h"
+#include"Ex1_Joseph.h"
 
 int main()
 {
-    test();
+    Joseph();
 }

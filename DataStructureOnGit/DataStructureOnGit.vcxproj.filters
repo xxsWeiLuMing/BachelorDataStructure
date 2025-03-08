@@ -46,6 +46,9 @@
     <Filter Include="头文件\Experiment">
       <UniqueIdentifier>{c5413540-98c2-4333-98cb-4d63e3518b67}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\测试数据">
+      <UniqueIdentifier>{eb1796da-d31c-4b8e-bb48-d2daaa33aa21}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -122,7 +125,10 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="二叉树.md">
-      <Filter>资源文件</Filter>
+      <Filter>资源文件\测试数据</Filter>
+    </None>
+    <None Include="Joseph.md">
+      <Filter>资源文件\测试数据</Filter>
     </None>
   </ItemGroup>
 </Project>
