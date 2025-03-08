@@ -43,6 +43,9 @@
     <Filter Include="头文件\Data Structure\Tree\BinaryTrees\test">
       <UniqueIdentifier>{b38dc197-a7c0-4f68-a724-aa86b2d394dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Experiment">
+      <UniqueIdentifier>{c5413540-98c2-4333-98cb-4d63e3518b67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -106,6 +109,9 @@
     </ClInclude>
     <ClInclude Include="testLinkBiTree.h">
       <Filter>头文件\Data Structure\Tree\BinaryTrees\test</Filter>
+    </ClInclude>
+    <ClInclude Include="Ex1_Joseph.h">
+      <Filter>头文件\Experiment</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
