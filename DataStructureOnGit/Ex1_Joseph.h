@@ -25,29 +25,26 @@ void Joseph()
     //}
 
     //p = L->next;
-    while (n > 1)
+
+    int pos = 1;
+    while (n > 0)
     {
-        int pos = 1;
-        for (int i = m; i > 0;)
+        for (int i = 1; i < m;)
         {
-            if (p == L->next)pos = 1;
             if (p->data == '*')p = p->next;                         
             else
             {
-                i--;
+                i++;
                 p = p->next;
             }
             pos++;
+            if (p == L->next)pos = 1;
         }
 
         ElemType e = p->data;
         p->data = '*';
 
-        cout << pos << " ";
-
-        
-        
-        CirLinkList q = p->next;
+        cout << pos << " ";       
         
         m = e-'0';
         n--;
