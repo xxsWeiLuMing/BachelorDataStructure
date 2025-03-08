@@ -17,27 +17,38 @@ void Joseph()
     //TraverseList(L);
 
     CirLinkList p = L->next;
-    int pos[30] = { 0 };
-    for (int i = 1; i <= n; i++)
-    {
-        pos[p->data - '0'] = i;
-        p = p->next;
-    }
+    //ElemType pos[30] = { '0' };
+    //for (int i = 1; i <= n; i++)
+    //{
+    //    pos[i] = p->data;
+    //    p = p->next;
+    //}
 
-    p = L->next;
-    while (L->next)
+    //p = L->next;
+    while (n>1)
     {
-        
-        for (int i = m; i > 0; i--)
+        int pos = 1;
+        for (int i = m; i > 0;)
         {
-            p = p->next;
+            if (p == L->next)pos = 1;
+            if (p->data == '*')p = p->next;                         
+            else
+            {
+                i--;
+                p = p->next;
+            }
+            pos++;
         }
-            
-        cout << pos[p->data-'0'] << " ";
 
-        ElemType e;
-        p = p->next;
-        ListDelete(L, m % n, e);
+        ElemType e = p->data;
+        p->data = '*';
+
+        cout << pos << " ";
+
+        
+        
+        CirLinkList q = p->next;
+        
         m = e-'0';
         n--;
     }
