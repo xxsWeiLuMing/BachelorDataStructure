@@ -29,10 +29,10 @@ void Joseph()
     int pos = 1;
     while (n > 0)
     {
-        for (int i = 1; ;)
+        int i = 1;
+        while (i < m || p->data == '*')
         {
-            if (i == m && p->data != '*')break;
-
+            //if (i == m && p->data != '*')break;
             if (p->data == '*')p = p->next;
             else
             {
