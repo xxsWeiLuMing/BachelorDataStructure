@@ -21,9 +21,10 @@ void Func()
 
     for (int i = 0; i < lengthA; i++)
     {
+        //if (va.elem[i] > x && ListInsert(va, i + 1, x))break;
         if (va.elem[i] > x)
         {
-            ListInsert(va, i + 1, x);
+            x&& ListInsert(va, i + 1, x);
             break;
         }
     }
