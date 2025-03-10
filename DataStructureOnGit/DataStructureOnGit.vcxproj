@@ -135,6 +135,7 @@
     <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="1_Joseph.h" />
     <ClInclude Include="ex1.1.h" />
+    <ClInclude Include="ex1.2.h" />
     <ClInclude Include="general.h" />
     <ClInclude Include="LinkBiTree.h" />
     <ClInclude Include="LinkQueue.h" />

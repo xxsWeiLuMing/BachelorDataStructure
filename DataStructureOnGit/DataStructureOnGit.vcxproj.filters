@@ -122,6 +122,9 @@
     <ClInclude Include="ex1.1.h">
       <Filter>头文件\Experiment</Filter>
     </ClInclude>
+    <ClInclude Include="ex1.2.h">
+      <Filter>头文件\Experiment</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="栈基本操作.md">
