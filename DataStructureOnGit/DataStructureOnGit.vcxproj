@@ -133,7 +133,8 @@
   <ItemGroup>
     <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="CircularLinkedList.h" />
-    <ClInclude Include="Ex1_Joseph.h" />
+    <ClInclude Include="1_Joseph.h" />
+    <ClInclude Include="ex1.1.h" />
     <ClInclude Include="general.h" />
     <ClInclude Include="LinkBiTree.h" />
     <ClInclude Include="LinkQueue.h" />
