@@ -52,6 +52,9 @@
     <Filter Include="头文件\Practice">
       <UniqueIdentifier>{0def659c-116e-45db-a252-4df3268d4521}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\基本操作">
+      <UniqueIdentifier>{db1b83ec-d0c2-4482-bbb6-61f29fec48ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -127,12 +130,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="栈基本操作.md">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="队列基本操作.md">
-      <Filter>资源文件</Filter>
-    </None>
     <None Include="二叉树.md">
       <Filter>资源文件\测试数据</Filter>
     </None>
@@ -141,6 +138,12 @@
     </None>
     <None Include="..\README.md">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="队列基本操作.md">
+      <Filter>资源文件\基本操作</Filter>
+    </None>
+    <None Include="栈基本操作.md">
+      <Filter>资源文件\基本操作</Filter>
     </None>
   </ItemGroup>
 </Project>
