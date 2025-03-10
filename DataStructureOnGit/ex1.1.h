@@ -10,8 +10,8 @@ void Func()
     SeqList va;
     InitList(va);
     ElemType a[] = { '1','3','5','7','9' };
-    int lenthA = sizeof(a) / sizeof(ElemType);
-    CreateList(va, a, lenthA);
+    int lengthA = sizeof(a) / sizeof(ElemType);
+    CreateList(va, a, lengthA);
     cout << "递增有序的顺序表：";
     TraverseList(va);
 
@@ -19,7 +19,7 @@ void Func()
     cout << "请输入要插入的元素x：";
     cin >> x;
 
-    for (int i = 0; i < lenthA; i++)
+    for (int i = 0; i < lengthA; i++)
     {
         if (va.elem[i] > x)
         {
