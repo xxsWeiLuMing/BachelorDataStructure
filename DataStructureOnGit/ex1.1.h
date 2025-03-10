@@ -5,7 +5,7 @@
 
 #include"SeqList.h"
 
-void SeqInsert()
+void Func()
 {
     SeqList va;
     InitList(va);
@@ -28,4 +28,5 @@ void SeqInsert()
     }
     cout << "插入后的顺序表：";
     TraverseList(va);
+    //无法插入一位以上数字，一位ElemType是char类型
 }
