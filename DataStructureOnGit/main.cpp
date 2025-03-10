@@ -1,6 +1,6 @@
-#include"1_Joseph.h"
+#include"ex1.1.h"
 
 int main()
 {
-    Joseph();
+    SeqInsert();
 }
