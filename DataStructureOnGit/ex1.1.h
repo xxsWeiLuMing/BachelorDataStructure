@@ -24,7 +24,7 @@ void Func()
         //if (va.elem[i] > x && ListInsert(va, i + 1, x))break;
         if (va.elem[i] > x)
         {
-            x&& ListInsert(va, i + 1, x);
+            ListInsert(va, i + 1, x);
             break;
         }
     }
