@@ -55,6 +55,9 @@
     <Filter Include="资源文件\基本操作">
       <UniqueIdentifier>{db1b83ec-d0c2-4482-bbb6-61f29fec48ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Data Structure\Tree\Huffman">
+      <UniqueIdentifier>{20bbebbc-fd6e-4127-a617-a5ffb35091b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -127,6 +130,9 @@
     </ClInclude>
     <ClInclude Include="ex1.2.h">
       <Filter>头文件\Experiment</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffmanTree.h">
+      <Filter>头文件\Data Structure\Tree\Huffman</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
