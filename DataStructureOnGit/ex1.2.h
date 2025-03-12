@@ -9,7 +9,7 @@ void Func()
 {
     SeqList va;
     InitList(va);
-    ElemType a[] = { '1','3','5','7','9' };
+    ElemType a[] = { '1','3','5','7','9' };//只能处理一位数，因为ElemType是char类型
     int lengthA = sizeof(a) / sizeof(ElemType);
     CreateList(va, a, lengthA);
     cout << "原来的顺序表：";
