@@ -30,5 +30,5 @@ void Func()
     }
     cout << "插入后的顺序表：";
     TraverseList(va);
-    //无法插入一位以上数字，一位ElemType是char类型
+    //无法插入一位以上数字，因为ElemType是char类型
 }
