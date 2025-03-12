@@ -2,7 +2,7 @@
 
 #include"CircularLinkedList.h"
 
-void Joseph() 
+void Func() 
 {
     int m, n;
 
