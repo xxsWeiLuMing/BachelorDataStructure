@@ -151,5 +151,8 @@
     <None Include="栈基本操作.md">
       <Filter>资源文件\基本操作</Filter>
     </None>
+    <None Include="HuffmanTree.md">
+      <Filter>资源文件\测试数据</Filter>
+    </None>
   </ItemGroup>
 </Project>
