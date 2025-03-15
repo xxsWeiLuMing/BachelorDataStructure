@@ -39,7 +39,7 @@ Status CreateList(SeqList& L, ElemType a[], int n)
 {
     if (!L.elem) return ERROR;//未初始化的表不能被创建
 
-    for (int i = 0; i <= n; i++)L.elem[i] = a[i];
+    for (int i = 0; i <= n; i++)L.elem[i] = a[i];//TODO：当n大于listsize？
 
     L.length = n;
     L.listsize = LIST_INIT_SIZE;
