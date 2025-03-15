@@ -13,7 +13,7 @@ typedef char ElemType;
 
 typedef struct SeqList 
 {
-    ElemType* elem; //存储空间基址
+    ElemType* elem = NULL; //存储空间基址
     int length;     //当前长度
     int listsize;   //当前分配的存储容量
 } SeqList;
@@ -22,6 +22,8 @@ typedef struct SeqList
 
 Status InitList(SeqList& L)
 {
+    if (L.elem)return ERROR;//已经初始化的表不能被初始化
+
     L.elem = (ElemType*)malloc(
         LIST_INIT_SIZE * sizeof(ElemType));
 
@@ -35,7 +37,7 @@ Status InitList(SeqList& L)
 
 Status CreateList(SeqList& L, ElemType a[], int n)
 {
-    if (!L.elem) exit(ERROR);
+    if (!L.elem) return ERROR;//未初始化的表不能被创建
 
     for (int i = 0; i <= n; i++)L.elem[i] = a[i];
 

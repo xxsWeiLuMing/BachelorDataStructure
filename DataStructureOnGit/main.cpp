@@ -1,4 +1,4 @@
-#include"1_Joseph.h"
+#include"ex1.2.h"
 
 int main()
 {
