@@ -64,11 +64,11 @@ Status EnQueue(SeqQueue& Q, QElemType e) {
 }
 
 //出队列
-Status DeQueue(SeqQueue& Q, QElemType& e) {
+QElemType DeQueue(SeqQueue& Q, QElemType& e) {
     if (Q.front == Q.rear) return ERROR; // 队列空
     e = Q.base[Q.front];
     Q.front = (Q.front + 1) % MAXQSIZE;
-    return OK;
+    return e;
 }
 
 //遍历输出
