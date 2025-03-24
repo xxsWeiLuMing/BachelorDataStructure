@@ -58,6 +58,12 @@
     <Filter Include="头文件\Data Structure\Tree\Huffman">
       <UniqueIdentifier>{20bbebbc-fd6e-4127-a617-a5ffb35091b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Experiment\Ex1">
+      <UniqueIdentifier>{1749b69c-5cc1-4e71-93ba-c6f019d5eecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Experiment\Ex2">
+      <UniqueIdentifier>{1a16e9d6-4715-45b6-bd94-da7d5122b670}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -125,14 +131,17 @@
     <ClInclude Include="1_Joseph.h">
       <Filter>头文件\Practice</Filter>
     </ClInclude>
-    <ClInclude Include="ex1.1.h">
-      <Filter>头文件\Experiment</Filter>
-    </ClInclude>
-    <ClInclude Include="ex1.2.h">
-      <Filter>头文件\Experiment</Filter>
-    </ClInclude>
     <ClInclude Include="HuffmanTree.h">
       <Filter>头文件\Data Structure\Tree\Huffman</Filter>
+    </ClInclude>
+    <ClInclude Include="ex1.1.h">
+      <Filter>头文件\Experiment\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="ex1.2.h">
+      <Filter>头文件\Experiment\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="ex2.1.h">
+      <Filter>头文件\Experiment\Ex2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
