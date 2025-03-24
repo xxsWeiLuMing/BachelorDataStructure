@@ -2,6 +2,23 @@
 
 #include"SinglyLinkedList.h"
 
+void Delete(LinkList& L,ElemType mink, ElemType maxk) {
+    LinkList p = L->next;
+    LinkList q = L;
+
+    while (p->data <= mink) {
+        p = p->next;
+        q = q->next;
+    }
+
+    while (p->data < maxk)
+    {
+        q->next = p->next;
+        free(p);
+        p = q->next;
+    }
+}
+
 void Func() {
     LinkList L;
     InitList(L);
@@ -18,4 +35,7 @@ void Func() {
     cin >> mink;
     cout << "输入maxk：";
     cin >> maxk;
+
+    Delete(L, mink, maxk);
+    TraverseList(L);
 }
