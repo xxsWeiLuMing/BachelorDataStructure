@@ -2,13 +2,24 @@
 
 #include"SinglyLinkedList.h"
 
+int m, n;
+
 LinkList Link(LinkList ha, LinkList hb) {
     LinkList hc;
 
-    hc = ha->next;
-    while (hc->next)hc = hc->next;
-    hc->next = hb->next;
-    hc = ha;
+    if (m < n) {
+        hc = ha->next;
+        while (hc->next)hc = hc->next;
+        hc->next = hb->next;
+        hc = ha;
+    }
+    else
+    {
+        hc = hb->next;
+        while (hc->next)hc = hc->next;
+        hc->next = ha->next;
+        hc = hb;
+    }
 
     return hc;
 }
@@ -18,8 +29,6 @@ void Func() {
     InitList(ha);
     InitList(hb);
     InitList(hc);
-
-    int m, n;
 
     cout << "输入ha的长度m：";
     cin >> m;
@@ -31,9 +40,10 @@ void Func() {
     cout << "输入hb：";
     CreateList(hb, n);
 
-    hc = Link(ha, hb);
-
     cout << "ha:"; TraverseList(ha);
     cout << "hb:"; TraverseList(hb);
+
+    hc = Link(ha, hb);
+
     cout << "hc:"; TraverseList(hc);
 }

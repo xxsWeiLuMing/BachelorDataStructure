@@ -137,6 +137,7 @@
     <ClInclude Include="ex1.1.h" />
     <ClInclude Include="ex1.2.h" />
     <ClInclude Include="ex2.1.h" />
+    <ClInclude Include="ex2.2.h" />
     <ClInclude Include="general.h" />
     <ClInclude Include="HuffmanTree.h" />
     <ClInclude Include="LinkBiTree.h" />

@@ -143,6 +143,9 @@
     <ClInclude Include="ex2.1.h">
       <Filter>头文件\Experiment\Ex2</Filter>
     </ClInclude>
+    <ClInclude Include="ex2.2.h">
+      <Filter>头文件\Experiment\Ex2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="二叉树.md">
