@@ -2,6 +2,17 @@
 
 #include"SinglyLinkedList.h"
 
+LinkList Link(LinkList ha, LinkList hb) {
+    LinkList hc;
+
+    hc = ha->next;
+    while (hc->next)hc = hc->next;
+    hc->next = hb->next;
+    hc = ha;
+
+    return hc;
+}
+
 void Func() {
     LinkList ha, hb, hc;
     InitList(ha);
@@ -20,5 +31,9 @@ void Func() {
     cout << "输入hb：";
     CreateList(hb, n);
 
+    hc = Link(ha, hb);
 
+    cout << "ha:"; TraverseList(ha);
+    cout << "hb:"; TraverseList(hb);
+    cout << "hc:"; TraverseList(hc);
 }
