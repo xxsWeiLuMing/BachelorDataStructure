@@ -4,7 +4,8 @@
 #include<malloc.h>
 using namespace std;
 
-typedef char ElemType;
+//typedef char ElemType;
+typedef int ElemType;
 
 typedef  struct  LNode
 {
