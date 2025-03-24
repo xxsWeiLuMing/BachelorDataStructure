@@ -19,7 +19,7 @@ void Delete(LinkList& L,ElemType mink, ElemType maxk) {
     }
 }
 
-void Func() {
+Status Func() {
     LinkList L;
     InitList(L);
 
@@ -35,6 +35,8 @@ void Func() {
     cin >> mink;
     cout << "输入maxk：";
     cin >> maxk;
+
+    if (mink > maxk)return ERROR;
 
     Delete(L, mink, maxk);
     TraverseList(L);
