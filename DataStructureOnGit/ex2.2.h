@@ -15,7 +15,7 @@ void Delete(LinkList& L,ElemType mink, ElemType maxk) {
     {
         q->next = p->next;
         free(p);
-        p = q->next;
+        if(q->next)p = q->next;
     }
 }
 
