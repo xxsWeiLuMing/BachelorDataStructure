@@ -2,11 +2,16 @@
 
 #include"SinglyLinkedList.h"
 
-void Delete(LinkList& L,ElemType mink, ElemType maxk) {
+Status Delete(LinkList& L,ElemType mink, ElemType maxk) {
     LinkList p = L->next;
     LinkList q = L;
 
     while (p->data <= mink) {
+        if (!p->next)
+        {
+            cout << "错误：所有结点小于mink" << endl;
+            return ERROR;
+        }
         p = p->next;
         q = q->next;
     }
@@ -16,6 +21,11 @@ void Delete(LinkList& L,ElemType mink, ElemType maxk) {
         q->next = p->next;
         free(p);
         if(q->next)p = q->next;
+    }
+    if (p == L->next)
+    {
+        cout << "错误：所有结点大于maxk" << endl;
+        return ERROR;
     }
 }
 
@@ -38,6 +48,6 @@ Status Func() {
 
     if (mink > maxk)return ERROR;
 
-    Delete(L, mink, maxk);
-    TraverseList(L);
+    if (Delete(L, mink, maxk))TraverseList(L);
+    else return ERROR;
 }
