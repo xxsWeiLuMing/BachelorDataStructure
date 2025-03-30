@@ -27,6 +27,8 @@ Status Delete(LinkList& L,ElemType mink, ElemType maxk) {
         cout << "错误：所有结点大于maxk" << endl;
         return ERROR;
     }
+
+    return OK;
 }
 
 Status Func() {
