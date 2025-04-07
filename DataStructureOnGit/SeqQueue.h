@@ -6,7 +6,8 @@ using namespace std;
 
 #define   MAXQSIZE    100
 
-typedef char QElemType;
+//typedef char QElemType;
+typedef int QElemType;
 
 typedef  struct {
     QElemType* base;

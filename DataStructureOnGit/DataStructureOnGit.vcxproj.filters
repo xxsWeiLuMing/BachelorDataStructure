@@ -64,6 +64,9 @@
     <Filter Include="头文件\Experiment\Ex2">
       <UniqueIdentifier>{1a16e9d6-4715-45b6-bd94-da7d5122b670}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Experiment\Ex3">
+      <UniqueIdentifier>{b14bbf34-8773-4a04-bf6e-456c3949769e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -145,6 +148,9 @@
     </ClInclude>
     <ClInclude Include="ex2.2.h">
       <Filter>头文件\Experiment\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="ex3.h">
+      <Filter>头文件\Experiment\Ex3</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
