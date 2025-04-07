@@ -6,11 +6,11 @@ void Func() {
     InitQueue(Q);
 
     QElemType e;
-
-    while (getchar()) {
-        cout << "输入作业时间：";
+    cout << "输入作业时间：";
+    while (cin.peek() != '\n') {
         cin >> e;
+        
     }
 
-    //QueueTraverse(Q);
+    QueueTraverse(Q);
 }
