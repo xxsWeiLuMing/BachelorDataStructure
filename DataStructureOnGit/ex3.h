@@ -7,7 +7,7 @@ Status EnQueue(QElemType e,SeqQueue& Q){
     if (Q.front == Q.rear) {// 队列空
         Q.base[Q.rear] = e;
         Q.rear = (Q.rear + 1) % MAXQSIZE;
-        Q.front = (Q.front - 1 + MAXQSIZE) % MAXQSIZE;
+        Q.front = (Q.front - 1 + MAXQSIZE) % MAXQSIZE;//同时移动Q.rear和Q.front
     }
     else {
         QElemType ave = Q.base[(Q.front + 1) % MAXQSIZE] + Q.base[(Q.rear - 1) % MAXQSIZE];
