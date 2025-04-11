@@ -10,7 +10,7 @@ Status EnQueue(QElemType e,SeqQueue& Q){
         Q.front = (Q.front - 1 + MAXQSIZE) % MAXQSIZE;//同时移动Q.rear和Q.front
     }
     else {
-        QElemType ave = Q.base[(Q.front + 1) % MAXQSIZE] + Q.base[(Q.rear - 1) % MAXQSIZE];
+        QElemType ave = Q.base[(Q.front + 1) % MAXQSIZE] + Q.base[(Q.rear - 1 + MAXQSIZE) % MAXQSIZE];
         //Q.rear-1才是队尾元素，Q.rear为空
         ave /= 2;
         if (e < ave) {
