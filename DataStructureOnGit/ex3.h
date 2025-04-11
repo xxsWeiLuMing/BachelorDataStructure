@@ -27,7 +27,7 @@ Status EnQueue(QElemType e,SeqQueue& Q){
 }
 
 Status Traverse(SeqQueue Q) {
-    int i = (Q.front + 1) % MAXQSIZE;//Q.front + 1可能超过100
+    int i = (Q.front + 1) % MAXQSIZE;//Q.front + 1可能超过MAXQSIZE
     while (i != Q.rear) {
         cout << Q.base[i] << " ";
         i = (i + 1) % MAXQSIZE;
