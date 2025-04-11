@@ -27,7 +27,7 @@ Status EnQueue(QElemType e,SeqQueue& Q){
 }
 
 Status Traverse(SeqQueue Q) {
-    int i = Q.front + 1;
+    int i = (Q.front + 1) % MAXQSIZE;//队头元素可能为0
     while (i != Q.rear) {
         cout << Q.base[i] << " ";
         i = (i + 1) % MAXQSIZE;
