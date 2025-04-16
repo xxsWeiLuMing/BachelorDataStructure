@@ -1,5 +1,5 @@
 #pragma once
-#include"LinkBiTree.h"
+#include"..\LinkBiTree.h"
 
 void test() {
     BiTree T;
