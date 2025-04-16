@@ -1,5 +1,5 @@
 #pragma once
-#include"SeqStack.h"
+#include"..\SeqStack.h"
 
 void CreateStack(SeqStack &S)
 {

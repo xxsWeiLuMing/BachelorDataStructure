@@ -1,5 +1,5 @@
 #pragma once
-#include"LinkQueue.h"
+#include"..\LinkQueue.h"
 
 void CreateQueue(LinkQueue& Q)
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include"LinkStack.h"
+#include"..\LinkStack.h"
 
 void CreateStack(SLinkList& S)
 {

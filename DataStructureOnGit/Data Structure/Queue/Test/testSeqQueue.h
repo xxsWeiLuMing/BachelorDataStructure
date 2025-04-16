@@ -1,5 +1,5 @@
 #pragma once
-#include"SeqQueue.h"
+#include"..\SeqQueue.h"
 
 void CreateQueue(SeqQueue& Q)
 {
