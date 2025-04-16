@@ -3,7 +3,7 @@
 // 试写一算法，将x插入到顺序表的适当位置上，
 // 以保持该表的有序性。
 
-#include"SeqList.h"
+#include"..\..\Data Structure\Linear List\SeqList.h"
 
 void Func()
 {

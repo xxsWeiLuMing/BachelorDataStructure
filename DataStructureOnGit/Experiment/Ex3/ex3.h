@@ -1,5 +1,5 @@
 #pragma once
-#include"SeqQueue.h"
+#include"..\..\Data Structure\Queue\SeqQueue.h"
 
 Status EnQueue(QElemType e,SeqQueue& Q){
     if ((Q.rear + 1) % MAXQSIZE == Q.front) return ERROR; // 队列满

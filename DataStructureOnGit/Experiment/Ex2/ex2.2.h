@@ -1,6 +1,6 @@
 #pragma once
 
-#include"SinglyLinkedList.h"
+#include"..\..\Data Structure\Linear List\SinglyLinkedList.h"
 
 Status Delete(LinkList& L,ElemType mink, ElemType maxk) {
     LinkList p = L->next;

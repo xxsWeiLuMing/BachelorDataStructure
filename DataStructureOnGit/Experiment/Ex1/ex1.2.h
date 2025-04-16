@@ -3,7 +3,7 @@
 // 实现顺序表的就地逆置，
 // 即利用原表的存储空间将线性表(a1,a2,…,an)逆置为(an,an-1,…,a1)
 
-#include"SeqList.h"
+#include"..\..\Data Structure\Linear List\SeqList.h"
 
 void Func()
 {
