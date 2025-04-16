@@ -1,4 +1,7 @@
 #pragma once
+#include<iostream>
+#include<malloc.h>
+using namespace std;
 
 //函数结果状态代码
 #define TRUE 1
