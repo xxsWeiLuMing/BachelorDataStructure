@@ -131,9 +131,6 @@
     <ClInclude Include="testLinkBiTree.h">
       <Filter>头文件\Data Structure\Tree\BinaryTrees\test</Filter>
     </ClInclude>
-    <ClInclude Include="1_Joseph.h">
-      <Filter>头文件\Practice</Filter>
-    </ClInclude>
     <ClInclude Include="HuffmanTree.h">
       <Filter>头文件\Data Structure\Tree\Huffman</Filter>
     </ClInclude>
@@ -151,6 +148,9 @@
     </ClInclude>
     <ClInclude Include="ex3.h">
       <Filter>头文件\Experiment\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Practice\1_Joseph.h">
+      <Filter>头文件\Practice</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

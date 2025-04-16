@@ -133,7 +133,6 @@
   <ItemGroup>
     <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="CircularLinkedList.h" />
-    <ClInclude Include="1_Joseph.h" />
     <ClInclude Include="ex1.1.h" />
     <ClInclude Include="ex1.2.h" />
     <ClInclude Include="ex2.1.h" />
@@ -144,6 +143,7 @@
     <ClInclude Include="LinkBiTree.h" />
     <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
+    <ClInclude Include="Practice\1_Joseph.h" />
     <ClInclude Include="SeqList.h" />
     <ClInclude Include="SeqQueue.h" />
     <ClInclude Include="SinglyLinkedList.h" />

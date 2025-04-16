@@ -1,6 +1,6 @@
 #pragma once
 
-#include"CircularLinkedList.h"
+#include"..\CircularLinkedList.h"
 
 void Func() 
 {
