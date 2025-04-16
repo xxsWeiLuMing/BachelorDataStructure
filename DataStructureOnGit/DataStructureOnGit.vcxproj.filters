@@ -74,79 +74,79 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="testSeqList.h">
+    <ClInclude Include="Data Structure\Linear List\Test\testSeqList.h">
       <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
-    <ClInclude Include="testSinglyLinkedList.h">
+    <ClInclude Include="Data Structure\Linear List\Test\testSinglyLinkedList.h">
       <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
-    <ClInclude Include="general.h">
+    <ClInclude Include="Data Structure\general.h">
       <Filter>头文件\Data Structure</Filter>
     </ClInclude>
-    <ClInclude Include="SeqList.h">
+    <ClInclude Include="Data Structure\Linear List\SeqList.h">
       <Filter>头文件\Data Structure\Linear List</Filter>
     </ClInclude>
-    <ClInclude Include="SinglyLinkedList.h">
+    <ClInclude Include="Data Structure\Linear List\SinglyLinkedList.h">
       <Filter>头文件\Data Structure\Linear List</Filter>
     </ClInclude>
-    <ClInclude Include="CircularLinkedList.h">
+    <ClInclude Include="Data Structure\Linear List\CircularLinkedList.h">
       <Filter>头文件\Data Structure\Linear List</Filter>
     </ClInclude>
-    <ClInclude Include="testCircularLinkedList.h">
+    <ClInclude Include="Data Structure\Linear List\Test\testCircularLinkedList.h">
       <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
-    <ClInclude Include="DoubleLinkedList.h">
+    <ClInclude Include="Data Structure\Linear List\DoubleLinkedList.h">
       <Filter>头文件\Data Structure\Linear List</Filter>
     </ClInclude>
-    <ClInclude Include="testDoubleLinkedList.h">
+    <ClInclude Include="Data Structure\Linear List\Test\testDoubleLinkedList.h">
       <Filter>头文件\Data Structure\Linear List\test</Filter>
     </ClInclude>
-    <ClInclude Include="SeqStack.h">
+    <ClInclude Include="Data Structure\Stack\SeqStack.h">
       <Filter>头文件\Data Structure\Stack</Filter>
     </ClInclude>
-    <ClInclude Include="testSeqStack.h">
+    <ClInclude Include="Data Structure\Stack\Test\testSeqStack.h">
       <Filter>头文件\Data Structure\Stack\test</Filter>
     </ClInclude>
-    <ClInclude Include="LinkStack.h">
+    <ClInclude Include="Data Structure\Stack\LinkStack.h">
       <Filter>头文件\Data Structure\Stack</Filter>
     </ClInclude>
-    <ClInclude Include="testLinkStack.h">
+    <ClInclude Include="Data Structure\Stack\Test\testLinkStack.h">
       <Filter>头文件\Data Structure\Stack\test</Filter>
     </ClInclude>
-    <ClInclude Include="SeqQueue.h">
+    <ClInclude Include="Data Structure\Queue\SeqQueue.h">
       <Filter>头文件\Data Structure\Queue</Filter>
     </ClInclude>
-    <ClInclude Include="LinkQueue.h">
+    <ClInclude Include="Data Structure\Queue\LinkQueue.h">
       <Filter>头文件\Data Structure\Queue</Filter>
     </ClInclude>
-    <ClInclude Include="testSeqQueue.h">
+    <ClInclude Include="Data Structure\Queue\Test\testSeqQueue.h">
       <Filter>头文件\Data Structure\Queue\test</Filter>
     </ClInclude>
-    <ClInclude Include="testLinkQueue.h">
+    <ClInclude Include="Data Structure\Queue\Test\testLinkQueue.h">
       <Filter>头文件\Data Structure\Queue\test</Filter>
     </ClInclude>
-    <ClInclude Include="LinkBiTree.h">
+    <ClInclude Include="Data Structure\Tree\BinaryTrees\LinkBiTree.h">
       <Filter>头文件\Data Structure\Tree\BinaryTrees</Filter>
     </ClInclude>
-    <ClInclude Include="testLinkBiTree.h">
+    <ClInclude Include="Data Structure\Tree\BinaryTrees\Test\testLinkBiTree.h">
       <Filter>头文件\Data Structure\Tree\BinaryTrees\test</Filter>
     </ClInclude>
-    <ClInclude Include="HuffmanTree.h">
+    <ClInclude Include="Data Structure\Tree\Huffman\HuffmanTree.h">
       <Filter>头文件\Data Structure\Tree\Huffman</Filter>
     </ClInclude>
-    <ClInclude Include="ex1.1.h">
+    <ClInclude Include="Experiment\Ex1\ex1.1.h">
       <Filter>头文件\Experiment\Ex1</Filter>
     </ClInclude>
-    <ClInclude Include="ex1.2.h">
+    <ClInclude Include="Experiment\Ex1\ex1.2.h">
       <Filter>头文件\Experiment\Ex1</Filter>
     </ClInclude>
-    <ClInclude Include="ex2.1.h">
+    <ClInclude Include="Experiment\Ex2\ex2.1.h">
       <Filter>头文件\Experiment\Ex2</Filter>
     </ClInclude>
-    <ClInclude Include="ex2.2.h">
+    <ClInclude Include="Experiment\Ex2\ex2.2.h">
       <Filter>头文件\Experiment\Ex2</Filter>
     </ClInclude>
-    <ClInclude Include="ex3.h">
+    <ClInclude Include="Experiment\Ex3\ex3.h">
       <Filter>头文件\Experiment\Ex3</Filter>
     </ClInclude>
     <ClInclude Include="Practice\1_Joseph.h">
@@ -154,22 +154,22 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="二叉树.md">
+    <None Include="Resource\二叉树.md">
       <Filter>资源文件\测试数据</Filter>
     </None>
-    <None Include="Joseph.md">
+    <None Include="Resource\Joseph.md">
       <Filter>资源文件\测试数据</Filter>
     </None>
     <None Include="..\README.md">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="队列基本操作.md">
+    <None Include="Resource\队列基本操作.md">
       <Filter>资源文件\基本操作</Filter>
     </None>
-    <None Include="栈基本操作.md">
+    <None Include="Resource\栈基本操作.md">
       <Filter>资源文件\基本操作</Filter>
     </None>
-    <None Include="HuffmanTree.md">
+    <None Include="Resource\HuffmanTree.md">
       <Filter>资源文件\测试数据</Filter>
     </None>
   </ItemGroup>
