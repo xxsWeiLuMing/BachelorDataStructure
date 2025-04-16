@@ -1,5 +1,5 @@
 #pragma once
-#include"SinglyLinkedList.h"
+#include"..\SinglyLinkedList.h"
 
 void test()
 {

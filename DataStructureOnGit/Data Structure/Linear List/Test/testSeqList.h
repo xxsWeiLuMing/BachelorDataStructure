@@ -1,5 +1,5 @@
 #pragma once
-#include"SeqList.h"
+#include"..\SeqList.h"
 
 void test()
 {

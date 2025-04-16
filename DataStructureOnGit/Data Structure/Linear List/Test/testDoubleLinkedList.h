@@ -1,5 +1,5 @@
 #pragma once
-#include"DoubleLinkedList.h"
+#include"..\DoubleLinkedList.h"
 void test()
 {
     DoubleLinkList D = NULL;
