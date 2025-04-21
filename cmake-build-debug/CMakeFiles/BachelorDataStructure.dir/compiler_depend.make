@@ -3,8 +3,8 @@
 
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/main.cpp \
   /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/general.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/LinearList/SinglyLinkedList.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/Experiment/Ex5/ex5.2.cpp \
+  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/SeqStack.h \
+  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/SeqStack.cpp \
   /usr/include/_ansi.h \
   /usr/include/_newlib_version.h \
   /usr/include/alloca.h \
@@ -229,6 +229,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cwctype:
 
+/usr/include/sys/stdio.h:
+
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/localefwd.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ptr_traits.h:
@@ -269,6 +271,18 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/wctype.h:
 
+/usr/include/sys/signal.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/cpu_defines.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/refwrap.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstdio:
+
+/usr/include/sys/timespec.h:
+
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/postypes.h:
 
 /usr/include/machine/_types.h:
@@ -289,19 +303,13 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_algobase.h:
 
-/usr/include/sys/signal.h:
+/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/SeqStack.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/cpu_defines.h:
+/usr/include/errno.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/cpp_type_traits.h:
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_iterator_base_funcs.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/refwrap.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstdio:
-
-/usr/include/sys/stdio.h:
-
-/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/Experiment/Ex5/ex5.2.cpp:
+/usr/include/cygwin/config.h:
 
 /usr/include/cygwin/stdlib.h:
 
@@ -309,21 +317,17 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/new_allocator.h:
 
-/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/LinearList/SinglyLinkedList.h:
-
-/usr/include/machine/_endian.h:
-
-/usr/include/time.h:
-
-/usr/include/sys/timespec.h:
-
-/usr/include/cygwin/config.h:
+/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/SeqStack.cpp:
 
 /usr/include/ctype.h:
 
 /usr/include/bits/endian.h:
 
 /usr/include/machine/stdlib.h:
+
+/usr/include/machine/_endian.h:
+
+/usr/include/time.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream:
 
@@ -354,10 +358,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/include/endian.h:
 
 /usr/include/cygwin/wait.h:
-
-/usr/include/errno.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_iterator_base_funcs.h:
 
 /usr/include/locale.h:
 

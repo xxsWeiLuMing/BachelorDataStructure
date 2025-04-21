@@ -1,6 +1,6 @@
-#include "Experiment/Ex5/ex5.2.cpp"
+#include "DataStructure/Stack/Test/SeqStack.cpp"
 
 int main() {
-    Func();
+    test();
     return 0;
 }
