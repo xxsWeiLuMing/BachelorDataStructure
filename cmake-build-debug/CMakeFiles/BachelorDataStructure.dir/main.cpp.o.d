@@ -1,7 +1,7 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/main.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/SeqStack.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/../SeqStack.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/LinkStack.cpp \
+ /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/../LinkStack.h \
  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/../../general.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/c++config.h \

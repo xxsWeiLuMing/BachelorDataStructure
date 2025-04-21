@@ -1,4 +1,4 @@
-#include "DataStructure/Stack/Test/SeqStack.cpp"
+#include "DataStructure/Stack/Test/LinkStack.cpp"
 
 int main() {
     test();
