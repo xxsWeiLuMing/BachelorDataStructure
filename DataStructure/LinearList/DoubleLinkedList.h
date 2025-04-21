@@ -18,7 +18,7 @@ typedef  struct  DoubleLNode
 
 
 //初始化
-Status InitList(DoubleLinkList& L)
+inline Status InitList(DoubleLinkList& L)
 {
     L = (DoubleLNode*)malloc(sizeof(DoubleLNode));
     if (!L) exit(OVERFLOW);
@@ -29,7 +29,7 @@ Status InitList(DoubleLinkList& L)
 }
 
 //创建
-Status CreateList(DoubleLinkList& L, int n)
+inline Status CreateList(DoubleLinkList& L, int n)
 {
     if (!L) return ERROR;
 
@@ -50,7 +50,7 @@ Status CreateList(DoubleLinkList& L, int n)
 }
 
 //遍历输出
-Status TraverseList(DoubleLinkList L)
+inline Status TraverseList(DoubleLinkList L)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -67,7 +67,7 @@ Status TraverseList(DoubleLinkList L)
 }
 
 //销毁
-Status DestroyList(DoubleLinkList& L)
+inline Status DestroyList(DoubleLinkList& L)
 {
     if (!L) return ERROR;
 
@@ -84,14 +84,14 @@ Status DestroyList(DoubleLinkList& L)
 }
 
 //判断空
-Status IsListEmpty(DoubleLinkList L)
+inline Status IsListEmpty(DoubleLinkList L)
 {
     if (!L) return TRUE;
     return L->next == NULL;
 }
 
 //求长度
-int ListLength(DoubleLinkList L)
+inline int ListLength(DoubleLinkList L)
 {
     if (!L) return ERROR;
 
@@ -107,7 +107,7 @@ int ListLength(DoubleLinkList L)
 }
 
 //求第i个元素的值
-Status GetElem(DoubleLinkList L, int i, ElemType& e)
+inline Status GetElem(DoubleLinkList L, int i, ElemType& e)
 {
     if (!L) return ERROR;
     if (i < 1) return ERROR;
@@ -145,7 +145,7 @@ Status GetElem(DoubleLinkList L, int i, ElemType& e)
 }*/
 
 //求第一个值为e的元素的位序
-int LocateElem(DoubleLinkList L, ElemType e)
+inline int LocateElem(DoubleLinkList L, ElemType e)
 {
     if (!L) return ERROR;
 
@@ -162,7 +162,7 @@ int LocateElem(DoubleLinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-Status ListInsert(DoubleLinkList& L, int i, ElemType e)
+inline Status ListInsert(DoubleLinkList& L, int i, ElemType e)
 {
     if (!L) return ERROR;
     if (i < 1) return ERROR;
@@ -189,7 +189,7 @@ Status ListInsert(DoubleLinkList& L, int i, ElemType e)
 }
 
 //删除第i个元素
-Status ListDelete(DoubleLinkList& L, int i, ElemType& e)
+inline Status ListDelete(DoubleLinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
     if (i < 1) return ERROR;

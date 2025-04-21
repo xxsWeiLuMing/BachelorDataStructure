@@ -16,7 +16,7 @@ typedef struct CirLNode
 } CirLNode, * CirLinkList;
 
 //初始化
-Status InitList(CirLinkList& L)
+inline Status InitList(CirLinkList& L)
 {
     L = (CirLinkList)malloc(sizeof(CirLNode));
     if (!L)return ERROR;
@@ -26,7 +26,7 @@ Status InitList(CirLinkList& L)
 }
 
 //创建
-Status CreateList(CirLinkList& L, int  n)
+inline Status CreateList(CirLinkList& L, int  n)
 {
     if (!L)return ERROR;
 
@@ -47,7 +47,7 @@ Status CreateList(CirLinkList& L, int  n)
 }
 
 //遍历输出
-Status TraverseList(CirLinkList L)
+inline Status TraverseList(CirLinkList L)
 {
     if (!L) return ERROR; //不能遍历未初始化的表
     if (!L->next) return ERROR; //不能遍历只有头结点的表
@@ -80,7 +80,7 @@ Status TraverseList(CirLinkList L)
 //    L = NULL;
 //}
 
-void DestroyList(CirLinkList& L)
+inline void DestroyList(CirLinkList& L)
 {
     CirLinkList p = L, q = L->next;
     do
@@ -96,14 +96,14 @@ void DestroyList(CirLinkList& L)
 }
 
 //判断空
-bool IsListEmpty(CirLinkList L)
+inline bool IsListEmpty(CirLinkList L)
 {
     if (!L) return true;
     return(L->next == NULL);//L为空，返回true，否则返回false
 }
 
 //求长度
-int ListLength(CirLinkList L)
+inline int ListLength(CirLinkList L)
 {
     if (!L) return ERROR;
     if (!L->next) return 0;
@@ -121,7 +121,7 @@ int ListLength(CirLinkList L)
 }
 
 //求第i个元素的值
-Status GetElem(CirLinkList L, int i, ElemType& e)
+inline Status GetElem(CirLinkList L, int i, ElemType& e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -151,7 +151,7 @@ Status GetElem(CirLinkList L, int i, ElemType& e)
 }
 
 //求第一个值为e的元素的位序
-int LocateElem(CirLinkList L, ElemType e)
+inline int LocateElem(CirLinkList L, ElemType e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -170,7 +170,7 @@ int LocateElem(CirLinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-Status ListInsert(CirLinkList& L, int i, ElemType e)
+inline Status ListInsert(CirLinkList& L, int i, ElemType e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -218,7 +218,7 @@ Status ListInsert(CirLinkList& L, int i, ElemType e)
 }
 
 //删除第i个元素
-Status ListDelete(CirLinkList& L, int i, ElemType& e)
+inline Status ListDelete(CirLinkList& L, int i, ElemType& e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;

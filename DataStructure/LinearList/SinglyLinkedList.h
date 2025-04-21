@@ -18,7 +18,7 @@ typedef  struct  LNode
 
 
 //初始化
-Status InitList(LinkList& L)
+inline Status InitList(LinkList& L)
 {
     L = (LinkList)malloc(sizeof(LNode));
     L->next = NULL;
@@ -28,7 +28,7 @@ Status InitList(LinkList& L)
 }
 
 //创建
-Status  CreateList(LinkList& L, int  n)
+inline Status  CreateList(LinkList& L, int  n)
 {
     if (!L)return ERROR;
 
@@ -46,7 +46,7 @@ Status  CreateList(LinkList& L, int  n)
 }
 
 //遍历输出
-Status TraverseList(LinkList L)
+inline Status TraverseList(LinkList L)
 {
     if (!L)return ERROR;//不能遍历未初始化的表
     if (!L->next)return ERROR;//不能遍历只有头结点的表
@@ -62,7 +62,7 @@ Status TraverseList(LinkList L)
 }
 
 //销毁
-void DestroyList(LinkList& L)
+inline void DestroyList(LinkList& L)
 {
     LinkList p = L, q = p->next;
     while (q)
@@ -76,14 +76,14 @@ void DestroyList(LinkList& L)
 }
 
 //判断空
-bool IsListEmpty(LinkList L)
+inline bool IsListEmpty(LinkList L)
 {
     if (!L) return true;//L为空，返回true
     return(L->next == NULL);
 }
 
 //求长度
-int ListLength(LinkList L)
+inline int ListLength(LinkList L)
 {
     LinkList p = L;
     int i = 0;
@@ -96,7 +96,7 @@ int ListLength(LinkList L)
 }
 
 //求第i个元素的值
-Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的值。
+inline Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的值。
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -116,7 +116,7 @@ Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的�
 }
 
 //求第一个值为e的元素的位序
-int LocateElem(LinkList L, ElemType e)
+inline int LocateElem(LinkList L, ElemType e)
 {
     LinkList p = L->next;
     int n = 1;
@@ -129,7 +129,7 @@ int LocateElem(LinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-Status ListInsert(LinkList& L, int  i, ElemType e)
+inline Status ListInsert(LinkList& L, int  i, ElemType e)
 {
     LinkList  p = L;
     int j = 0;
@@ -148,7 +148,7 @@ Status ListInsert(LinkList& L, int  i, ElemType e)
 }
 
 //删除第i个元素
-Status ListDelete(LinkList& L, int i, ElemType& e)
+inline Status ListDelete(LinkList& L, int i, ElemType& e)
 {
     int j = 0;
     LinkList p = L, q;

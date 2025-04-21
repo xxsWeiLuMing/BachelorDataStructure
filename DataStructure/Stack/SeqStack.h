@@ -18,7 +18,7 @@ typedef  struct {
 } SeqStack;//顺序栈
 
 //初始化
-Status InitStack(SeqStack& S)
+inline Status InitStack(SeqStack& S)
 {
     S.base = (SElemType*)malloc(STACK_INIT_SIZE * sizeof(SElemType));
     if (!S.base) exit(OVERFLOW);
@@ -28,7 +28,7 @@ Status InitStack(SeqStack& S)
 }
 
 //销毁
-Status DestroyStack(SeqStack& S)
+inline Status DestroyStack(SeqStack& S)
 {
     free(S.base);
     S.base = S.top = NULL;
@@ -37,7 +37,7 @@ Status DestroyStack(SeqStack& S)
 }
 
 //遍历输出
-Status TraverseStack(SeqStack S)
+inline Status TraverseStack(SeqStack S)
 {
     if (!S.base) return ERROR;
     if (S.top == S.base) return ERROR;
@@ -52,21 +52,21 @@ Status TraverseStack(SeqStack S)
 }
 
 //判断空
-Status IsStackEmpty(SeqStack S)
+inline Status IsStackEmpty(SeqStack S)
 {
     if (!S.base) return TRUE;
     return S.top == S.base;
 }
 
 //求长度
-int StackLength(SeqStack S)
+inline int StackLength(SeqStack S)
 {
     if (!S.base) return ERROR;
     return S.top - S.base;
 }
 
 //得到栈首元素
-Status GetTop(SeqStack S, SElemType& e)
+inline Status GetTop(SeqStack S, SElemType& e)
 {
     if (!S.base) return ERROR;
     if (S.top == S.base) return ERROR;
@@ -74,7 +74,7 @@ Status GetTop(SeqStack S, SElemType& e)
     return OK;
 }
 
-Status Push(SeqStack& S, SElemType e)
+inline Status Push(SeqStack& S, SElemType e)
 {
     if (!S.base) return ERROR;
     if (S.top - S.base >= S.stacksize)
@@ -92,7 +92,7 @@ Status Push(SeqStack& S, SElemType e)
 }
 
 //出栈
-Status Pop(SeqStack& S, SElemType& e)
+inline Status Pop(SeqStack& S, SElemType& e)
 {
     if (!S.base) return ERROR;
     if (S.top == S.base) return ERROR;
@@ -101,7 +101,7 @@ Status Pop(SeqStack& S, SElemType& e)
 }
 
 //清空栈
-Status ClearStack(SeqStack& S)
+inline Status ClearStack(SeqStack& S)
 {
     if (!S.base) return ERROR;
     S.top = S.base;

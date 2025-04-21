@@ -18,13 +18,13 @@ typedef  struct  SLNode {
 } SLNode, * SLinkList;
 
 //初始化
-Status InitStack(SLinkList& S) {
+inline Status InitStack(SLinkList& S) {
     S = nullptr;
     return OK;
 }
 
 //销毁
-Status DestroyStack(SLinkList& S) {
+inline Status DestroyStack(SLinkList& S) {
     //if (!S)return OK;
     SLNode* p;
     while (S) {
@@ -36,12 +36,12 @@ Status DestroyStack(SLinkList& S) {
 }
 
 //遍历输出
-void visit(SLinkList p) {
+inline void visit(SLinkList p) {
     if (p->next)visit(p->next);
     cout << p->data << " ";
 }
 
-Status TraverseStack(SLinkList S) {
+inline Status TraverseStack(SLinkList S) {
     //if (!S)return OK;
     SLNode* p = S;
     //while (p) {
@@ -54,12 +54,12 @@ Status TraverseStack(SLinkList S) {
 }
 
 //判断空
-bool StackEmpty(SLinkList S) {
+inline bool StackEmpty(SLinkList S) {
     return S == nullptr;
 }
 
 //求长度
-int StackLength(SLinkList S) {
+inline int StackLength(SLinkList S) {
     int length = 0;
     SLNode* p = S;
     while (p) {
@@ -70,14 +70,14 @@ int StackLength(SLinkList S) {
 }
 
 //得到栈首元素
-Status GetTop(SLinkList S, SElemType& e) {
+inline Status GetTop(SLinkList S, SElemType& e) {
     if (S == nullptr) return ERROR;
     e = S->data;
     return OK;
 }
 
 //入栈
-Status Push(SLinkList& S, SElemType e) {
+inline Status Push(SLinkList& S, SElemType e) {
     SLNode* p = (SLNode*)malloc(sizeof(SLNode));
     if (!p)exit(OVERFLOW);
     p->data = e;
@@ -87,7 +87,7 @@ Status Push(SLinkList& S, SElemType e) {
 }
 
 //出栈
-Status Pop(SLinkList& S, SElemType& e) {
+inline Status Pop(SLinkList& S, SElemType& e) {
     if (S == nullptr) return ERROR;
     SLNode* p = S;
     e = p->data;
@@ -97,7 +97,7 @@ Status Pop(SLinkList& S, SElemType& e) {
 }
 
 //清空栈
-Status ClearStack(SLinkList& S) {
+inline Status ClearStack(SLinkList& S) {
     DestroyStack(S);
     S = nullptr;
     return OK;

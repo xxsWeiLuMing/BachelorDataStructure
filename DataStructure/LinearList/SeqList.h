@@ -18,8 +18,7 @@ typedef struct SeqList
 } SeqList;
 
 
-
-Status InitList(SeqList& L)
+inline Status InitList(SeqList& L)
 {
     if (L.elem)return ERROR;//已经初始化的表不能被初始化
 
@@ -34,7 +33,7 @@ Status InitList(SeqList& L)
     return OK;
 }
 
-Status CreateList(SeqList& L, ElemType a[], int n)
+inline Status CreateList(SeqList& L, ElemType a[], int n)
 {
     if (!L.elem) return ERROR;//未初始化的表不能被创建
 
@@ -46,7 +45,7 @@ Status CreateList(SeqList& L, ElemType a[], int n)
     return OK;
 }
 
-Status TraverseList(SeqList L)
+inline Status TraverseList(SeqList L)
 {
     if (L.length == 0)return ERROR;
 
@@ -58,7 +57,7 @@ Status TraverseList(SeqList L)
     return OK;
 }
 
-void DestroyList(SeqList& L)
+inline void DestroyList(SeqList& L)
 {
     free(L.elem);
     L.elem = NULL;
@@ -66,17 +65,17 @@ void DestroyList(SeqList& L)
     L.listsize = 0;
 }
 
-Status IsListEmpty(SeqList L)
+inline Status IsListEmpty(SeqList L)
 {
     return (L.length == 0);
 }
 
-int ListLength(SeqList L)
+inline int ListLength(SeqList L)
 {
     return(L.length);
 }
 
-Status GetElem(SeqList L, int i, ElemType& e)
+inline Status GetElem(SeqList L, int i, ElemType& e)
 {
     if (i<1 || i>L.length)return ERROR;
 
@@ -85,7 +84,7 @@ Status GetElem(SeqList L, int i, ElemType& e)
     return OK;
 }
 
-int LocateElem(SeqList L,ElemType e)
+inline int LocateElem(SeqList L,ElemType e)
 {
     for (int i = 0; i < L.length; i++)
     {
@@ -95,7 +94,7 @@ int LocateElem(SeqList L,ElemType e)
     return ERROR;
 }
 
-Status ListInsert(SeqList& L,int i, ElemType e)
+inline Status ListInsert(SeqList& L,int i, ElemType e)
 {
     if (i<1 || i>L.length + 1)return ERROR;
 
@@ -121,7 +120,7 @@ Status ListInsert(SeqList& L,int i, ElemType e)
 }
 
 //删除第i个元素
-Status ListDelete(SeqList& L, int i, ElemType& e)
+inline Status ListDelete(SeqList& L, int i, ElemType& e)
 {
     if (i<1 || i>L.length)return ERROR;
 
@@ -137,4 +136,5 @@ Status ListDelete(SeqList& L, int i, ElemType& e)
 
     return OK;
 }
+
 #endif //SEQLIST_H

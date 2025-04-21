@@ -21,7 +21,7 @@ typedef  struct {
 
 
 //初始化
-Status InitQueue(LinkQueue& Q) {
+inline Status InitQueue(LinkQueue& Q) {
     Q.front = Q.rear = (QueuePtr)malloc(sizeof(QNode));
     if (!Q.front) return ERROR;
     Q.front->next = nullptr;
@@ -29,7 +29,7 @@ Status InitQueue(LinkQueue& Q) {
 }
 
 //销毁
-Status DestroyQueue(LinkQueue& Q) {
+inline Status DestroyQueue(LinkQueue& Q) {
     while (Q.front) {
         Q.rear = Q.front->next;
         free(Q.front);
@@ -39,7 +39,7 @@ Status DestroyQueue(LinkQueue& Q) {
 }
 
 //清空队列
-Status ClearQueue(LinkQueue& Q) {
+inline Status ClearQueue(LinkQueue& Q) {
     QueuePtr p, q;
     Q.rear = Q.front;
     p = Q.front->next;
@@ -53,13 +53,13 @@ Status ClearQueue(LinkQueue& Q) {
 }
 
 //判断空
-Status QueueEmpty(LinkQueue Q) {
+inline Status QueueEmpty(LinkQueue Q) {
     if (Q.front == Q.rear) return TRUE;
     else return FALSE;
 }
 
 //求长度
-int QueueLength(LinkQueue Q) {
+inline int QueueLength(LinkQueue Q) {
     int length = 0;
     QueuePtr p = Q.front;
     while (p != Q.rear) {
@@ -70,14 +70,14 @@ int QueueLength(LinkQueue Q) {
 }
 
 //得到队首元素
-Status GetHead(LinkQueue Q, QElemType& e) {
+inline Status GetHead(LinkQueue Q, QElemType& e) {
     if (Q.front == Q.rear) return ERROR;
     e = Q.front->next->data;
     return OK;
 }
 
 //入队列
-Status EnQueue(LinkQueue& Q, QElemType e) {
+inline Status EnQueue(LinkQueue& Q, QElemType e) {
     QueuePtr p = (QueuePtr)malloc(sizeof(QNode));
     if (!p) exit(OVERFLOW);
     p->data = e;
@@ -88,7 +88,7 @@ Status EnQueue(LinkQueue& Q, QElemType e) {
 }
 
 //出队列
-Status DeQueue(LinkQueue& Q, QElemType& e) {
+inline Status DeQueue(LinkQueue& Q, QElemType& e) {
     if (Q.front == Q.rear) return ERROR;
     QueuePtr p = Q.front->next;
     e = p->data;
@@ -99,7 +99,7 @@ Status DeQueue(LinkQueue& Q, QElemType& e) {
 }
 
 //遍历输出
-Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
+inline Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
     QueuePtr p = Q.front->next;
     while (p) {
         visit(p->data);
@@ -108,7 +108,7 @@ Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
     return OK;
 }
 
-Status QueueTraverse(LinkQueue Q) {
+inline Status QueueTraverse(LinkQueue Q) {
     QueuePtr p = Q.front->next;
     while (p) {
         cout << p->data << " ";
