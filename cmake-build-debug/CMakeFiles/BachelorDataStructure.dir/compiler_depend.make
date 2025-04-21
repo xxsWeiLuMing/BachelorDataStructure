@@ -3,8 +3,8 @@
 
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/main.cpp \
   /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/general.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/LinkStack.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/LinkStack.cpp \
+  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
+  /cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Tree/BinaryTrees/Test/LinkBiTree.cpp \
   /usr/include/_ansi.h \
   /usr/include/_newlib_version.h \
   /usr/include/alloca.h \
@@ -253,12 +253,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_iterator.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/stddef.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/cow_string.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/compare:
-
 /usr/include/wchar.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_iterator_base_types.h:
@@ -266,6 +260,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/char_traits.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/locale_classes.tcc:
+
+/usr/include/sched.h:
 
 /usr/include/wctype.h:
 
@@ -287,23 +283,23 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/streambuf_iterator.h:
 
-/usr/include/sched.h:
-
-/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/LinkStack.h:
-
 /usr/include/_ansi.h:
 
 /usr/include/bits/wordsize.h:
-
-/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Stack/Test/LinkStack.cpp:
 
 /usr/include/alloca.h:
 
 /usr/include/machine/time.h:
 
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_algobase.h:
+
 /usr/include/stdio.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_algobase.h:
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/stddef.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/cow_string.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/compare:
 
 /usr/include/cygwin/config.h:
 
@@ -313,6 +309,10 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/new_allocator.h:
 
+/usr/include/machine/_endian.h:
+
+/usr/include/time.h:
+
 /usr/include/ctype.h:
 
 /usr/include/bits/endian.h:
@@ -320,10 +320,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/include/machine/stdlib.h:
 
 /usr/include/sys/timespec.h:
-
-/usr/include/machine/_endian.h:
-
-/usr/include/time.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream:
 
@@ -354,6 +350,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/include/endian.h:
 
 /usr/include/cygwin/wait.h:
+
+/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Tree/BinaryTrees/LinkBiTree.h:
 
 /usr/include/errno.h:
 
@@ -417,9 +415,9 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/exception.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/exception_ptr.h:
-
 /usr/include/stdint.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/exception_ptr.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/basic_string.tcc:
 
@@ -444,6 +442,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/include/stdlib.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/istream.tcc:
+
+/cygdrive/d/ApP/Programming/CLionProjects/FormGit/BachelorDataStructure/DataStructure/Tree/BinaryTrees/Test/LinkBiTree.cpp:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/iterator_concepts.h:
 
