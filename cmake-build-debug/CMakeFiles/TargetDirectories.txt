@@ -1,3 +1,0 @@
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/cmake-build-debug/CMakeFiles/BachelorDataStructure.dir
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
