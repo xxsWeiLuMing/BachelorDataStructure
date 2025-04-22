@@ -16,13 +16,11 @@ void Divide(LinkList &A,LinkList &B,LinkList &C) {
 
         pB=pC;
         if (B->next==nullptr) {
-            if (pC==nullptr)break;
             pC=pC->next;
             pB->next=nullptr;
             B->next=pB;
         }
         else {
-            if (pC==nullptr)break;
             pC=pC->next;
             pB->next=B->next;
             B->next=pB;
