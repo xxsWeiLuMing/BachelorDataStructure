@@ -3,18 +3,7 @@
 //
 #include "../../DataStructure/LinearList/SinglyLinkedList.h"
 
-void Func() {
-    LinkList C;
-    InitList(C);
-
-    int lenC=7;
-    cout<<"输入"<<lenC<<"个数：";
-    CreateList(C,lenC);
-    cout<<endl;
-
-    LinkList A,B;
-    InitList(A);
-    InitList(B);
+void Divide(LinkList &A,LinkList &B,LinkList &C) {
     LinkList pA=A,pB=A;
     LinkList pC=C->next;
 
@@ -39,10 +28,27 @@ void Func() {
             B->next=pB;
         }
     }
+}
+
+void Func() {
+    LinkList C;
+    InitList(C);
+
+    int lenC=7;
+    cout<<"输入"<<lenC<<"个数：";
+    CreateList(C,lenC);
+    cout<<endl;
+
+    LinkList A,B;
+    InitList(A);
+    InitList(B);
+
+    Divide(A,B,C);
 
     cout<<"A:";
     TraverseList(A);
-
     cout<<"B:";
     TraverseList(B);
+    cout<<"C:";
+    TraverseList(C);
 }
