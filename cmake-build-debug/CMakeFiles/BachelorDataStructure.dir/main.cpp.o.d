@@ -1,8 +1,8 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/BinaryTrees/Test/LinkBiTree.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/BinaryTrees/Test/../LinkBiTree.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/BinaryTrees/Test/../../../general.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Experiment/Ex5/ex5.2.cpp \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Experiment/Ex5/../../DataStructure/LinearList/SinglyLinkedList.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Experiment/Ex5/../../DataStructure/LinearList/../general.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/os_defines.h \
