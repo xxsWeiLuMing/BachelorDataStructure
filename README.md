@@ -8,7 +8,7 @@
 
     1.C语言的特点是可移植性强，而Visual Studio用sln破坏了这一优点，所有我把项目完全修改为CMake项目。
 
-    2.如果没有CMake，参看[Windows下的CMake详细安装教程（2024/1/24）_windows安装cmake-CSDN博客](https://blog.csdn.net/weixin_52677672/article/details/135815928)。
+    2.如果没有CMake，参看[Download CMake](https://cmake.org/download/)。建议下载.msi文件，因为可以自动添加环境变量。建议下载最新版。
 
     3.我没有测试过在Windows以外的操作系统上实施项目。
 
