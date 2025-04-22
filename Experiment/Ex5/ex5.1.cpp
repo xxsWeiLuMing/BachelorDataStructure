@@ -4,25 +4,25 @@
 #include "../../DataStructure/LinearList/SinglyLinkedList.h"
 
 void Delete(LinkList&L) {
-    LinkList current=L->next;
+    LinkList cur=L->next;
 
-    while (current!= nullptr) {
-        LinkList mayDelete=current->next;
-        LinkList priorMayDelete=current;
+    while (cur!= nullptr) {
+        LinkList del=cur->next;
+        LinkList priorDel=cur;
 
-        while (mayDelete!=nullptr) {
-            if (abs(mayDelete->data)==abs(current->data)) {
-                priorMayDelete->next=mayDelete->next;
-                free(mayDelete);
-                mayDelete=priorMayDelete->next;
+        while (del!=nullptr) {
+            if (abs(del->data)==abs(cur->data)) {
+                priorDel->next=del->next;
+                free(del);
+                del=priorDel->next;
             }
             else {
-                priorMayDelete=mayDelete;
-                mayDelete=mayDelete->next;
+                priorDel=del;
+                del=del->next;
             }
         }
 
-        current=current->next;
+        cur=cur->next;
     }
 }
 
