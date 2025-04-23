@@ -54,8 +54,7 @@ inline Status ClearQueue(LinkQueue& Q) {
 
 //判断空
 inline Status QueueEmpty(LinkQueue Q) {
-    if (Q.front == Q.rear) return TRUE;
-    else return FALSE;
+    return Q.front == Q.rear;
 }
 
 //求长度
