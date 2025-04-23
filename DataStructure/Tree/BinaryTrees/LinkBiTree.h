@@ -124,13 +124,58 @@ inline Status PreOrderTraverse(BiTree T,SLinkList& S) {
 
     while (p||!StackEmpty(S)) {
         if (p) {
-            if (cout<<p->data<<" ") {} else return ERROR;
+            if (!(cout<<p->data<<" "))return ERROR;
             Push(S,p);
             p=p->lChild;
         }
         else {
             Pop(S,p);
             p=p->rChild;
+        }
+    }
+
+    return OK;
+}
+
+inline Status InOrderTraverse(BiTree T,SLinkList& S) {
+    InitStack(S);
+    BiTree p=T;
+
+    while (p||!StackEmpty(S)) {
+        if (p) {
+            Push(S,p);
+            p=p->lChild;
+        }
+        else {
+            Pop(S,p);
+            if (!(cout<<p->data<<" "))return ERROR;
+            p=p->rChild;
+        }
+    }
+
+    return OK;
+}
+
+inline Status PostOrderTraverse(BiTree T,SLinkList& S) {
+    InitStack(S);
+    BiTree p=T,pre=nullptr;
+
+    while (p||!StackEmpty(S)) {
+        if (p) {
+            Push(S,p);
+            p=p->lChild;
+        }
+        else {
+            Pop(S,p);
+            if (p->rChild!=nullptr&&p->rChild!=pre) {
+                Push(S,p);
+                p=p->rChild;
+            }
+            else {
+                if (!(cout<<p->data<<" "))return ERROR;
+                pre=p;
+                p=nullptr;
+            }
         }
     }
 
