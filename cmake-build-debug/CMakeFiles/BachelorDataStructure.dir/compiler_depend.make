@@ -3,8 +3,8 @@
 
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/general.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/LinearList/SinglyLinkedList.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Experiment/Ex5/ex5.2.cpp \
+  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
+  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/BinaryTrees/Test/LinkBiTree.cpp \
   /usr/include/_ansi.h \
   /usr/include/_newlib_version.h \
   /usr/include/alloca.h \
@@ -233,6 +233,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/sys/stdio.h:
 
+/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/BinaryTrees/LinkBiTree.h:
+
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/localefwd.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ptr_traits.h:
@@ -295,24 +297,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/_ansi.h:
 
-/usr/include/bits/wordsize.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream:
-
-/usr/include/sys/cpuset.h:
-
-/usr/include/signal.h:
-
-/usr/include/pthread.h:
-
-/usr/include/alloca.h:
-
-/usr/include/machine/time.h:
-
-/usr/include/stdio.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_algobase.h:
-
 /usr/include/cygwin/stdlib.h:
 
 /usr/include/sys/reent.h:
@@ -329,6 +313,30 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/machine/stdlib.h:
 
+/usr/include/alloca.h:
+
+/usr/include/machine/time.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_algobase.h:
+
+/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/BinaryTrees/Test/LinkBiTree.cpp:
+
+/usr/include/bits/wordsize.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream:
+
+/usr/include/sys/cpuset.h:
+
+/usr/include/signal.h:
+
+/usr/include/pthread.h:
+
+/usr/include/cygwin/wait.h:
+
+/usr/include/cygwin/config.h:
+
 /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp:
 
 /usr/include/cygwin/signal.h:
@@ -338,8 +346,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/include/errno.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_iterator_base_funcs.h:
-
-/usr/include/cygwin/config.h:
 
 /usr/include/sys/_timeval.h:
 
@@ -353,15 +359,11 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cerrno:
 
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/LinearList/SinglyLinkedList.h:
-
 /usr/include/machine/endian.h:
 
 /usr/include/sys/ucontext.h:
 
 /usr/include/endian.h:
-
-/usr/include/cygwin/wait.h:
 
 /usr/include/locale.h:
 
@@ -457,7 +459,9 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/locale_facets.h:
 
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Experiment/Ex5/ex5.2.cpp:
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/clocale:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/locale_facets.tcc:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/max_size_type.h:
 
@@ -488,10 +492,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_construct.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/streambuf.tcc:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/locale_facets.tcc:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/clocale:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/exception:
 

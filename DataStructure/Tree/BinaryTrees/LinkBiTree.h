@@ -20,7 +20,7 @@ inline Status  CreateBiTree(BiTree& T)//先序输入，创建二叉树
 {
     char ch;
     scanf("%c", &ch, (int)sizeof(ch));
-    if (ch == ' ')  T = nullptr;
+    if (ch == '*')  T = nullptr;
     else
     {
         T = (BiTNode*)malloc(sizeof(BiTNode));

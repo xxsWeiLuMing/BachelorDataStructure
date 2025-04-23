@@ -1,6 +1,6 @@
-#include "Experiment/Ex5/ex5.2.cpp"
+#include "DataStructure/Tree/BinaryTrees/Test/LinkBiTree.cpp"
 
 int main() {
-    Func();
+    test();
     return 0;
 }
