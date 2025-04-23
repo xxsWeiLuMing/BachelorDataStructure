@@ -25,22 +25,21 @@ void Divide(LinkList &A,LinkList &B,LinkList C) {
     LinkList pA=A;
 
     while (pC!= nullptr) {
-        LinkList tempA=(LinkList)malloc(sizeof(LNode));
-        if (tempA==nullptr)exit(OVERFLOW);
-        tempA->next=nullptr;
+        auto temp=static_cast<LinkList>(malloc(sizeof(LNode)));
+        if (temp==nullptr)exit(OVERFLOW);
+        temp->next=nullptr;
 
-        pA->next=tempA;
+        pA->next=temp;
         pA=pA->next;
         pA->data=pC->data;
 
         pC=pC->next;
         if (pC==nullptr)break;
 
-        LinkList tempB=(LinkList)malloc(sizeof(LNode));
-        if (tempB==nullptr)exit(OVERFLOW);
-        tempB->next=nullptr;
+        temp=static_cast<LinkList>(malloc(sizeof(LNode)));
+        if (temp==nullptr)exit(OVERFLOW);
 
-        LinkList pB=tempB;
+        LinkList pB=temp;
         pB->data=pC->data;
         pC=pC->next;
         if (B->next==nullptr)pB->next=nullptr;
