@@ -12,22 +12,22 @@ typedef char TElemType;
 typedef  struct  BiTNode
 {
     TElemType data;
-    struct  BiTNode* lchild, * rchild;
+    struct  BiTNode* lChild, * rChild;
 } BiTNode, * BiTree;
 
 //建树
 inline Status  CreateBiTree(BiTree& T)//先序输入，创建二叉树
 {
     char ch;
-    scanf("%c", &ch, (int)sizeof(ch));
+    scanf("%c", &ch, static_cast<int>(sizeof(ch)));
     if (ch == '*')  T = nullptr;
     else
     {
-        T = (BiTNode*)malloc(sizeof(BiTNode));
+        T = static_cast<BiTNode *>(malloc(sizeof(BiTNode)));
         if (!T) exit(OVERFLOW);
         T->data = ch;
-        CreateBiTree(T->lchild);
-        CreateBiTree(T->rchild);
+        CreateBiTree(T->lChild);
+        CreateBiTree(T->rChild);
     }
     return OK;
 }
@@ -40,13 +40,13 @@ inline void DisplayBiTree(BiTree T)
     if (T != nullptr)
     {
         printf("%c", T->data);
-        if (T->lchild != nullptr || T->rchild != nullptr)
+        if (T->lChild != nullptr || T->rChild != nullptr)
         {
             printf("(");
-            DisplayBiTree(T->lchild);
+            DisplayBiTree(T->lChild);
             /*递归处理左子树*/
             printf(",");
-            DisplayBiTree(T->rchild);
+            DisplayBiTree(T->rChild);
             /*递归处理右子树*/
             printf(")");
         }
