@@ -181,6 +181,65 @@ inline Status PostOrderTraverse(BiTree T,SLinkList& S) {
 
     return OK;
 }
+
+
+
 //层序遍历
+typedef  struct  QNode {
+    BiTree data;
+    struct  QNode* next;
+} QNode, * QueuePtr;
+
+typedef  struct {
+    QueuePtr front;
+    QueuePtr rear;
+} LinkQueue;
+
+inline Status InitQueue(LinkQueue& Q) {
+    Q.front = Q.rear = (QueuePtr)malloc(sizeof(QNode));
+    if (!Q.front) return ERROR;
+    Q.front->next = nullptr;
+    return OK;
+}
+
+inline Status EnQueue(LinkQueue& Q, BiTree e) {
+    QueuePtr p = (QueuePtr)malloc(sizeof(QNode));
+    if (!p) exit(OVERFLOW);
+    p->data = e;
+    p->next = nullptr;
+    Q.rear->next = p;
+    Q.rear = p;
+    return OK;
+}
+
+inline Status DeQueue(LinkQueue& Q, BiTree& e) {
+    if (Q.front == Q.rear) return ERROR;
+    QueuePtr p = Q.front->next;
+    e = p->data;
+    Q.front->next = p->next;
+    if (Q.rear == p) Q.rear = Q.front;
+    free(p);
+    return OK;
+}
+
+inline Status QueueEmpty(LinkQueue Q) {
+    return Q.front == Q.rear;
+}
+
+inline Status LevelOrderTraverse(BiTree T) {
+    LinkQueue Q;
+    InitQueue(Q);
+    BiTree p;
+    EnQueue(Q,T);
+
+    while (!QueueEmpty(Q)) {
+        DeQueue(Q,p);
+        if(!(cout<<p->data<<" "))return ERROR;
+        if (p->lChild!=nullptr)EnQueue(Q,p->lChild);
+        if (p->rChild!=nullptr)EnQueue(Q,p->rChild);
+    }
+
+    return OK;
+}
 
 #endif //LINKBITREE_H
