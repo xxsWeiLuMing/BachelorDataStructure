@@ -20,30 +20,34 @@ void Divide(LinkList &B,LinkList &C) {
     }
 }
 
-/*void Divide(LinkList &A,LinkList &B,LinkList &C) {
-    LinkList pA=A,pB;
+void Divide(LinkList &A,LinkList &B,LinkList C) {
     LinkList pC=C->next;
+    LinkList pA=A;
 
     while (pC!= nullptr) {
-        pA->next=pC;
-        pA=pA->next;
-        pC=pC->next;
+        LinkList tempA=(LinkList)malloc(sizeof(LNode));
+        if (tempA==nullptr)exit(OVERFLOW);
+        tempA->next=nullptr;
 
+        pA->next=tempA;
+        pA=pA->next;
+        pA->data=pC->data;
+
+        pC=pC->next;
         if (pC==nullptr)break;
 
-        pB=pC;
-        if (B->next==nullptr) {
-            pC=pC->next;
-            pB->next=nullptr;
-            B->next=pB;
-        }
-        else {
-            pC=pC->next;
-            pB->next=B->next;
-            B->next=pB;
-        }
+        LinkList tempB=(LinkList)malloc(sizeof(LNode));
+        if (tempB==nullptr)exit(OVERFLOW);
+        tempB->next=nullptr;
+
+        LinkList pB=tempB;
+        pB->data=pC->data;
+        pC=pC->next;
+        if (B->next==nullptr)pB->next=nullptr;
+        else pB->next=B->next;
+        B->next=pB;
     }
-}*/
+}
 
 void Func() {
     LinkList C;
@@ -58,7 +62,8 @@ void Func() {
     InitList(A);
     InitList(B);
 
-    Divide(B,C);
+    //Divide(B,C);
+    Divide(A,B,C);
 
     cout<<"A:";
     TraverseList(A);
