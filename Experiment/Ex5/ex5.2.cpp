@@ -3,8 +3,25 @@
 //
 #include "../../DataStructure/LinearList/SinglyLinkedList.h"
 
-void Divide(LinkList &A,LinkList &B,LinkList &C) {
-    LinkList pA=A,pB=A;
+void Divide(LinkList &B,LinkList &C) {
+    LinkList pC=C->next;
+
+    while (pC!= nullptr) {
+        LinkList pA=pC;
+        pC=pC->next;
+        if (pC==nullptr)break;
+        pA->next=pC->next;
+
+        LinkList pB = pC;
+        pC=pC->next;
+        if (B->next==nullptr)pB->next=nullptr;
+        else pB->next=B->next;
+        B->next=pB;
+    }
+}
+
+/*void Divide(LinkList &A,LinkList &B,LinkList &C) {
+    LinkList pA=A,pB;
     LinkList pC=C->next;
 
     while (pC!= nullptr) {
@@ -26,7 +43,7 @@ void Divide(LinkList &A,LinkList &B,LinkList &C) {
             B->next=pB;
         }
     }
-}
+}*/
 
 void Func() {
     LinkList C;
@@ -41,7 +58,7 @@ void Func() {
     InitList(A);
     InitList(B);
 
-    Divide(A,B,C);
+    Divide(B,C);
 
     cout<<"A:";
     TraverseList(A);
