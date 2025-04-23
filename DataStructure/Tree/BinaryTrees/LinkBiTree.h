@@ -53,4 +53,10 @@ inline void DisplayBiTree(BiTree T)
     }
 }
 
+//递归先序、中序、后序遍历
+
+//非递归先序、中序、后序遍历
+
+//层序遍历
+
 #endif //LINKBITREE_H
