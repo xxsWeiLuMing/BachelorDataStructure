@@ -10,4 +10,17 @@ void test() {
 
     cout << "显示二叉树：";
     DisplayBiTree(T);
+    cout <<endl;
+
+    cout<<"递归先序遍历：";
+    PreOrderTraverse(T);
+    cout <<endl;
+
+    cout<<"递归中序遍历：";
+    InOrderTraverse(T);
+    cout <<endl;
+
+    cout<<"递归后序遍历：";
+    PostOrderTraverse(T);
+    cout <<endl;
 }

@@ -54,6 +54,35 @@ inline void DisplayBiTree(BiTree T)
 }
 
 //递归先序、中序、后序遍历
+inline Status PreOrderTraverse(BiTree T) {
+    if (T!=nullptr) {
+        if(cout<<T->data<<" ")
+            if(PreOrderTraverse(T->lChild))
+                if(PreOrderTraverse(T->rChild))return OK;
+        return ERROR;
+    }
+    return OK;
+}
+
+inline Status InOrderTraverse(BiTree T) {
+    if (T!=nullptr) {
+        if (InOrderTraverse(T->lChild))
+            if (cout<<T->data<<" ")
+                if (InOrderTraverse(T->rChild))return OK;
+        return ERROR;
+    }
+    return OK;
+}
+
+inline Status PostOrderTraverse(BiTree T) {
+    if (T!=nullptr) {
+        if (PostOrderTraverse(T->lChild))
+            if (PostOrderTraverse(T->rChild))
+                if (cout<<T->data<<" ")return OK;
+    }
+    return OK;
+}
+
 
 //非递归先序、中序、后序遍历
 
