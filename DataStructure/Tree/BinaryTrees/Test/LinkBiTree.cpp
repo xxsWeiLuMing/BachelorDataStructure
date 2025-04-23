@@ -23,4 +23,9 @@ void test() {
     cout<<"递归后序遍历：";
     PostOrderTraverse(T);
     cout <<endl;
+
+    SLinkList S;
+    cout<<"非递归先序遍历：";
+    PreOrderTraverse(T,S);
+    cout <<endl;
 }

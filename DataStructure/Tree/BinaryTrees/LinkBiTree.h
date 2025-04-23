@@ -8,7 +8,6 @@
 #include"../../general.h"
 
 typedef char TElemType;
-
 typedef  struct  BiTNode
 {
     TElemType data;
@@ -79,13 +78,64 @@ inline Status PostOrderTraverse(BiTree T) {
         if (PostOrderTraverse(T->lChild))
             if (PostOrderTraverse(T->rChild))
                 if (cout<<T->data<<" ")return OK;
+        return ERROR;
     }
     return OK;
 }
 
 
-//非递归先序、中序、后序遍历
 
+//非递归先序、中序、后序遍历
+typedef  struct  SLNode {
+    BiTree   data;
+    struct SLNode* next;
+} SLNode, * SLinkList;
+
+inline Status InitStack(SLinkList& S) {
+    S=nullptr;
+    return OK;
+}
+
+inline Status StackEmpty(SLinkList S) {
+    return S==nullptr;
+}
+
+inline Status Push(SLinkList& S, BiTree e) {
+    SLNode* p = (SLNode*)malloc(sizeof(SLNode));
+    if (!p)exit(OVERFLOW);
+    p->data = e;
+    p->next = S;
+    S = p;
+    return OK;
+}
+
+inline Status Pop(SLinkList& S, BiTree& e) {
+    if (S == nullptr) return ERROR;
+    SLNode* p = S;
+    e = p->data;
+    S = S->next;
+    free(p);
+    return OK;
+}
+
+inline Status PreOrderTraverse(BiTree T,SLinkList& S) {
+    InitStack(S);
+    BiTree p=T;
+
+    while (p||!StackEmpty(S)) {
+        if (p) {
+            if (cout<<p->data<<" ") {} else return ERROR;
+            Push(S,p);
+            p=p->lChild;
+        }
+        else {
+            Pop(S,p);
+            p=p->rChild;
+        }
+    }
+
+    return OK;
+}
 //层序遍历
 
 #endif //LINKBITREE_H
