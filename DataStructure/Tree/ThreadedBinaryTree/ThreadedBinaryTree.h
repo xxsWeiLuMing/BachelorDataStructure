@@ -35,6 +35,7 @@ inline void InThreading(BiThrTree p) {
 inline Status InOrderThreading(BiThrTree &Thrt,BiThrTree T) {
     Thrt=static_cast<BiThrTree>(malloc(sizeof(BiThrNode)));
     if (!Thrt)exit((OVERFLOW));
+
     Thrt->lTag = Link;
     Thrt->rTag = Thread;
 
