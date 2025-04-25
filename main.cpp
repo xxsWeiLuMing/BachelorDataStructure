@@ -1,4 +1,4 @@
-#include "DataStructure/Tree/BinaryTrees/Test/LinkBiTree.cpp"
+#include "DataStructure/Tree/BinaryTrees/LinkBiTree.cpp"
 
 int main() {
     test();

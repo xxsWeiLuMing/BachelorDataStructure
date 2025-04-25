@@ -1,7 +1,7 @@
 //
 // Created by small on 2025/4/21.
 //
-#include"../LinkBiTree.h"
+#include "LinkBiTree.h"
 
 void test() {
     BiTree T;
