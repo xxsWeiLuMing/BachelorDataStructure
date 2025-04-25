@@ -14,8 +14,8 @@ void test()//ElemType必须为char.This Func need ElemType must be char.
 
     cout << "CreateList Status:" << CreateList(L, 5) << endl;
 
-    cout << "TraverseList:";
-    TraverseList(L);
+    cout << "DisplayList:";
+    DisplayList(L);
 
     cout << "IsListEmpty:" << IsListEmpty(L) << endl;
 
@@ -32,11 +32,11 @@ void test()//ElemType必须为char.This Func need ElemType must be char.
 
     ListInsert(L, 5, '1');
     cout << "ListInsert:";
-    TraverseList(L);
+    DisplayList(L);
 
     ListDelete(L, 1, e);
     cout << "ListDelete:";
-    TraverseList(L);
+    DisplayList(L);
     cout << "ListDelete e:" << e << endl;
 
     DestroyList(L);

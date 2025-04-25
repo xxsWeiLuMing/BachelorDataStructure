@@ -12,8 +12,8 @@ void test()
     cout << "IsListEmpty:" << IsListEmpty(H) << endl;
 
     CreateList(H, 5);
-    cout << "CreateList,TraverseList:";
-    TraverseList(H);
+    cout << "CreateList,DisplayList:";
+    DisplayList(H);
 
     cout << "IsListEmpty:" << IsListEmpty(H) << endl;
 

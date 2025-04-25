@@ -12,8 +12,8 @@ void test()
     cout << "ListLength:" << ListLength(D) << endl;
 
     CreateList(D, 5);
-    cout << "CreateList,TraverseList:";
-    TraverseList(D);
+    cout << "CreateList,DisplayList:";
+    DisplayList(D);
 
     cout << "IsListEmpty:" << IsListEmpty(D) << endl;
     cout << "ListLength:" << ListLength(D) << endl;
@@ -31,12 +31,12 @@ void test()
     e = '1';
     if (ListInsert(D, i, e))cout << "ListInsert 第" << i << "位插入" << e << ":";
     else cout << "ListInsert 第" << i << "位插入" << e << "失败:";
-    TraverseList(D);
+    DisplayList(D);
 
     i = 0;
     if (ListDelete(D, i, e))cout << "ListDelete 删除第" << i << "位" << e << " :";
     else cout << "ListDelete 删除第" << i << "位失败:";
-    TraverseList(D);
+    DisplayList(D);
 
     DestroyList(D);
     cout << "DestroyList IsListEmpty:" << IsListEmpty(D) << endl;

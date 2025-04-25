@@ -12,7 +12,7 @@ void test()
         'f','g','h','i','j' };
     CreateList(L, a, 10);//顺序表：创建
     cout << "初始化、创建、遍历：";
-    TraverseList(L);//顺序表：遍历
+    DisplayList(L);//顺序表：遍历
 
     cout << "判断空：" << IsListEmpty(L) << endl;//顺序表：判断空
 

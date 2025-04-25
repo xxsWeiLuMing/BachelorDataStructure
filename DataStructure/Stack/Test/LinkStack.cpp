@@ -30,8 +30,8 @@ void test()
 
     CreateStack(S);
 
-    cout << "TraverseStack:";
-    TraverseStack(S);
+    cout << "DisplayStack:";
+    DisplayStack(S);
     cout << "IsStackEmpty:" << StackEmpty(S) << endl;
 
     cout << "StackLength:" << StackLength(S) << endl;

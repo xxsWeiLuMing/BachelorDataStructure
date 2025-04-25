@@ -98,7 +98,7 @@ inline Status DeQueue(LinkQueue& Q, QElemType& e) {
 }
 
 //遍历输出
-inline Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
+inline Status DisplayQueue(LinkQueue Q, void (*visit)(QElemType)) {
     QueuePtr p = Q.front->next;
     while (p) {
         visit(p->data);
@@ -107,7 +107,7 @@ inline Status QueueTraverse(LinkQueue Q, void (*visit)(QElemType)) {
     return OK;
 }
 
-inline Status QueueTraverse(LinkQueue Q) {
+inline Status DisplayQueue(LinkQueue Q) {
     QueuePtr p = Q.front->next;
     while (p) {
         cout << p->data << " ";

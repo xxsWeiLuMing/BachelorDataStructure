@@ -29,8 +29,8 @@ void test()
 
     CreateQueue(Q);
 
-    cout << "QueueTraverse:";
-    QueueTraverse(Q);
+    cout << "DisplayQueue:";
+    DisplayQueue(Q);
     cout << "QueueEmpty:" << QueueEmpty(Q) << endl;
 
     cout << "QueueLength:" << QueueLength(Q) << endl;

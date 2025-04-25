@@ -37,7 +37,7 @@ inline Status DestroyStack(SeqStack& S)
 }
 
 //遍历输出
-inline Status TraverseStack(SeqStack S)
+inline Status DisplayStack(SeqStack S)
 {
     if (!S.base) return ERROR;
     if (S.top == S.base) return ERROR;

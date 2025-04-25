@@ -74,7 +74,7 @@ inline QElemType DeQueue(SeqQueue& Q, QElemType& e) {
 }
 
 //遍历输出
-inline Status QueueTraverse(SeqQueue Q, void (*visit)(QElemType)) {
+inline Status DisplayQueue(SeqQueue Q, void (*visit)(QElemType)) {
     int i = Q.front;
     while (i != Q.rear) {
         visit(Q.base[i]);
@@ -83,7 +83,7 @@ inline Status QueueTraverse(SeqQueue Q, void (*visit)(QElemType)) {
     return OK;
 }
 
-inline Status QueueTraverse(SeqQueue Q) {
+inline Status DisplayQueue(SeqQueue Q) {
     int i = Q.front;
     while (i != Q.rear) {
         cout << Q.base[i] << " ";

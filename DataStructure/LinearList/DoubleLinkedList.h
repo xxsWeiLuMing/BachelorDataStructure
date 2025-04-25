@@ -50,7 +50,7 @@ inline Status CreateList(DoubleLinkList& L, int n)
 }
 
 //遍历输出
-inline Status TraverseList(DoubleLinkList L)
+inline Status DisplayList(DoubleLinkList L)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;

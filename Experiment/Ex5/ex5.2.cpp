@@ -65,9 +65,9 @@ void Func() {
     Divide(A,B,C);
 
     cout<<"A:";
-    TraverseList(A);
+    DisplayList(A);
     cout<<"B:";
-    TraverseList(B);
+    DisplayList(B);
     cout<<"C:";
-    TraverseList(C);
+    DisplayList(C);
 }

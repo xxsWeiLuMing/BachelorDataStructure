@@ -47,7 +47,7 @@ inline Status CreateList(CirLinkList& L, int  n)
 }
 
 //遍历输出
-inline Status TraverseList(CirLinkList L)
+inline Status DisplayList(CirLinkList L)
 {
     if (!L) return ERROR; //不能遍历未初始化的表
     if (!L->next) return ERROR; //不能遍历只有头结点的表

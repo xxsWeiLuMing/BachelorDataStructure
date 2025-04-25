@@ -45,7 +45,7 @@ inline Status CreateList(SeqList& L, ElemType a[], int n)
     return OK;
 }
 
-inline Status TraverseList(SeqList L)
+inline Status DisplayList(SeqList L)
 {
     if (L.length == 0)return ERROR;
 

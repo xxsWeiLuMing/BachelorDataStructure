@@ -41,7 +41,7 @@ inline void visit(SLinkList p) {
     cout << p->data << " ";
 }
 
-inline Status TraverseStack(SLinkList S) {
+inline Status DisplayStack(SLinkList S) {
     //if (!S)return OK;
     SLNode* p = S;
     //while (p) {
