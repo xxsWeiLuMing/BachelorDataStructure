@@ -33,8 +33,8 @@ inline void InThreading(BiThrTree p) {
 
 //空线索化二叉树
 inline Status InOrderThreading(BiThrTree &Thrt,BiThrTree T) {
-    if (!((Thrt=static_cast<BiThrTree>(malloc(sizeof(BiThrNode))))))
-        exit((OVERFLOW));
+    Thrt=static_cast<BiThrTree>(malloc(sizeof(BiThrNode)));
+    if (!Thrt)exit((OVERFLOW));
     Thrt->lTag = Link;
     Thrt->rTag = Thread;
 
