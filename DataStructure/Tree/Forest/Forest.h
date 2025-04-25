@@ -10,12 +10,12 @@
 typedef char TElemType;
 typedef struct PTNode {
     TElemType data;
-    int parent;
+    int parent;//双亲位置域
 }PTNode;
 
 typedef struct {
     PTNode nodes[MAX_TREE_SIZE];
-    int n;
+    int root,num;//根结点的位置和结点个数
 }PTree;
 
 
@@ -28,12 +28,12 @@ typedef struct CTNode {
 
 typedef struct {
     TElemType data;
-    ChildPtr firstChild;
+    ChildPtr firstChild;//孩子链表头指针
 }CTBox;
 
 typedef struct {
     CTBox nodes[MAX_TREE_SIZE];
-    int n,r;
+    int num,root;//结点数和根结点的位置
 }CTree;
 
 
