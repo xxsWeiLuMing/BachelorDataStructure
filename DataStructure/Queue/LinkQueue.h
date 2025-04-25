@@ -22,7 +22,7 @@ typedef  struct {
 
 //初始化
 inline Status InitQueue(LinkQueue& Q) {
-    Q.front = Q.rear = (QueuePtr)malloc(sizeof(QNode));
+    Q.front = Q.rear = static_cast<QueuePtr>(malloc(sizeof(QNode)));
     if (!Q.front) return ERROR;
     Q.front->next = nullptr;
     return OK;
@@ -40,12 +40,14 @@ inline Status DestroyQueue(LinkQueue& Q) {
 
 //清空队列
 inline Status ClearQueue(LinkQueue& Q) {
-    QueuePtr p, q;
+    if (Q.rear==Q.front)return OK;//空队列无需清空
+    if (Q.rear==nullptr&&Q.front==nullptr)return ERROR;//未分配内存的队列无法清空
+
     Q.rear = Q.front;
-    p = Q.front->next;
+    QueuePtr p = Q.front->next;
     Q.front->next = nullptr;
     while (p) {
-        q = p;
+        QueuePtr q = p;
         p = p->next;
         free(q);
     }
@@ -98,10 +100,10 @@ inline Status DeQueue(LinkQueue& Q, QElemType& e) {
 }
 
 //遍历输出
-inline Status DisplayQueue(LinkQueue Q, void (*visit)(QElemType)) {
+inline Status DisplayQueue(LinkQueue Q, Status (*visit)(QElemType)) {
     QueuePtr p = Q.front->next;
     while (p) {
-        visit(p->data);
+        if (!visit(p->data))return ERROR;
         p = p->next;
     }
     return OK;
@@ -110,7 +112,7 @@ inline Status DisplayQueue(LinkQueue Q, void (*visit)(QElemType)) {
 inline Status DisplayQueue(LinkQueue Q) {
     QueuePtr p = Q.front->next;
     while (p) {
-        cout << p->data << " ";
+        if (!(cout << p->data << " "))return ERROR;
         p = p->next;
     }
     cout << endl;

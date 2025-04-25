@@ -18,7 +18,7 @@ typedef  struct {
 
 //初始化
 inline Status InitQueue(SeqQueue& Q) {
-    Q.base = (QElemType*)malloc(MAXQSIZE * sizeof(QElemType));
+    Q.base = static_cast<QElemType *>(malloc(MAXQSIZE * sizeof(QElemType)));
     if (!Q.base) return ERROR;
     Q.front = Q.rear = 0;
     return OK;
@@ -74,10 +74,10 @@ inline QElemType DeQueue(SeqQueue& Q, QElemType& e) {
 }
 
 //遍历输出
-inline Status DisplayQueue(SeqQueue Q, void (*visit)(QElemType)) {
+inline Status DisplayQueue(SeqQueue Q, Status (*visit)(QElemType)) {
     int i = Q.front;
     while (i != Q.rear) {
-        visit(Q.base[i]);
+        if(!visit(Q.base[i]))return ERROR;
         i = (i + 1) % MAXQSIZE;
     }
     return OK;
@@ -86,7 +86,7 @@ inline Status DisplayQueue(SeqQueue Q, void (*visit)(QElemType)) {
 inline Status DisplayQueue(SeqQueue Q) {
     int i = Q.front;
     while (i != Q.rear) {
-        cout << Q.base[i] << " ";
+        if(!(cout << Q.base[i] << " "))return ERROR;
         i = (i + 1) % MAXQSIZE;
     }
     cout << endl;
