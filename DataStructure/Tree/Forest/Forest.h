@@ -41,7 +41,7 @@ typedef struct {
 //孩子兄弟表示法
 typedef struct CSNode {
     TElemType data;
-    struct CSNode *firstChild,nextSibling;
+    struct CSNode *firstChild,*nextSibling;
 }CSNode,*CSTree;
 
 #endif //FOREST_H
