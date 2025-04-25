@@ -6,8 +6,8 @@
 #define HUFFMANTREE_H
 
 #include"..\..\general.h"
-#define codebit 10
 
+#define codebit 10
 typedef  struct {
     unsigned int    weight;//权
     unsigned int    parent, lchild, rchild;//父母，左孩子，右孩子
