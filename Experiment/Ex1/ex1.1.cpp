@@ -11,7 +11,7 @@ void Func()
     int lengthA = sizeof(a) / sizeof(ElemType);
     CreateList(va, a, lengthA);
     cout << "递增有序的顺序表：";
-    TraverseList(va);
+    DisplayList(va);
 
     ElemType x;
     cout << "请输入要插入的元素x：";
@@ -27,6 +27,6 @@ void Func()
         }
     }
     cout << "插入后的顺序表：";
-    TraverseList(va);
+    DisplayList(va);
     //只能处理一位数，因为ElemType是char类型
 }

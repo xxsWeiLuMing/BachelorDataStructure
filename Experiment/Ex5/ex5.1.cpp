@@ -35,5 +35,5 @@ void Func() {
     cout<<endl;
 
     Delete(L);
-    TraverseList(L);
+    DisplayList(L);
 }

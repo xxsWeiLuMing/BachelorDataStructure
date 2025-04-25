@@ -51,6 +51,6 @@ Status Func() {
 
     if (mink > maxk)return ERROR;
 
-    if (Delete(L, mink, maxk))TraverseList(L);
+    if (Delete(L, mink, maxk))DisplayList(L);
     else return ERROR;
 }

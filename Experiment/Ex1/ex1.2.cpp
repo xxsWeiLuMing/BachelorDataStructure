@@ -11,7 +11,7 @@ void Func()
     int lengthA = sizeof(a) / sizeof(ElemType);
     CreateList(va, a, lengthA);
     cout << "原来的顺序表：";
-    TraverseList(va);
+    DisplayList(va);
 
     for (int i = 0; i < lengthA / 2; i++)
     {
@@ -20,5 +20,5 @@ void Func()
         va.elem[lengthA - 1 - i] = temp;
     }
     cout << "逆置后的顺序表：";
-    TraverseList(va);
+    DisplayList(va);
 }

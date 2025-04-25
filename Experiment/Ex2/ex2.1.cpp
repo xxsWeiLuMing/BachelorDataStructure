@@ -41,10 +41,10 @@ void Func() {
     cout << "输入hb：";
     CreateList(hb, n);
 
-    cout << "ha:"; TraverseList(ha);
-    cout << "hb:"; TraverseList(hb);
+    cout << "ha:"; DisplayList(ha);
+    cout << "hb:"; DisplayList(hb);
 
     hc = Link(ha, hb);
 
-    cout << "hc:"; TraverseList(hc);
+    cout << "hc:"; DisplayList(hc);
 }
