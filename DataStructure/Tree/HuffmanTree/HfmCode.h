@@ -75,7 +75,7 @@ inline void CreteHfmCode(HuffmanTree HT,HuffmanCode &HC,int letNum) {
     char* code=(char*)malloc(letNum * sizeof(char));
     code[letNum-1]='\0';
 
-    for (int i=1;i<=n;++i) {
+    for (int i=1;i<=letNum;++i) {
         int start=letNum-1;
         for (int c=i,f=HT[i].parent;f!=0;c=f,f=HT[f].parent) {
             if (HT[f].lChild==c)code[--start]='0';

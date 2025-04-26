@@ -1,6 +1,6 @@
-#include "DataStructure/Tree/BinaryTrees/LinkBiTree.cpp"
+#include "DataStructure/Tree/HuffmanTree/HuffmanTree.cpp"
 
 int main() {
-    test();
+    Func();
     return 0;
 }

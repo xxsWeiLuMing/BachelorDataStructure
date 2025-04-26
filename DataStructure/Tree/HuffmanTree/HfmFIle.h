@@ -18,8 +18,11 @@ inline void WriteHfmTree(HuffmanTree HT,int n)//把哈夫曼树写入文件
 
     for (int i = 1; i <= n; i++)
     {
-        fprintf(file, "%c %d\n", HT[i].letter, HT[i].weight);
+        fprintf(file, "%c      %d      %d      %d      %d\n",
+            HT[i].letter, HT[i].weight,HT[i].parent,HT[i].lChild,HT[i].rChild);
     }
+    fprintf(file,"letter weight parent lChild rChild\n");
+
     fclose(file);
 }
 #endif //HFMWRITEFILE_H
