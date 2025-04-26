@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "BachelorDataStructure.exe"
-  "BachelorDataStructure.pdb"
+  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Out/BachelorDataStructure.exe"
+  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Out/BachelorDataStructure.pdb"
+  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Out/libBachelorDataStructure.dll.a"
   "CMakeFiles/BachelorDataStructure.dir/main.cpp.o"
   "CMakeFiles/BachelorDataStructure.dir/main.cpp.o.d"
-  "libBachelorDataStructure.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
