@@ -15,7 +15,7 @@ void Func() {
     HuffmanTree HT=nullptr;//哈夫曼树
 
     char *eng=&english[0];
-    unsigned int *w=weight;
+    unsigned int *w=&weight[0];
 
     InitHfmTree(HT,w,letterNum,eng);
     CreteHfmTree(letterNum,HT);

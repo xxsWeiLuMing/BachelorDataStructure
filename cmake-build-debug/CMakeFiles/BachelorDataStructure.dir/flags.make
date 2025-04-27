@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src
 
 CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
 

@@ -1,8 +1,8 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/HuffmanTree/HuffmanTree.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/HuffmanTree/HuffmanTree.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/HuffmanTree/..\..\general.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/Tree/HuffmanTree/HuffmanTree.cpp \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/Tree/HuffmanTree/HuffmanTree.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/Tree/HuffmanTree/..\..\general.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/os_defines.h \
@@ -137,11 +137,11 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/istream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/istream.tcc \
  /usr/include/malloc.h /usr/include/machine/malloc.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/HuffmanTree/HfmCode.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/Tree/HuffmanTree/HfmCode.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/sys/string.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/limits.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/syslimits.h \
  /usr/include/limits.h /usr/include/features.h \
  /usr/include/cygwin/limits.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/DataStructure/Tree/HuffmanTree/HfmFIle.h
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/Tree/HuffmanTree/HfmFIle.h
