@@ -1,5 +1,5 @@
 ToolSet: 3.6.1 (local)@C:\Software\CodeSoft\cygwin\Cygwin64
-Ninja: null@C:\Software\CodeSoft\JetBrains\CLion 2024.3.5\bin\ninja\cygwin\x64\ninja.exe
+Ninja: 1.12.1@C:\Software\CodeSoft\JetBrains\CLion 2024.3.5\bin\ninja\cygwin\x64\ninja.exe
 Options: 
 
 Options:
