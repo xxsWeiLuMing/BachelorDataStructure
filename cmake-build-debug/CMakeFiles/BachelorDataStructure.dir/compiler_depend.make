@@ -4,7 +4,7 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/general.h \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/Experiment/Ex6/ex6.2.cpp \
+  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/Experiment/Ex6/ex6.3.cpp \
   /usr/include/_ansi.h \
   /usr/include/_newlib_version.h \
   /usr/include/alloca.h \
@@ -299,6 +299,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/sys/cpuset.h:
 
+/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/Experiment/Ex6/ex6.3.cpp:
+
 /usr/include/signal.h:
 
 /usr/include/pthread.h:
@@ -394,8 +396,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/stdexcept:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/alloc_traits.h:
-
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/Experiment/Ex6/ex6.2.cpp:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/allocator.h:
 
