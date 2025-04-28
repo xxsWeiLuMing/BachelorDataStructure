@@ -7,11 +7,11 @@
 
 #include "../general.h"
 
-typedef char ElemType;
+typedef char LElemType;
 
 typedef struct CirLNode
 {
-    ElemType data;
+    LElemType data;
     struct  CirLNode* next;
 } CirLNode, * CirLinkList;
 
@@ -121,7 +121,7 @@ inline int ListLength(CirLinkList L)
 }
 
 //求第i个元素的值
-inline Status GetElem(CirLinkList L, int i, ElemType& e)
+inline Status GetElem(CirLinkList L, int i, LElemType& e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -151,7 +151,7 @@ inline Status GetElem(CirLinkList L, int i, ElemType& e)
 }
 
 //求第一个值为e的元素的位序
-inline int LocateElem(CirLinkList L, ElemType e)
+inline int LocateElem(CirLinkList L, LElemType e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -170,7 +170,7 @@ inline int LocateElem(CirLinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-inline Status ListInsert(CirLinkList& L, int i, ElemType e)
+inline Status ListInsert(CirLinkList& L, int i, LElemType e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -218,7 +218,7 @@ inline Status ListInsert(CirLinkList& L, int i, ElemType e)
 }
 
 //删除第i个元素
-inline Status ListDelete(CirLinkList& L, int i, ElemType& e)
+inline Status ListDelete(CirLinkList& L, int i, LElemType& e)
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;

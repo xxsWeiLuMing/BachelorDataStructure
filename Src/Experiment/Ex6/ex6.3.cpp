@@ -7,9 +7,9 @@ void Swap(BiTree &T) {
         Swap(T->lChild);
         Swap(T->rChild);
 
-        BiTree Temp = T->lChild;
+        BiTree temp = T->lChild;
         T->lChild = T->rChild;
-        T->rChild = Temp;
+        T->rChild = temp;
     }
 }
 

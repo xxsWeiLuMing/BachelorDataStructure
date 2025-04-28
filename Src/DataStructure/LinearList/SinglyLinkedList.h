@@ -7,11 +7,11 @@
 
 #include "../general.h"
 
-typedef int ElemType;
+typedef int LElemType;
 //typedef char ElemType;
 typedef  struct  LNode
 {
-    ElemType data;
+    LElemType data;
     struct  LNode* next;
 } LNode, * LinkList;
 
@@ -96,7 +96,7 @@ inline int ListLength(LinkList L)
 }
 
 //求第i个元素的值
-inline Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元素的值。
+inline Status GetElem(LinkList L, int i, LElemType& e)//用e返回L中第i个元素的值。
 {
     if (!L) return ERROR;
     if (!L->next) return ERROR;
@@ -116,7 +116,7 @@ inline Status GetElem(LinkList L, int i, ElemType& e)//用e返回L中第i个元�
 }
 
 //求第一个值为e的元素的位序
-inline int LocateElem(LinkList L, ElemType e)
+inline int LocateElem(LinkList L, LElemType e)
 {
     LinkList p = L->next;
     int n = 1;
@@ -129,7 +129,7 @@ inline int LocateElem(LinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-inline Status ListInsert(LinkList& L, int  i, ElemType e)
+inline Status ListInsert(LinkList& L, int  i, LElemType e)
 {
     LinkList  p = L;
     int j = 0;
@@ -148,7 +148,7 @@ inline Status ListInsert(LinkList& L, int  i, ElemType e)
 }
 
 //删除第i个元素
-inline Status ListDelete(LinkList& L, int i, ElemType& e)
+inline Status ListDelete(LinkList& L, int i, LElemType& e)
 {
     int j = 0;
     LinkList p = L, q;

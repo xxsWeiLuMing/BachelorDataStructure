@@ -7,10 +7,10 @@
 
 #include "../general.h"
 
-typedef char ElemType;
+typedef char LElemType;
 typedef  struct  DoubleLNode
 {
-    ElemType data;
+    LElemType data;
     struct  DoubleLNode* prior;
     struct  DoubleLNode* next;
 } DoubleLNode, * DoubleLinkList;
@@ -107,7 +107,7 @@ inline int ListLength(DoubleLinkList L)
 }
 
 //求第i个元素的值
-inline Status GetElem(DoubleLinkList L, int i, ElemType& e)
+inline Status GetElem(DoubleLinkList L, int i, LElemType& e)
 {
     if (!L) return ERROR;
     if (i < 1) return ERROR;
@@ -145,7 +145,7 @@ inline Status GetElem(DoubleLinkList L, int i, ElemType& e)
 }*/
 
 //求第一个值为e的元素的位序
-inline int LocateElem(DoubleLinkList L, ElemType e)
+inline int LocateElem(DoubleLinkList L, LElemType e)
 {
     if (!L) return ERROR;
 
@@ -162,7 +162,7 @@ inline int LocateElem(DoubleLinkList L, ElemType e)
 }
 
 //把元素e插入到第i个
-inline Status ListInsert(DoubleLinkList& L, int i, ElemType e)
+inline Status ListInsert(DoubleLinkList& L, int i, LElemType e)
 {
     if (!L) return ERROR;
     if (i < 1) return ERROR;
@@ -189,7 +189,7 @@ inline Status ListInsert(DoubleLinkList& L, int i, ElemType e)
 }
 
 //删除第i个元素
-inline Status ListDelete(DoubleLinkList& L, int i, ElemType& e)
+inline Status ListDelete(DoubleLinkList& L, int i, LElemType& e)
 {
     if (!L) return ERROR;
     if (i < 1) return ERROR;

@@ -9,10 +9,10 @@
 #define  LIST_INIT_SIZE  100 //存储空间的初始分配量
 #define  LISTINCREMENT  10 //存储空间的分配增量
 
-typedef char ElemType;
+typedef char LElemType;
 typedef struct SeqList
 {
-    ElemType* elem = NULL; //存储空间基址
+    LElemType* elem = NULL; //存储空间基址
     int length;     //当前长度
     int listsize;   //当前分配的存储容量
 } SeqList;
@@ -22,8 +22,8 @@ inline Status InitList(SeqList& L)
 {
     if (L.elem)return ERROR;//已经初始化的表不能被初始化
 
-    L.elem = (ElemType*)malloc(
-        LIST_INIT_SIZE * sizeof(ElemType));
+    L.elem = (LElemType*)malloc(
+        LIST_INIT_SIZE * sizeof(LElemType));
 
     if (!L.elem) exit(OVERFLOW);
 
@@ -33,7 +33,7 @@ inline Status InitList(SeqList& L)
     return OK;
 }
 
-inline Status CreateList(SeqList& L, ElemType a[], int n)
+inline Status CreateList(SeqList& L, LElemType a[], int n)
 {
     if (!L.elem) return ERROR;//未初始化的表不能被创建
 
@@ -75,7 +75,7 @@ inline int ListLength(SeqList L)
     return(L.length);
 }
 
-inline Status GetElem(SeqList L, int i, ElemType& e)
+inline Status GetElem(SeqList L, int i, LElemType& e)
 {
     if (i<1 || i>L.length)return ERROR;
 
@@ -84,7 +84,7 @@ inline Status GetElem(SeqList L, int i, ElemType& e)
     return OK;
 }
 
-inline int LocateElem(SeqList L,ElemType e)
+inline int LocateElem(SeqList L,LElemType e)
 {
     for (int i = 0; i < L.length; i++)
     {
@@ -94,21 +94,21 @@ inline int LocateElem(SeqList L,ElemType e)
     return ERROR;
 }
 
-inline Status ListInsert(SeqList& L,int i, ElemType e)
+inline Status ListInsert(SeqList& L,int i, LElemType e)
 {
     if (i<1 || i>L.length + 1)return ERROR;
 
     if (L.length >= L.listsize)
     {
-        ElemType* newbase = (ElemType*)realloc(L.elem,
-            (L.listsize + LISTINCREMENT) * sizeof(ElemType));
+        LElemType* newbase = (LElemType*)realloc(L.elem,
+            (L.listsize + LISTINCREMENT) * sizeof(LElemType));
         if (!newbase) exit(OVERFLOW);
         L.elem = newbase;
         L.listsize += LISTINCREMENT;
     }
 
-    ElemType* q = &(L.elem[i - 1]);
-    for (ElemType* p = &(L.elem[L.length - 1]); p >= q; p--)
+    LElemType* q = &(L.elem[i - 1]);
+    for (LElemType* p = &(L.elem[L.length - 1]); p >= q; p--)
     {
         *(p + 1) = *p;
     }
@@ -120,14 +120,14 @@ inline Status ListInsert(SeqList& L,int i, ElemType e)
 }
 
 //删除第i个元素
-inline Status ListDelete(SeqList& L, int i, ElemType& e)
+inline Status ListDelete(SeqList& L, int i, LElemType& e)
 {
     if (i<1 || i>L.length)return ERROR;
 
-    ElemType* p = &(L.elem[i - 1]);
+    LElemType* p = &(L.elem[i - 1]);
     e = *p;
 
-    for (ElemType* q = &(L.elem[L.length - 1]); p <= q; p++)
+    for (LElemType* q = &(L.elem[L.length - 1]); p <= q; p++)
     {
         *p = *(p + 1);
     }
