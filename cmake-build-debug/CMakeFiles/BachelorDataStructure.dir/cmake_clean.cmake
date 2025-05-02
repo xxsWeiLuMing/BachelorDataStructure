@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Out/BachelorDataStructure.exe"
-  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Out/BachelorDataStructure.pdb"
-  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Out/libBachelorDataStructure.dll.a"
+  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Output/BachelorDataStructure.exe"
+  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Output/BachelorDataStructure.pdb"
+  "/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Output/libBachelorDataStructure.dll.a"
   "CMakeFiles/BachelorDataStructure.dir/main.cpp.o"
   "CMakeFiles/BachelorDataStructure.dir/main.cpp.o.d"
 )
