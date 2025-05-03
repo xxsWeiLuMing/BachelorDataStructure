@@ -12,8 +12,8 @@
 
 //选出最小权和次小权
 inline void WeightSelect(HuffmanTree HT, int i, int& s1, int& s2) {
-    int small1=INT_MAX;//最小权
-    int small2=INT_MAX;//次小权
+    unsigned int small1=INT_MAX;//最小权
+    unsigned int small2=INT_MAX;//次小权
 
     for (int j=1;j<i;j++) {
         if (HT[j].parent==0) {//未创建完毕的结点parent为0
@@ -78,7 +78,7 @@ inline void CreteHfmCode(HuffmanTree HT,HuffmanCode &HC,int letNum) {
 
     for (int i=1;i<=letNum;++i) {
         int start=letNum-1;
-        for (int c=i,f=HT[i].parent;f!=0;c=f,f=HT[f].parent) {
+        for (unsigned int c=i,f=HT[i].parent;f!=0;c=f,f=HT[f].parent) {
             if (HT[f].lChild==c)code[--start]='0';
             else code[--start]='1';
         }
@@ -95,7 +95,7 @@ inline void WriteHfmTree(HuffmanTree HT,int n)
 {
     FILE* file=fopen("HfmTree.txt", "w");
 
-    if (file == NULL) {
+    if (file == nullptr) {
         printf("无法打开HfmTree文件！");
         return;
     }
@@ -105,7 +105,7 @@ inline void WriteHfmTree(HuffmanTree HT,int n)
         fprintf(file, "%c      %d      %d      %d      %d\n",
             HT[i].letter, HT[i].weight,HT[i].parent,HT[i].lChild,HT[i].rChild);
     }
-    fprintf(file,"letter weight parent lChild rChild\n");
+    //fprintf(file,"letter weight parent lChild rChild\n");
 
     fclose(file);
 }
