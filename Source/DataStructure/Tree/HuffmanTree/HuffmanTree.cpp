@@ -19,7 +19,9 @@ Status Func() {
 
     char runState='0';
     while (true) {
-        cout<<"按E退出，按I建树，按D译码codefile.txt，"
+        cout<<"按E退出，按I建树，"
+              "按C编码tobetrans、结果写入codefile，"
+              "按D译码codefile，"
               "按P打印codefi1e、并写入codeprint，"
               "按T打印哈夫曼树同时写入文件treeprint"<<endl;
         cout<<"请输入：";
