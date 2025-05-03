@@ -5,8 +5,10 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/1_HfmCreateTree.h
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/2_Code.h
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.cpp
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.h
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/tool.h
  /usr/include/_ansi.h
  /usr/include/_newlib_version.h
  /usr/include/alloca.h
@@ -129,6 +131,7 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/utility.h
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cctype
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cerrno
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/climits
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/clocale
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/compare
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/concepts

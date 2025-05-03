@@ -2,6 +2,7 @@
 // Created by small on 2025/4/26.
 //
 #include "1_HfmCreateTree.h"
+#include "2_Code.h"
 
 Status Func() {
     int letterNum=26;//26个字母
@@ -32,6 +33,22 @@ Status Func() {
             CreteHfmTree(letterNum,HT);
             CreteHfmCode(HT,HC,letterNum);
             WriteHfmTree(HT,letterNum);
+        }
+
+        if (runState == 'C'||runState == 'c') {
+            Code(HT,HC,letterNum);
+        }
+
+        if (runState == 'D'||runState == 'd') {
+            cout<<"没写"<<endl;
+        }
+
+        if (runState == 'P'||runState == 'p') {
+            cout<<"没写"<<endl;
+        }
+
+        if (runState == 'T'||runState == 't') {
+            cout<<"没写"<<endl;
         }
     }
 

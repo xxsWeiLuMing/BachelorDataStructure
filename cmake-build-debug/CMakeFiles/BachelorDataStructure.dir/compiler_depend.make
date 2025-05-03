@@ -4,8 +4,10 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/1_HfmCreateTree.h \
+  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/2_Code.h \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.cpp \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.h \
+  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/tool.h \
   /usr/include/_ansi.h \
   /usr/include/_newlib_version.h \
   /usr/include/alloca.h \
@@ -128,6 +130,7 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
   /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/utility.h \
   /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cctype \
   /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cerrno \
+  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/climits \
   /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/clocale \
   /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/compare \
   /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/concepts \
@@ -255,15 +258,15 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/compare:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/localefwd.h:
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cerrno:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cctype:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ptr_traits.h:
 
 /usr/include/sys/lock.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_function.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/cxxabi_init_exception.h:
 
 /usr/include/sys/features.h:
 
@@ -295,13 +298,11 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/alloca.h:
 
+/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/2_Code.h:
+
 /usr/include/machine/time.h:
 
-/usr/include/ctype.h:
-
-/usr/include/machine/stdlib.h:
-
-/usr/include/bits/endian.h:
+/usr/include/sys/_locale.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/postypes.h:
 
@@ -311,7 +312,11 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/streambuf_iterator.h:
 
-/usr/include/bits/wordsize.h:
+/usr/include/bits/endian.h:
+
+/usr/include/machine/stdlib.h:
+
+/usr/include/ctype.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream:
 
@@ -331,6 +336,10 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/time.h:
 
+/usr/include/bits/wordsize.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/cxxabi_init_exception.h:
+
 /usr/include/sys/errno.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/hash_bytes.h:
@@ -345,7 +354,15 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/_newlib_version.h:
 
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/climits:
+
 /usr/include/strings.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/new:
+
+/usr/include/cygwin/limits.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ostream_insert.h:
 
 /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/1_HfmCreateTree.h:
 
@@ -357,8 +374,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h:
 
-/usr/include/cygwin/config.h:
-
 /usr/include/machine/malloc.h:
 
 /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.cpp:
@@ -369,11 +384,7 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_iterator_base_funcs.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/new:
-
-/usr/include/cygwin/limits.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ostream_insert.h:
+/usr/include/cygwin/config.h:
 
 /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.h:
 
@@ -405,8 +416,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ranges_cmp.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cerrno:
-
 /usr/include/machine/endian.h:
 
 /usr/include/stdio.h:
@@ -431,13 +440,13 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/locale.h:
 
-/usr/include/sys/_locale.h:
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/localefwd.h:
 
 /usr/include/sys/stdio.h:
 
-/usr/include/sys/sched.h:
-
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/utility.h:
+
+/usr/include/sys/sched.h:
 
 /usr/include/sys/sysmacros.h:
 
@@ -452,6 +461,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/alloc_traits.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/allocator.h:
+
+/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/tool.h:
 
 /usr/include/sys/_timespec.h:
 
@@ -476,8 +487,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/basic_string.tcc:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/exception_defines.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cctype:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/functional_hash.h:
 

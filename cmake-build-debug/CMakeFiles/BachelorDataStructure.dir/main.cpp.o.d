@@ -16,12 +16,13 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/include/sys/_types.h /usr/include/machine/_types.h \
  /usr/include/sys/lock.h /usr/include/sys/_locale.h \
  /usr/include/strings.h /usr/include/sys/string.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/climits \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/limits.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/syslimits.h \
  /usr/include/limits.h /usr/include/features.h \
  /usr/include/bits/wordsize.h /usr/include/cygwin/limits.h \
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/..\..\general.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/../../general.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ios \
@@ -141,4 +142,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ostream.tcc \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/istream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/istream.tcc \
- /usr/include/malloc.h /usr/include/machine/malloc.h
+ /usr/include/malloc.h /usr/include/machine/malloc.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/2_Code.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/tool.h
