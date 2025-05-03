@@ -5,7 +5,7 @@
 #include "HfmCode.h"
 #include "HfmFIle.h"
 
-void Func() {
+Status Func() {
     int letterNum=26;//26个字母
     int nodeNum=2*letterNum-1;//2*26-1个结点
     char english[28]="0abcdefghijklmnopqrstuvwxyz";
@@ -17,8 +17,23 @@ void Func() {
     char *eng=&english[0];
     unsigned int *w=&weight[0];
 
-    InitHfmTree(HT,w,letterNum,eng);
-    CreteHfmTree(letterNum,HT);
-    CreteHfmCode(HT,HC,letterNum);
-    WriteHfmTree(HT,letterNum);
+    char runState='0';
+    while (true) {
+        cout<<"按E退出，按I建树，按D译码codefile.txt，"
+              "按P打印codefi1e、并写入codeprint，"
+              "按T打印哈夫曼树同时写入文件treeprint"<<endl;
+        cout<<"请输入：";
+        cin>>runState;
+
+        if (runState == 'E'||runState == 'e')break;
+
+        if (runState =='I'||runState == 'i') {
+            InitHfmTree(HT,w,letterNum,eng);
+            CreteHfmTree(letterNum,HT);
+            CreteHfmCode(HT,HC,letterNum);
+            WriteHfmTree(HT,letterNum);
+        }
+    }
+
+    return OK;
 }
