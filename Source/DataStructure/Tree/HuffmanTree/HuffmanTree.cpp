@@ -3,7 +3,7 @@
 //
 #include "HuffmanTree.h"
 #include "HfmCode.h"
-#include "HfmFIle.h"
+#include "HfmFile.h"
 
 Status Func() {
     int letterNum=26;//26个字母
