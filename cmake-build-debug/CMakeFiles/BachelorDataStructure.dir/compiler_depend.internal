@@ -3,9 +3,10 @@
 
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/general.h
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/DataStructure/Tree/BinaryTrees/LinkBiTree.h
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Src/Experiment/Ex6/ex6.3.cpp
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/1_HfmCreateTree.h
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.cpp
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.h
  /usr/include/_ansi.h
  /usr/include/_newlib_version.h
  /usr/include/alloca.h
@@ -14,12 +15,15 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /usr/include/bits/wordsize.h
  /usr/include/ctype.h
  /usr/include/cygwin/config.h
+ /usr/include/cygwin/limits.h
  /usr/include/cygwin/signal.h
  /usr/include/cygwin/stdlib.h
  /usr/include/cygwin/time.h
  /usr/include/cygwin/wait.h
  /usr/include/endian.h
  /usr/include/errno.h
+ /usr/include/features.h
+ /usr/include/limits.h
  /usr/include/locale.h
  /usr/include/machine/_default_types.h
  /usr/include/machine/_endian.h
@@ -38,6 +42,8 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
+ /usr/include/string.h
+ /usr/include/strings.h
  /usr/include/sys/_intsup.h
  /usr/include/sys/_locale.h
  /usr/include/sys/_pthreadtypes.h
@@ -57,6 +63,7 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /usr/include/sys/select.h
  /usr/include/sys/signal.h
  /usr/include/sys/stdio.h
+ /usr/include/sys/string.h
  /usr/include/sys/sysmacros.h
  /usr/include/sys/timespec.h
  /usr/include/sys/types.h
@@ -128,6 +135,7 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstdint
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstdio
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstdlib
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstring
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cwchar
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cwctype
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/debug/assertions.h
@@ -165,7 +173,9 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/gthr-default.h
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/gthr.h
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/os_defines.h
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/limits.h
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/stddef.h
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/syslimits.h
 

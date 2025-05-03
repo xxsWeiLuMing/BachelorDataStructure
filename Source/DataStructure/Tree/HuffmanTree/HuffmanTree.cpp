@@ -1,9 +1,7 @@
 //
 // Created by small on 2025/4/26.
 //
-#include "HuffmanTree.h"
-#include "HfmCode.h"
-#include "HfmFile.h"
+#include "1_HfmCreateTree.h"
 
 Status Func() {
     int letterNum=26;//26个字母
@@ -18,12 +16,12 @@ Status Func() {
     unsigned int *w=&weight[0];
 
     char runState='0';
+    cout<<"按E退出，按I建树，"
+      "按C编码tobetrans、结果写入codefile，"
+      "按D译码codefile，"
+      "按P打印codefi1e、并写入codeprint，"
+      "按T打印哈夫曼树同时写入文件treeprint"<<endl;
     while (true) {
-        cout<<"按E退出，按I建树，"
-              "按C编码tobetrans、结果写入codefile，"
-              "按D译码codefile，"
-              "按P打印codefi1e、并写入codeprint，"
-              "按T打印哈夫曼树同时写入文件treeprint"<<endl;
         cout<<"请输入：";
         cin>>runState;
 

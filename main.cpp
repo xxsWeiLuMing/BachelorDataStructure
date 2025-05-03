@@ -1,4 +1,4 @@
-#include "Experiment/Ex6/ex6.3.cpp"
+#include "DataStructure/Tree/HuffmanTree/HuffmanTree.cpp"
 
 int main() {
     Func();

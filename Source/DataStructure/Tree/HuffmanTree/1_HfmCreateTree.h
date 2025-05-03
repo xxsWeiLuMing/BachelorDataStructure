@@ -1,15 +1,16 @@
 //
-// Created by small on 2025/4/26.
+// Created by small on 2025/5/3.
 //
 
-#ifndef HFMCODE_H
-#define HFMCODE_H
+#ifndef HFMCREATETREE_H
+#define HFMCREATETREE_H
 
 #include <cstring>
 #include <limits.h>
+
 #include "HuffmanTree.h"
 
-//选出两个权值最小的根结点
+//选出最小权和次小权
 inline void WeightSelect(HuffmanTree HT, int i, int& s1, int& s2) {
     int small1=INT_MAX;//最小权
     int small2=INT_MAX;//次小权
@@ -88,4 +89,24 @@ inline void CreteHfmCode(HuffmanTree HT,HuffmanCode &HC,int letNum) {
 
     free(code);
 }
-#endif //HFMCODE_H
+
+inline void WriteHfmTree(HuffmanTree HT,int n)//把哈夫曼树写入文件
+{
+    FILE* file=fopen("HfmTree.txt", "w");
+
+    if (file == NULL) {
+        printf("无法打开HfmTree文件！");
+        return;
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        fprintf(file, "%c      %d      %d      %d      %d\n",
+            HT[i].letter, HT[i].weight,HT[i].parent,HT[i].lChild,HT[i].rChild);
+    }
+    fprintf(file,"letter weight parent lChild rChild\n");
+
+    fclose(file);
+}
+
+#endif //HFMCREATETREE_H
