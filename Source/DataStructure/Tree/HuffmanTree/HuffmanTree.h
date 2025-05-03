@@ -5,7 +5,7 @@
 #ifndef HUFFMANTREE_H
 #define HUFFMANTREE_H
 
-#include"..\..\general.h"
+#include"../../general.h"
 
 #define codebit 10
 typedef  struct {

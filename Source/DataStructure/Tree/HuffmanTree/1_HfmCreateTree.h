@@ -6,7 +6,7 @@
 #define HFMCREATETREE_H
 
 #include <cstring>
-#include <limits.h>
+#include <climits>
 
 #include "HuffmanTree.h"
 
