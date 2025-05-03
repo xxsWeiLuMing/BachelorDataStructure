@@ -52,7 +52,7 @@ inline void CreteHfmTree(int letNum,HuffmanTree &HT) {
     }
 }
 
-inline Status InitHfmTree(HuffmanTree &HT,unsigned int*w,int letNum,char* eng) {
+inline Status InitHfmTree(HuffmanTree &HT,unsigned int*w,int letNum,char* let) {
     if (letNum<=1||letNum>26)return ERROR;
 
     int nodeNum=2*letNum-1;
@@ -61,8 +61,8 @@ inline Status InitHfmTree(HuffmanTree &HT,unsigned int*w,int letNum,char* eng) {
 
     HuffmanTree temp;
     int i;
-    for (temp=HT,i=0;i<=letNum;++i,++temp,++w,++eng)//字母和其权值顺序填入HT
-        *temp={*w,0,0,0,*eng};
+    for (temp=HT,i=0;i<=letNum;++i,++temp,++w,++let)//字母和其权值顺序填入HT
+        *temp={*w,0,0,0,*let};
     for (;i<nodeNum;++i,++temp)//从第n+1个结点开始，把结点的元素全部初始化为空值
         *temp={0,0,0,0,' '};
 
@@ -90,7 +90,8 @@ inline void CreteHfmCode(HuffmanTree HT,HuffmanCode &HC,int letNum) {
     free(code);
 }
 
-inline void WriteHfmTree(HuffmanTree HT,int n)//把哈夫曼树写入文件
+//把哈夫曼树写入文件
+inline void WriteHfmTree(HuffmanTree HT,int n)
 {
     FILE* file=fopen("HfmTree.txt", "w");
 
