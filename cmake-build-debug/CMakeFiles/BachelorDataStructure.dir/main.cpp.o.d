@@ -1,13 +1,28 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex6/ex6.3.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/../../general.h \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.cpp \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/1_HfmCreateTree.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cstring \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/os_defines.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/cpu_defines.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/pstl/pstl_config.h \
+ /usr/include/string.h /usr/include/_ansi.h /usr/include/newlib.h \
+ /usr/include/_newlib_version.h /usr/include/sys/config.h \
+ /usr/include/machine/ieeefp.h /usr/include/sys/features.h \
+ /usr/include/cygwin/config.h /usr/include/sys/reent.h \
+ /usr/include/_ansi.h /usr/lib/gcc/x86_64-pc-cygwin/12/include/stddef.h \
+ /usr/include/sys/cdefs.h /usr/include/machine/_default_types.h \
+ /usr/include/sys/_types.h /usr/include/machine/_types.h \
+ /usr/include/sys/lock.h /usr/include/sys/_locale.h \
+ /usr/include/strings.h /usr/include/sys/string.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/syslimits.h \
+ /usr/include/limits.h /usr/include/features.h \
+ /usr/include/bits/wordsize.h /usr/include/cygwin/limits.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/HuffmanTree.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/HuffmanTree/..\..\general.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ios \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iosfwd \
@@ -15,16 +30,7 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/memoryfwd.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/postypes.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cwchar /usr/include/wchar.h \
- /usr/include/_ansi.h /usr/include/newlib.h \
- /usr/include/_newlib_version.h /usr/include/sys/config.h \
- /usr/include/machine/ieeefp.h /usr/include/sys/features.h \
- /usr/include/cygwin/config.h /usr/include/sys/reent.h \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/stddef.h \
- /usr/include/sys/cdefs.h /usr/include/machine/_default_types.h \
- /usr/include/sys/_types.h /usr/include/machine/_types.h \
- /usr/include/sys/lock.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/stdarg.h \
- /usr/include/sys/_locale.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/exception \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/exception.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/exception_ptr.h \
@@ -53,7 +59,7 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/localefwd.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/c++locale.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/clocale \
- /usr/include/locale.h /usr/include/_ansi.h \
+ /usr/include/locale.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cctype /usr/include/ctype.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ios_base.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ext/atomicity.h \
@@ -66,12 +72,11 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/include/sys/timespec.h /usr/include/sys/_timespec.h \
  /usr/include/sys/_pthreadtypes.h /usr/include/sys/cpuset.h \
  /usr/include/machine/types.h /usr/include/endian.h \
- /usr/include/bits/byteswap.h /usr/include/bits/wordsize.h \
- /usr/include/sys/sysmacros.h /usr/include/signal.h \
- /usr/include/sys/signal.h /usr/include/cygwin/signal.h \
- /usr/include/sys/ucontext.h /usr/include/sched.h \
- /usr/include/sys/sched.h /usr/include/time.h /usr/include/machine/time.h \
- /usr/include/cygwin/time.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/sysmacros.h \
+ /usr/include/signal.h /usr/include/sys/signal.h \
+ /usr/include/cygwin/signal.h /usr/include/sys/ucontext.h \
+ /usr/include/sched.h /usr/include/sys/sched.h /usr/include/time.h \
+ /usr/include/machine/time.h /usr/include/cygwin/time.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/atomic_word.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/locale_classes.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/string \
