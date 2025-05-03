@@ -25,12 +25,10 @@ inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
                 break;
             }
         }
-        for (int j = 1; j <= letNum; j++) {
-            if (code[i] == nullptr) {
-                code[i] = (char *) malloc(2 * sizeof(char));
-                code[i][0] = text[i];
-                code[i][1] = '\0';
-            }
+        if (code[i] == nullptr) {
+            code[i] = (char *) malloc(2 * sizeof(char));
+            code[i][0] = text[i];
+            code[i][1] = '\0';
         }
     }
 
