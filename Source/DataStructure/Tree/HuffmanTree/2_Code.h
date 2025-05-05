@@ -8,7 +8,7 @@
 #include "HuffmanTree.h"
 #include "tool.h"
 
-inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
+/*inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
     if (!HT || !HC)
         FillHfmTree(HT, HC, letNum);
 
@@ -33,6 +33,34 @@ inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
     }
 
     write_codefile(code, textNum);
+}*/
+
+inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
+    if (!HT || !HC)
+        FillHfmTree(HT, HC, letNum);
+
+    FILE *tobetrans = fopen("tobetrans.txt", "r");
+    if (!tobetrans) {
+        cout << "tobetrans.txt打开失败" << endl;
+        exit(0);
+    }
+    FILE *codefile = fopen("codefile.txt", "w");
+    if (!codefile) {
+        cout << "codefile.txt打开失败" << endl;
+        exit(0);
+    }
+
+
+    for (char letter = fgetc(tobetrans); letter != EOF; letter = fgetc(tobetrans)) {
+        bool letInHT = false;
+        for (int i = 1; i <= letNum; i++) {
+            if (letter == HT[i].letter || letter == HT[i].letter - 32) {
+                fprintf(codefile, "%s\\", HC[i]);
+                letInHT = true;
+            }
+        }
+        if (!letInHT)fprintf(codefile, "%c", letter);
+    }
 }
 
 #endif //INC_2_CODE_H
