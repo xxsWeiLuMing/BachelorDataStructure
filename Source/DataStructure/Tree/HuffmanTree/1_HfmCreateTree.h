@@ -92,7 +92,7 @@ inline void CreteHfmCode(HuffmanTree HT, HuffmanCode &HC, int letNum) {
 }
 
 //把哈夫曼树写入文件
-inline void WriteHfmTree(HuffmanTree HT, int n) {
+inline void WriteHfmTree(HuffmanTree HT, int letNum) {
     FILE *file = fopen("HfmTree.txt", "w");
 
     if (file == nullptr) {
@@ -100,7 +100,7 @@ inline void WriteHfmTree(HuffmanTree HT, int n) {
         return;
     }
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= letNum; i++) {
         fprintf(file, "%c      %d      %d      %d      %d\n",
                 HT[i].letter, HT[i].weight, HT[i].parent, HT[i].lChild, HT[i].rChild);
     }
