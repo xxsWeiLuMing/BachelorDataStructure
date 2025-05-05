@@ -61,6 +61,9 @@ inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
         }
         if (!letInHT)fprintf(codefile, "%c", letter);
     }
+
+    fclose(tobetrans);
+    fclose(codefile);
 }
 
 #endif //INC_2_CODE_H
