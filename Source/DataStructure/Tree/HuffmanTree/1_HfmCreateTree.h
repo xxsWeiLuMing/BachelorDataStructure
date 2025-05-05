@@ -100,7 +100,7 @@ inline void WriteHfmTree(HuffmanTree HT, int letNum) {
         return;
     }
 
-    for (int i = 1; i <= letNum; i++) {
+    for (int i = 1; i <= letNum; i++) {//i <= 2*letNum-1;
         fprintf(file, "%c      %d      %d      %d      %d\n",
                 HT[i].letter, HT[i].weight, HT[i].parent, HT[i].lChild, HT[i].rChild);
     }
