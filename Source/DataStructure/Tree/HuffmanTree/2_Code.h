@@ -53,18 +53,18 @@ inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
 
     for (char letter = fgetc(tobetrans); letter != EOF; letter = fgetc(tobetrans)) {
         bool letInHT = false;
-        /*for (int i = 1; i <= letNum; i++) {
+        for (int i = 1; i <= letNum; i++) {
             if (letter == HT[i].letter || letter == HT[i].letter - 32) {
                 fprintf(codefile, "%s\\", HC[i]);
                 letInHT = true;
                 break;
             }
-        }*/
-        for (int i = 1; i <= letNum ||
-                        letter != HT[i].letter || letter != HT[i].letter - 32; i++) {
+        }
+        /*for (int i = 1; i <= letNum &&
+                        (letter != HT[i].letter || letter != HT[i].letter - 32); i++) {
             fprintf(codefile, "%s\\", HC[i]);
             letInHT = true;
-        }
+        }*/
         if (!letInHT)fprintf(codefile, "%c", letter);
     }
 
