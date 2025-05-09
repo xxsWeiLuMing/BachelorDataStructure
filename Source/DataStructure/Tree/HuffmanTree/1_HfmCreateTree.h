@@ -93,7 +93,7 @@ inline void CreteHfmCode(HuffmanTree HT, HuffmanCode &HC, int letNum) {
 
 //把哈夫曼树写入文件
 inline void WriteHfmTree(HuffmanTree HT, int letNum) {
-    FILE *file = fopen("HfmTree.txt", "w");
+    FILE *file = fopen("./HfmTree.txt", "w");
 
     if (file == nullptr) {
         printf("WriteHfmTree()：HfmTree.txt打开失败！");
