@@ -13,8 +13,8 @@ inline void FillHfmTree(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
     FILE *file = fopen("HfmTree.txt", "r");
 
     if (file == NULL) {
-        printf("无法打开文件！");
-        return;
+        cout << "FillHfmTree()：HfmTree.txt打开失败！" << endl;
+        exit(0);
     }
 
     char c[30] = "0";

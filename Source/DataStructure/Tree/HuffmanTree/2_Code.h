@@ -41,12 +41,12 @@ inline void Code(HuffmanTree &HT, HuffmanCode &HC, int &letNum) {
 
     FILE *tobetrans = fopen("tobetrans.txt", "r");
     if (!tobetrans) {
-        cout << "tobetrans.txt打开失败" << endl;
+        cout << "Code()：tobetrans.txt打开失败!" << endl;
         exit(0);
     }
     FILE *codefile = fopen("codefile.txt", "w");
     if (!codefile) {
-        cout << "codefile.txt打开失败" << endl;
+        cout << "Code()：codefile.txt打开失败!" << endl;
         exit(0);
     }
 
