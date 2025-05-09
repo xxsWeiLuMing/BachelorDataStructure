@@ -97,7 +97,7 @@ inline void WriteHfmTree(HuffmanTree HT, int letNum) {
 
     if (file == nullptr) {
         printf("无法打开HfmTree文件！");
-        return;
+        exit(0);
     }
 
     for (int i = 1; i <= letNum; i++) {//i <= 2*letNum-1;
