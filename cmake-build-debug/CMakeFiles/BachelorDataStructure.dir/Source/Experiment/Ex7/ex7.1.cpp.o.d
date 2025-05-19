@@ -1,16 +1,13 @@
-CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
+CMakeFiles/BachelorDataStructure.dir/Source/Experiment/Ex7/ex7.1.cpp.o: \
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex7/ex7.1.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/../../general.h \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/sstream \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/istream \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ios \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iosfwd \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/os_defines.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/cpu_defines.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/pstl/pstl_config.h \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ostream \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ios \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iosfwd \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stringfwd.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/memoryfwd.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/postypes.h \
@@ -133,7 +130,11 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/ctype_inline.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/locale_facets.tcc \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/basic_ios.tcc \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ostream.tcc \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/istream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/istream.tcc \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/sstream.tcc \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/../../general.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
  /usr/include/malloc.h /usr/include/machine/malloc.h

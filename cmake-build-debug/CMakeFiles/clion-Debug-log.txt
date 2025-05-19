@@ -1,4 +1,4 @@
 C:\Users\small\AppData\Local\JetBrains\CLion2025.1\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure -B /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/cmake-build-debug
--- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
 -- Build files have been written to: /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/cmake-build-debug
