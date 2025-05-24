@@ -4,7 +4,7 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h \
   /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
-  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex7/ex7.1.cpp \
+  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex7/ex7.cpp \
   /usr/include/_ansi.h \
   /usr/include/_newlib_version.h \
   /usr/include/alloca.h \
@@ -215,8 +215,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/initializer_list:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ext/type_traits.h:
-
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ext/string_conversions.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ext/numeric_traits.h:
@@ -295,12 +293,6 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/bits/wordsize.h:
 
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex7/ex7.1.cpp:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/functexcept.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ios_base.h:
-
 /usr/include/cygwin/stdlib.h:
 
 /usr/include/sys/reent.h:
@@ -317,6 +309,10 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/machine/stdlib.h:
 
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/ext/type_traits.h:
+
+/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex7/ex7.cpp:
+
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream:
 
 /usr/include/sys/cpuset.h:
@@ -327,6 +323,20 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/include/alloca.h:
 
+/usr/include/sys/ucontext.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/sys/errno.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/hash_bytes.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/streambuf:
+
+/usr/include/sys/_stdint.h:
+
+/usr/include/_newlib_version.h:
+
 /usr/include/machine/time.h:
 
 /usr/include/stdio.h:
@@ -334,6 +344,12 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_algobase.h:
 
 /usr/include/cygwin/config.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_pair.h:
+
+/usr/include/machine/_default_types.h:
+
+/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h:
 
 /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp:
 
@@ -359,37 +375,17 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/cerrno:
 
-/usr/include/machine/endian.h:
-
-/usr/include/sys/ucontext.h:
-
 /usr/include/endian.h:
 
 /usr/include/cygwin/wait.h:
 
-/usr/include/locale.h:
-
-/usr/include/sys/errno.h:
-
 /usr/include/sys/select.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/std_abs.h:
 
 /usr/include/newlib.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/hash_bytes.h:
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/std_abs.h:
 
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/streambuf:
-
-/usr/include/sys/_stdint.h:
-
-/usr/include/_newlib_version.h:
-
-/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/stl_pair.h:
-
-/cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h:
-
-/usr/include/machine/_default_types.h:
+/usr/include/locale.h:
 
 /usr/include/sys/_locale.h:
 
@@ -444,6 +440,10 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: /cygdrive/d/ApP/Programming/CLi
 /usr/include/sys/sched.h:
 
 /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/utility.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/functexcept.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ios_base.h:
 
 /usr/include/stdlib.h:
 
