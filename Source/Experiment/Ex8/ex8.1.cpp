@@ -10,15 +10,15 @@ void PrintArray(int arr[], int n) {
     cout << endl;
 }
 
-void BubbleSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
+void BubbleSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 int k = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = k;
 
-                PrintArray(arr, n);
+                PrintArray(arr, size);
             }
         }
     }
