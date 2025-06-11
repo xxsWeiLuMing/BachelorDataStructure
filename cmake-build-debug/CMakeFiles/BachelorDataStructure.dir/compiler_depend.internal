@@ -3,9 +3,7 @@
 
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/general.h
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/LinkBiTree.h
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex7/ex7.cpp
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex8/ex8.1.cpp
  /usr/include/_ansi.h
  /usr/include/_newlib_version.h
  /usr/include/alloca.h
@@ -26,11 +24,9 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o
  /usr/include/machine/_types.h
  /usr/include/machine/endian.h
  /usr/include/machine/ieeefp.h
- /usr/include/machine/malloc.h
  /usr/include/machine/stdlib.h
  /usr/include/machine/time.h
  /usr/include/machine/types.h
- /usr/include/malloc.h
  /usr/include/newlib.h
  /usr/include/pthread.h
  /usr/include/sched.h

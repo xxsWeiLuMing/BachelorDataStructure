@@ -1,4 +1,4 @@
-#include "Experiment/Ex7/ex7.cpp"
+#include "Experiment/Ex8/ex8.1.cpp"
 
 int main() {
     Func();

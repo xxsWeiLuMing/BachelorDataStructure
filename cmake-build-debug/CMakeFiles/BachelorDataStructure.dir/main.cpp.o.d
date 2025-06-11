@@ -1,8 +1,6 @@
 CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/main.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex7/ex7.cpp \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/LinkBiTree.h \
- /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/DataStructure/Tree/BinaryTrees/../../general.h \
+ /cygdrive/d/ApP/Programming/CLionProjects/BachelorDataStructure/Source/Experiment/Ex8/ex8.1.cpp \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/iostream \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/x86_64-pc-cygwin/bits/os_defines.h \
@@ -135,5 +133,4 @@ CMakeFiles/BachelorDataStructure.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/basic_ios.tcc \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/ostream.tcc \
  /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/istream \
- /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/istream.tcc \
- /usr/include/malloc.h /usr/include/machine/malloc.h
+ /usr/lib/gcc/x86_64-pc-cygwin/12/include/c++/bits/istream.tcc

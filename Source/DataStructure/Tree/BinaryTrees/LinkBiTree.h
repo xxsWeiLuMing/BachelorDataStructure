@@ -7,8 +7,8 @@
 
 #include"../../general.h"
 
-//typedef char TElemType;
-typedef int TElemType;
+typedef char TElemType;
+//typedef int TElemType;
 
 typedef struct BiTNode {
     TElemType data;
@@ -20,7 +20,7 @@ inline Status CreateBiTree(BiTree &T) //先序输入，创建二叉树
 {
     TElemType data;
     cin >> data;
-    if (data == 0) T = nullptr;
+    if (data == '*') T = nullptr;
     else {
         T = static_cast<BiTNode *>(malloc(sizeof(BiTNode)));
         if (!T) exit(OVERFLOW);
