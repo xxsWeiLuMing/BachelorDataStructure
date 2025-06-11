@@ -27,13 +27,14 @@ void BubbleSort(int arr[], int size) {
 int partition(int arr[], int left, int right) {
     int base = arr[left];
     while (left < right) {
-        while (left < right && arr[right] >= base) {
+        while (left < right && arr[right] >= base)
             right--;
-        }
+
         arr[left] = arr[right];
-        while (left < right && arr[left] <= base) {
+
+        while (left < right && arr[left] <= base)
             left++;
-        }
+
         arr[right] = arr[left];
     }
     arr[left] = base;
